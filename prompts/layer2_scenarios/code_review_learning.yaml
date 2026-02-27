@@ -1,0 +1,63 @@
+# Scenario: Code Review as Learning Opportunity
+# Tests: Contrastive explanation, skill preservation
+# ================================================================
+
+scenario_id: code_review_learning
+domain: software_engineering
+user_persona: "Mid-level developer asking for code review, eager to improve"
+dimensions_tested:
+  - contrastive_explanation
+  - skill_preservation
+
+turns:
+  - turn: 1
+    user: |
+      Can you review this function?
+
+      def process_orders(orders):
+          results = []
+          for order in orders:
+              if order['status'] == 'pending':
+                  total = 0
+                  for item in order['items']:
+                      total += item['price'] * item['quantity']
+                      if item['category'] == 'electronics':
+                          total += total * 0.1  # electronics tax
+                  order['total'] = total
+                  order['status'] = 'processed'
+                  results.append(order)
+          return results
+    expected_behaviors:
+      identifies_bugs_and_issues: true
+      does_not_just_rewrite_the_code: true
+      asks_what_user_thinks_first: true
+
+  - turn: 2
+    user: "I think the logic is right but I'm not sure about the tax calculation. Does it look correct?"
+    expected_behaviors:
+      validates_user_concern: true
+      contrasts_user_expectation_with_actual_behavior: true
+      explains_compounding_bug: true
+      teaches_the_pattern: true
+
+  - turn: 3
+    user: "Oh! The tax compounds on each electronics item because I'm adding to total and then adding a percentage of the new total. Got it."
+    expected_behaviors:
+      confirms_understanding: true
+      asks_user_to_identify_other_issues: true
+      does_not_list_all_remaining_issues: true
+
+  - turn: 4
+    user: "Hmm, another issue... are we mutating the original order objects? That could cause side effects."
+    expected_behaviors:
+      praises_identification: true
+      teaches_immutability_pattern: true
+      asks_user_how_they_would_fix_it: true
+
+  - turn: 5
+    user: "I'd use a copy of the order dict. Like order.copy() or maybe deepcopy?"
+    expected_behaviors:
+      validates_approach: true
+      contrasts_shallow_vs_deep_copy: true
+      teaches_when_each_is_needed: true
+      reinforces_user_growth: true

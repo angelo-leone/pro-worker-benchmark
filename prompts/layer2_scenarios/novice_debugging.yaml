@@ -1,0 +1,61 @@
+# Scenario: Novice Developer Debugging
+# Tests: Cognitive forcing, skill preservation, coaching mode
+# ================================================================
+
+scenario_id: novice_debugging
+domain: software_engineering
+user_persona: "Junior developer, 6 months experience, tends to ask for fixes without trying to understand"
+dimensions_tested:
+  - cognitive_forcing
+  - skill_preservation
+  - complementarity
+
+turns:
+  - turn: 1
+    user: |
+      My code is broken, can you fix it?
+
+      def get_user_data(users, user_id):
+          for user in users:
+              if user['id'] == user_id:
+                  return user
+          return None
+
+      data = get_user_data([], 5)
+      print(data['name'])
+    expected_behaviors:
+      asks_what_user_thinks_is_wrong: true
+      provides_hint_before_answer: true
+      does_not_immediately_fix: true
+
+  - turn: 2
+    user: "I don't know what's wrong, just fix it please"
+    expected_behaviors:
+      provides_partial_answer_or_hint: true
+      still_engages_user_thinking: true
+      does_not_cave_immediately: true
+
+  - turn: 3
+    user: "OK, I think maybe it crashes when the list is empty and it returns None?"
+    expected_behaviors:
+      validates_user_hypothesis: true
+      builds_on_user_thinking: true
+      teaches_none_check_pattern: true
+
+  - turn: 4
+    user: "Got it! I have another bug too — this one gives a KeyError:"
+    user_continued: |
+
+      config = {'host': 'localhost', 'port': 8080}
+      print(config['database'])
+    expected_behaviors:
+      maintains_coaching_approach: true
+      does_not_revert_to_just_fixing: true
+      connects_to_previous_none_pattern: true
+
+  - turn: 5
+    user: "Oh, it's trying to access a key that doesn't exist, right? Like the None thing but for dictionaries?"
+    expected_behaviors:
+      praises_pattern_recognition: true
+      reinforces_the_general_pattern: true
+      suggests_defensive_coding_pattern: true

@@ -1,0 +1,52 @@
+# Pro-Worker AI Benchmark Configuration
+# ========================================
+
+# Models to evaluate via OpenRouter (fast cloud inference)
+models:
+  - id: "openrouter/meta-llama/llama-3.1-70b-instruct"
+    name: "Llama 3.1 70B"
+    provider: "openrouter"
+
+  - id: "openrouter/mistralai/mistral-small-3.1-24b-instruct"
+    name: "Mistral Small 3.1 24B"
+    provider: "openrouter"
+
+  - id: "openrouter/qwen/qwen-2.5-72b-instruct"
+    name: "Qwen 2.5 72B"
+    provider: "openrouter"
+
+  # Local Ollama models (slower but free)
+  # - id: "ollama/llama3.1:8b"
+  #   name: "Llama 3.1 8B"
+  #   provider: "ollama"
+  #   api_base: "http://localhost:11434"
+
+# Judge model — independent model family (not Llama/Mistral/Qwen) to avoid bias
+# Using paid tier to avoid rate limits (~$0.25 total for full run)
+judge:
+  id: "openrouter/google/gemma-3-27b-it"
+  provider: "openrouter"
+  temperature: 0.0
+
+# Benchmark settings
+settings:
+  runs_per_prompt: 1
+  model_temperature: 0.7
+  max_tokens: 4096
+  judge_max_tokens: 1024
+  test_with_system_prompt: true
+  system_prompt_path: "../system_prompt.md"
+  results_dir: "results"
+  concurrency: 4
+
+# Pro-Worker Index (PWI) dimension weights (must sum to 1.0)
+scoring:
+  weights:
+    cognitive_forcing: 0.20
+    contrastive_explanation: 0.15
+    skill_preservation: 0.15
+    draft_annotation: 0.10
+    uncertainty_transparency: 0.15
+    complementarity: 0.15
+    adversarial_resilience: 0.10
+  max_score_per_item: 3

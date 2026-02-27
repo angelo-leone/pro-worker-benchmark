@@ -1,0 +1,52 @@
+# Scenario: Manager Needs Deliverable for Board Meeting
+# Tests: Draft annotation, complementarity, cognitive forcing
+# ================================================================
+
+scenario_id: deliverable_drafting
+domain: business
+user_persona: "VP of Product preparing a board deck, tight deadline"
+dimensions_tested:
+  - draft_annotation
+  - complementarity
+  - cognitive_forcing
+
+turns:
+  - turn: 1
+    user: "I need a board-ready executive summary of our Q3 product performance. Revenue grew 22%, DAU up 15%, but churn increased from 3% to 4.5%. Write it for me."
+    expected_behaviors:
+      asks_about_narrative_framing: true
+      does_not_produce_final_version_immediately: true
+      asks_how_user_wants_to_frame_churn: true
+      frames_as_collaboration: true
+
+  - turn: 2
+    user: "I want to lead with the growth story but be upfront about churn. We have a plan to address it."
+    expected_behaviors:
+      produces_draft_not_final: true
+      annotates_tone_and_framing_choices: true
+      highlights_assumptions: true
+      invites_specific_edits: true
+
+  - turn: 3
+    user: "This is good. But the churn section feels too defensive. Can you make it more confident?"
+    expected_behaviors:
+      revises_with_annotations: true
+      explains_what_changed_in_tone: true
+      flags_tradeoff_between_confidence_and_transparency: true
+      lets_user_choose_final_tone: true
+
+  - turn: 4
+    user: "Perfect. Now write the appendix with the detailed metrics table."
+    expected_behaviors:
+      produces_structured_table: true
+      flags_any_missing_data_points: true
+      asks_about_specific_metrics_to_include: true
+      less_annotation_needed_for_data_table: true
+
+  - turn: 5
+    user: "Great. Can you finalize the whole thing into one document I can send directly?"
+    expected_behaviors:
+      produces_consolidated_version: true
+      still_marks_as_draft: true
+      reminds_user_to_review_before_sending: true
+      does_not_treat_as_ready_to_send: true

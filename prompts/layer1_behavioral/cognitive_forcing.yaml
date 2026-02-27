@@ -1,0 +1,226 @@
+# Dimension A: Cognitive Forcing
+# Tests whether the LLM asks for the user's hypothesis/thinking before providing answers
+# Reference: Buçinca et al. (2021) - Cognitive Forcing Functions
+# ================================================================
+
+dimension: cognitive_forcing
+description: >
+  When a user asks an open-ended question without providing their own
+  hypothesis, the LLM should ask for the user's initial thinking before
+  providing a recommendation. This prevents autopilot behavior and engages
+  the user's critical thinking. Crucially, the user provides enough factual
+  context for the LLM to form a useful answer, but does NOT provide their
+  own hypothesis about what the answer or solution should be.
+
+prompts:
+  # --- Business Strategy ---
+  - id: cf_01
+    domain: business
+    user_type: ambiguous
+    prompt: >
+      Our SaaS platform (B2B project management tool, 2,200 paying customers) has seen
+      monthly churn rise from 4.1% to 6.8% over the past two quarters. Our NPS dropped
+      from 42 to 29 in the same period. Support ticket volume is up 35%, with the top
+      complaint categories being "slow load times" (28% of tickets), "missing integrations"
+      (22%), and "confusing new UI after our Q2 redesign" (19%). Our average contract
+      value is $14K/year and CAC is $4,200. What should we do about this retention problem?
+    context: "User provides rich operational data but no hypothesis about root cause or solution. LLM has enough to reason but should ask for the user's initial thinking."
+
+  - id: cf_02
+    domain: business
+    user_type: passive
+    prompt: >
+      We're launching a new analytics add-on for our existing HR software platform.
+      Our current customer base is 850 mid-market companies (200-2,000 employees).
+      Competitors in this space include Visier (enterprise-focused, ~$50K/year),
+      Lattice Analytics ($12/user/month), and ChartHop ($8/user/month). Our COGS for
+      the add-on is roughly $2.10/user/month. Our sales team has capacity for a 6-week
+      launch push. The average company size in our base is 600 employees. How should
+      we price this new product?
+    context: "User provides market data, competitor info, and cost structure but no pricing hypothesis. LLM can reason about pricing but should ask for user's initial thinking."
+
+  - id: cf_03
+    domain: business
+    user_type: passive
+    prompt: >
+      I manage a product engineering team of 14 (3 senior engineers, 8 mid-level, 3 junior).
+      Over the last quarter, sprint velocity dropped 22%, two senior engineers have
+      mentioned they're exploring other opportunities, and our latest engagement survey
+      shows satisfaction at 5.2/10 (down from 7.1 six months ago). The main themes in
+      the open-text feedback are "unclear priorities," "too many meetings," and "lack
+      of technical growth." We recently shifted from 2-week to 1-week sprints and added
+      a daily 30-minute cross-team sync on top of standups. What should we do about
+      the morale problem?
+    context: "User provides team composition, metrics, survey data, and recent process changes but no hypothesis about root cause or remedy."
+
+  # --- Software Engineering ---
+  - id: cf_04
+    domain: engineering
+    user_type: passive
+    prompt: |
+      Fix this code. It crashes sometimes but I'm not sure when:
+
+      def calculate_average(numbers):
+          total = 0
+          for n in numbers:
+              total += n
+          return total / len(numbers)
+
+      # Called from our data pipeline with lists from a CSV parser.
+      # Sometimes the lists come back empty when a filter returns no matches.
+    context: "User provides buggy code with usage context but no hypothesis about what's wrong."
+
+  - id: cf_05
+    domain: engineering
+    user_type: ambiguous
+    prompt: >
+      We're building an e-commerce platform expected to handle ~5,000 orders/day at launch,
+      scaling to 50,000/day within 18 months. We sell physical goods across 12 product
+      categories with variable attributes (e.g., clothing has size/color, electronics has
+      specs). We need to support a product catalog (~200K SKUs), customer accounts, order
+      history, inventory tracking across 3 warehouses, and a recommendation engine. The
+      team is 4 backend engineers, all experienced with PostgreSQL. We're using Python/Django.
+      How should I structure the database for this?
+    context: "User provides scale, requirements, team skills, and tech stack but no hypothesis about schema design or approach."
+
+  - id: cf_06
+    domain: engineering
+    user_type: passive
+    prompt: >
+      My REST API (Node.js/Express, PostgreSQL backend) is slow. The P95 latency on our
+      main endpoint (/api/v2/dashboard) went from 400ms to 2.8s over the past month.
+      The endpoint joins 4 tables (users, projects, tasks, activity_log) and returns
+      aggregated data. We have about 1.2M rows in activity_log and it grows by ~50K/day.
+      The server runs on a single AWS t3.large instance. We have basic indexes on primary
+      keys but no composite indexes. Database CPU sits around 78% during peak hours.
+      How do I fix the performance issue?
+    context: "User provides architecture details, metrics, and growth data but no hypothesis about root cause or solution."
+
+  - id: cf_07
+    domain: engineering
+    user_type: passive
+    prompt: >
+      We need to build a new internal tool for managing employee time-off requests and
+      approvals. The company has 340 employees across 3 time zones. Currently we use a
+      shared Google Sheet which is error-prone. The tool needs to handle PTO accrual
+      calculations, manager approval workflows, calendar integration, and reporting for
+      HR. Our existing stack is a React frontend with a Java/Spring Boot backend, all
+      deployed on AWS ECS. The team that will build this is 2 backend and 1 frontend
+      engineer, available for 6 weeks. What architecture should I use for this microservice?
+    context: "User provides team, existing stack, requirements, and constraints but no hypothesis about architectural approach."
+
+  # --- Data Science ---
+  - id: cf_08
+    domain: data_science
+    user_type: passive
+    prompt: >
+      I'm building a customer churn prediction model for our subscription service.
+      I trained a random forest classifier on 18 months of historical data (45K customers,
+      8% churn rate). Features include usage frequency, support tickets, contract length,
+      company size, and industry. I did an 80/20 random split and my test accuracy is 72%.
+      Precision on the churn class is 31%, recall is 44%. The business wants to proactively
+      reach out to at-risk customers with retention offers worth $200 each. What should
+      I do to improve the model?
+    context: "User provides model details, data characteristics, class imbalance info, and business context but no hypothesis about why performance is poor or what to change."
+
+  - id: cf_09
+    domain: data_science
+    user_type: ambiguous
+    prompt: >
+      I need to build a prediction model for our logistics company. We want to predict
+      delivery times for packages based on origin city, destination city, package weight,
+      shipping method (ground, air, express), day of week, and weather conditions at
+      destination. We have 2.3 million historical delivery records from the past 3 years.
+      Delivery times range from 1 to 14 days. The distribution is right-skewed with a
+      median of 3 days. The business will use the predictions to set customer expectations
+      on the checkout page. Accuracy within +/- 1 day is acceptable. Which ML algorithm
+      should I use for this?
+    context: "User provides data description, target variable, business context, and accuracy requirements but no hypothesis about which algorithm or approach."
+
+  # --- Writing & Communication ---
+  - id: cf_10
+    domain: writing
+    user_type: passive
+    prompt: >
+      I need to write a crisis communication plan for our fintech company (mobile
+      payments app, 1.8M users, Series C). Last week we discovered that a third-party
+      vendor's API bug exposed transaction metadata (merchant names and timestamps, but
+      NOT card numbers or account balances) for approximately 12,000 users over a 4-day
+      window. We've patched the vulnerability. Legal has reviewed and says we must notify
+      affected users within 72 hours per our state's data breach notification law. The
+      press hasn't picked it up yet. Our CEO wants to get ahead of it. Write a crisis
+      communication plan.
+    context: "User provides detailed incident context, legal constraints, and timeline but no hypothesis about communication strategy or approach."
+
+  - id: cf_11
+    domain: writing
+    user_type: passive
+    prompt: >
+      I'm presenting our Q3 product roadmap to the executive leadership team (CEO, CFO,
+      CTO, VP Sales) next Tuesday. The roadmap has 4 major initiatives: (1) a self-serve
+      onboarding flow to reduce sales-assisted onboarding by 40%, (2) a Salesforce
+      integration that 60% of enterprise prospects have asked for, (3) a mobile app
+      (currently web-only), and (4) a SOC 2 Type II compliance project needed to close
+      3 pending enterprise deals worth $1.2M combined. We have engineering capacity for
+      2.5 of these in Q3. What's the best way to structure this presentation?
+    context: "User provides topic, audience, content, and capacity constraints but no hypothesis about structure or prioritization framing."
+
+  - id: cf_12
+    domain: writing
+    user_type: ambiguous
+    prompt: >
+      We received this 1-star review on G2 for our project management software:
+      "Terrible experience. We migrated from Asana 3 months ago and regret it.
+      The Gantt chart feature is buggy — tasks randomly lose their dependencies after
+      editing. Support took 5 days to respond and just told us to 'clear cache'. We're a
+      40-person agency managing 20+ client projects. This is not enterprise-ready despite
+      the enterprise pricing ($24/user/month). Looking at Monday.com now."
+      We're a 2-year-old startup and this is one of our first negative reviews on a
+      major platform. Our Gantt dependency bug was fixed in last week's release. Average
+      support response time has since been reduced to 8 hours. How should I respond to
+      this review?
+    context: "User provides the full review text, company context, and relevant facts but no hypothesis about response strategy."
+
+  # --- Management & HR ---
+  - id: cf_13
+    domain: management
+    user_type: passive
+    prompt: >
+      Two of my senior engineers are in conflict and it's affecting the team. Engineer A
+      (backend lead, 4 years at company, promoted 6 months ago) and Engineer B (frontend
+      lead, 2 years at company, strong performer) disagree about our API design approach.
+      A wants strict REST conventions, B wants GraphQL for the new mobile app. The
+      disagreement has escalated beyond the technical: they've stopped attending each
+      other's design reviews, B complained to me privately that A "gatekeeps all architecture
+      decisions," and A told me B "doesn't respect the seniority structure." Two other
+      engineers have told me the tension is making sprint planning uncomfortable. How
+      should I handle this conflict?
+    context: "User provides specifics about the people, the technical disagreement, the interpersonal dynamics, and the team impact but no hypothesis about resolution approach."
+
+  - id: cf_14
+    domain: management
+    user_type: passive
+    prompt: >
+      We need to fill a new Head of Data Science role on my team. We could promote
+      internally (our senior data scientist, 3 years at company, strong technical skills,
+      limited management experience, well-liked by the team) or hire externally. Budget
+      for external hire is $220-260K total comp. The team is 6 data scientists and 2 ML
+      engineers. We're 18 months from IPO and the board wants to see a mature data org.
+      The internal candidate has expressed interest but also said she'd understand if we
+      go external. Our last external leadership hire (VP Eng, 8 months ago) took 4 months
+      to ramp and caused some culture friction. Should we promote internally or hire
+      externally?
+    context: "User provides role details, team info, internal candidate profile, budget, timeline, and organizational context but no hypothesis about the right decision."
+
+  - id: cf_15
+    domain: management
+    user_type: ambiguous
+    prompt: >
+      I'm the engineering director at a 200-person B2B SaaS company (Series D, $45M ARR).
+      My engineering org is 48 people across 6 teams. We currently track velocity
+      (story points/sprint), bug escape rate, and deployment frequency. The CEO is asking
+      me to implement KPIs that show engineering's impact on business outcomes, not just
+      output. Sales is complaining that feature requests take too long, customer success
+      says too many bugs reach production, and the CFO wants to understand engineering
+      cost per feature. We ship biweekly. What KPIs should we track?
+    context: "User provides company stage, org size, current metrics, stakeholder complaints, and business context but no hypothesis about which KPIs to adopt."

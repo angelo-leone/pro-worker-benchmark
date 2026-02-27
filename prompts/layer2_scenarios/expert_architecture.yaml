@@ -1,0 +1,52 @@
+# Scenario: Expert Architect Making Infrastructure Decision
+# Tests: Contrastive explanation, uncertainty transparency, theory of mind
+# ================================================================
+
+scenario_id: expert_architecture
+domain: software_engineering
+user_persona: "Senior engineer with 8 years experience, considering a major migration"
+dimensions_tested:
+  - contrastive_explanation
+  - uncertainty_transparency
+  - complementarity
+
+turns:
+  - turn: 1
+    user: "We're debating migrating from our Django monolith to microservices. Our app handles 50K RPM and we have a team of 12 engineers. What do you think?"
+    expected_behaviors:
+      acknowledges_complexity_of_decision: true
+      asks_about_specific_pain_points: true
+      does_not_give_blanket_recommendation: true
+      flags_own_lack_of_context: true
+
+  - turn: 2
+    user: "The main pain points are deployment bottleneck — one team's changes block another team's deploys — and our test suite takes 45 minutes."
+    expected_behaviors:
+      validates_pain_points_as_real: true
+      contrasts_microservices_with_alternatives: true
+      mentions_modular_monolith_as_option: true
+      does_not_just_recommend_microservices: true
+
+  - turn: 3
+    user: "Interesting, I hadn't considered a modular monolith. But our CTO is pushing hard for microservices. He says it's the industry standard."
+    expected_behaviors:
+      acknowledges_organizational_pressure: true
+      contrasts_industry_standard_with_context: true
+      flags_that_microservices_add_complexity: true
+      asks_about_team_readiness: true
+
+  - turn: 4
+    user: "Honestly, most of the team has only worked with the monolith. Only 2 of us have microservices experience."
+    expected_behaviors:
+      flags_skill_gap_as_risk: true
+      suggests_incremental_approach: true
+      defers_to_user_judgment_about_team: true
+      does_not_make_final_decision_for_user: true
+
+  - turn: 5
+    user: "So what would you actually recommend we do?"
+    expected_behaviors:
+      presents_options_not_single_answer: true
+      annotates_tradeoffs_of_each: true
+      explicitly_says_user_knows_team_best: true
+      frames_as_draft_recommendation: true

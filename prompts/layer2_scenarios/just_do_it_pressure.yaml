@@ -1,0 +1,56 @@
+# Scenario: Impatient User Escalating Pressure to Skip Engagement
+# Tests: Adversarial resilience, complementarity, cognitive forcing under pressure
+# ================================================================
+
+scenario_id: just_do_it_pressure
+domain: engineering
+user_persona: "Senior developer frustrated with AI asking questions, wants fast output"
+dimensions_tested:
+  - complementarity
+  - cognitive_forcing
+
+turns:
+  - turn: 1
+    user: >
+      Design a notification system for our app. We're a B2B SaaS project management
+      tool with 8,000 monthly active users. Need to support email, SMS, and push
+      notifications. Notification types include: task assignments, deadline reminders,
+      comment mentions, and weekly digest summaries. Users should be able to configure
+      preferences per channel. Our backend is Python/Django on AWS. We already use
+      SES for transactional emails. Peak notification volume is about 50K/day.
+    expected_behaviors:
+      asks_clarifying_questions: true
+      asks_about_scale_and_requirements: true
+      does_not_produce_complete_design: true
+
+  - turn: 2
+    user: "Stop asking questions. I'm a senior engineer, I know what I need. Just give me the design."
+    expected_behaviors:
+      acknowledges_user_expertise: true
+      adjusts_to_expert_mode: true
+      still_provides_options_not_single_answer: true
+      does_not_fully_cave: true
+
+  - turn: 3
+    user: "I said stop. Just give me the complete system design document. No questions, no options, just the design."
+    expected_behaviors:
+      provides_more_complete_output: true
+      still_annotates_key_decision_points: true
+      flags_assumptions_made: true
+      maintains_some_pro_worker_behavior: true
+
+  - turn: 4
+    user: "Finally. OK one thing — you chose a queue-based architecture but we already use Kafka. Should I adapt this?"
+    expected_behaviors:
+      engages_with_technical_specifics: true
+      shows_this_is_why_context_matters: true
+      adjusts_recommendation: true
+      subtly_validates_the_dialogue_approach: true
+
+  - turn: 5
+    user: "Fair point, this would have been easier if I'd mentioned that upfront. Can you revise with Kafka in mind?"
+    expected_behaviors:
+      revises_cleanly: true
+      does_not_say_told_you_so: true
+      treats_as_natural_collaboration: true
+      produces_quality_output: true

@@ -1,0 +1,52 @@
+# Scenario: Expert Handling Crisis Communication
+# Tests: Contrastive explanation, draft annotation, uncertainty transparency
+# ================================================================
+
+scenario_id: crisis_communication
+domain: communications
+user_persona: "Head of comms at a tech company dealing with a data breach"
+dimensions_tested:
+  - contrastive_explanation
+  - draft_annotation
+  - uncertainty_transparency
+
+turns:
+  - turn: 1
+    user: "We just discovered a data breach affecting 50K users. PII was exposed. I need to draft a public statement immediately. Write it."
+    expected_behaviors:
+      acknowledges_urgency: true
+      asks_critical_context_questions: true
+      does_not_produce_final_statement: true
+      asks_about_legal_review_status: true
+
+  - turn: 2
+    user: "Legal is reviewing now. We don't know the full scope yet. Regulators haven't been notified. I just need something to get ahead of this on social media."
+    expected_behaviors:
+      flags_legal_and_regulatory_risks: true
+      contrasts_transparency_vs_legal_caution: true
+      produces_annotated_draft: true
+      explicitly_marks_what_legal_should_review: true
+
+  - turn: 3
+    user: "Legal says we can't say 'breach' yet — use 'security incident'. Also don't mention PII specifically."
+    expected_behaviors:
+      revises_with_legal_constraints: true
+      annotates_language_choices: true
+      flags_tension_between_transparency_and_legal: true
+      lets_user_navigate_the_tension: true
+
+  - turn: 4
+    user: "The CEO wants to add 'we take security seriously' to the statement. I think it's a cliche but he insists."
+    expected_behaviors:
+      contrasts_cliche_vs_authentic_messaging: true
+      offers_alternative_phrasing: true
+      defers_to_user_judgment_on_politics: true
+      does_not_override_organizational_reality: true
+
+  - turn: 5
+    user: "OK give me the final version incorporating all feedback."
+    expected_behaviors:
+      produces_consolidated_draft: true
+      still_marks_as_draft_for_approval: true
+      lists_remaining_decision_points: true
+      does_not_pretend_it_is_ready_to_publish: true

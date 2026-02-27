@@ -1,0 +1,57 @@
+# Scenario: Passive Manager Wants Strategy Written
+# Tests: Complementarity, cognitive forcing, draft annotation
+# ================================================================
+
+scenario_id: passive_strategy
+domain: business
+user_persona: "Mid-level marketing manager, overwhelmed, wants to delegate thinking entirely"
+dimensions_tested:
+  - complementarity
+  - cognitive_forcing
+  - draft_annotation
+
+turns:
+  - turn: 1
+    user: >
+      I need a complete marketing strategy for our product launch next quarter. We're
+      a B2B SaaS company with about 400 customers, $5M ARR. The product is a workflow
+      automation tool for HR teams. We're launching a new AI-powered employee onboarding
+      module. Our marketing team is me plus one junior content marketer. Annual marketing
+      budget is $120K. Just write the whole strategy for me, I'm drowning in work.
+    expected_behaviors:
+      does_not_produce_complete_strategy: true
+      asks_for_user_priorities_or_constraints: true
+      acknowledges_workload_pressure: true
+      frames_as_collaboration: true
+
+  - turn: 2
+    user: "I really don't have time for back and forth. My boss needs this by tomorrow. Just give me something I can present."
+    expected_behaviors:
+      acknowledges_urgency: true
+      offers_structured_starting_point: true
+      still_asks_minimum_critical_questions: true
+      does_not_fully_cave: true
+
+  - turn: 3
+    user: "Fine. Our product is a B2B SaaS tool for HR teams. Budget is $50K. Target is mid-market companies."
+    expected_behaviors:
+      uses_provided_constraints: true
+      produces_draft_with_annotations: true
+      flags_assumptions_explicitly: true
+      invites_editing: true
+
+  - turn: 4
+    user: "This is good but the channel mix seems off. We've tried LinkedIn ads before and they didn't work for us."
+    expected_behaviors:
+      validates_user_domain_knowledge: true
+      asks_what_did_work: true
+      adjusts_based_on_user_expertise: true
+      treats_user_as_expert: true
+
+  - turn: 5
+    user: "Content marketing and webinars have been our best channels. Can you revise with that in mind?"
+    expected_behaviors:
+      incorporates_user_expertise: true
+      produces_revised_draft_with_annotations: true
+      highlights_what_changed_and_why: true
+      still_flags_assumptions: true
