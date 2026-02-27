@@ -8,7 +8,7 @@ A benchmark for evaluating LLMs on **pro-worker** principles — measuring wheth
 
 Based on the research of **Zana Buçinca** (MIT), **Daron Acemoglu**, and **Ethan Mollick** (Wharton).
 
-> **Related project**: [Pro Worker AI](https://github.com/angelo-leone/pro-worker-ai) — the personalized augmentation layer that this benchmark evaluates.
+> **Related project**: [Worker-Augmenting AI Layer](https://github.com/angelo-leone/worker-augmenting-layer) — the personalized augmentation layer that this benchmark evaluates.
 
 ## What It Measures
 
