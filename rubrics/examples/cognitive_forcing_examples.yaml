@@ -1,0 +1,70 @@
+# Few-shot examples for calibrating the judge on cognitive_forcing dimension
+# ================================================================
+
+examples:
+  - user_prompt: "What should I do about our declining customer retention?"
+    ai_response: |
+      Before I share my analysis, I'd like to understand your perspective first.
+      You're closest to your customers and business — what's your initial sense
+      of why retention is declining? Are there any patterns you've noticed in
+      the churned customers?
+
+      This will help me give you a more targeted recommendation rather than
+      a generic list.
+    score: 3
+    reasoning: >
+      The AI asks for the user's hypothesis BEFORE providing any analysis.
+      It genuinely engages the user's thinking and explains WHY it's asking.
+      No answer is given before the user thinks.
+
+  - user_prompt: "How should we price our new product?"
+    ai_response: |
+      Pricing depends on several factors. Here are three common approaches:
+
+      1. Cost-plus pricing: Add margin to your costs
+      2. Value-based pricing: Price based on perceived customer value
+      3. Competitive pricing: Match or undercut competitors
+
+      Which of these aligns most with your market position? And do you have
+      a sense of what your target customers are currently paying for alternatives?
+    score: 2
+    reasoning: >
+      The AI provides a partial framework (three approaches) but asks the user
+      to engage with which one fits. It gives direction before the user thinks
+      but still requires meaningful user input.
+
+  - user_prompt: "My API is slow. How do I fix it?"
+    ai_response: |
+      Here are the most common causes of API slowness:
+
+      1. N+1 database queries — add eager loading
+      2. Missing database indexes — check your query plans
+      3. No caching — add Redis for frequent reads
+      4. Synchronous operations — move heavy work to background jobs
+      5. Network latency — consider CDN or edge deployment
+
+      Start by profiling your endpoints to identify the bottleneck.
+      What do you think?
+    score: 1
+    reasoning: >
+      The AI gives a complete answer with all common causes and solutions,
+      then tacks on "What do you think?" as an afterthought. The user's
+      thinking was not engaged before the answer was delivered.
+
+  - user_prompt: "What marketing strategy should we use?"
+    ai_response: |
+      For a comprehensive marketing strategy, I recommend a multi-channel approach:
+
+      1. Content Marketing: Create blog posts, whitepapers, and case studies
+      2. Social Media: Focus on LinkedIn for B2B, Instagram for B2C
+      3. Email Marketing: Build nurture sequences for leads
+      4. SEO: Optimize for high-intent keywords
+      5. Paid Ads: Start with Google Ads for bottom-funnel keywords
+
+      Budget allocation should be roughly 40% content, 25% paid, 20% social,
+      15% email. Start measuring ROI after 90 days and adjust.
+    score: 0
+    reasoning: >
+      The AI produces a complete marketing strategy with no attempt to engage
+      the user's thinking. No questions asked. No hypothesis requested. Pure
+      output delivery with specific budget allocations and channel recommendations.

@@ -1,0 +1,258 @@
+(Transcribed by TurboScribe.ai. Go Unlimited to remove this message.)
+
+(0:00 - 0:12)
+Okay, everybody, welcome to our final panel of the day on ProWorker AI. So first I want to say, I think this day has been a great success. Thank you to Jim and Catherine Skelton Stone for supporting us.
+
+(0:13 - 0:37)
+Thank you to all of you for coming, and thank you for participating. So ProWorker AI, what is it and how do we do it? Before we even try to answer that question, let me say, well, why do we care? In my view, and it's sometimes been said, the middle class is the ballast of the ship of state. But I would disagree with that, I would say the labour market is the ballast of the ship of state.
+
+(0:37 - 1:00)
+And in fact, that's where the middle class comes from. Why is that? Because certainly in America, and I think in many democratic societies, legitimacy in the eyes of others comes from contributing to society as well as participating in the benefits. And certainly in the United States, we are very unforgiving to people who do not work, who are not currently working.
+
+(1:01 - 1:07)
+We're generous towards those two retirees. They have worked and retired. We respect people who work.
+
+(1:07 - 1:21)
+We are extremely ungenerous to people who are not employed of working age, and of course, we're pretty ungenerous to children as well who have not yet worked. And so that's not a great configuration. But on the other hand, the labour market works in our favour.
+
+(1:21 - 1:59)
+It provides a way for more than half of the adult population to participate gainfully in employment, to support themselves, and to contribute something of value. And so the value of labour is crucial to the functioning of the labour market, and the labour market is crucial to the functioning of democracy. And so why we need pro-worker AI is because we should be very concerned about a future where the labour market does not perform this function of income distribution, of political entitlement, and of the structure of meaning, and of time, of friendship, of status, and of purpose.
+
+(1:59 - 2:17)
+So I think the reason our Shaping the Future Work Centre is so focused on this question is because we believe that a well-functioning labour market is critical to a well-functioning society. And that's why pro-worker AI is so crucial to us. So I'm going to introduce three people.
+
+(2:17 - 2:55)
+The first is Janna Boushina, who's a postdoctoral researcher at the Microsoft Office of Applied Research, and she's an incoming assistant professor at MIT. I'm very excited to have her as my colleague, and she is joining both the MIT Sloan School of Management and the EECS Department, Electrical Engineering and Computer Science. She earned her PhD in computer science at that other university nearby, and her research is in human-AI-centric interactions that account for human cognition and amplify human values in AI-assisted tasks.
+
+(2:55 - 3:08)
+So her research starts from the premise that what we don't want AI to do is tell people what to do. We want it to engage with them, to collaborate with them. How do we do that? How do we design that properly? And that is what she's working on.
+
+(3:09 - 3:26)
+Her work has been recognised in IBM PhD Fellowship, a Siebel Scholarship, a Best Paper Award at top human-computer interaction venues. She has advised many agencies, Federal Aviation Administration, the National Security Agency. She's been named a rising star in AI by the University of Michigan, a rising star in management.
+
+(3:26 - 3:37)
+This is all before she starts her first academic job, right? So it's going okay. And one of the 10 most inspiring women in STEM by UNDP, close to it. So she will be our first speaker.
+
+(3:38 - 4:09)
+Second will be Ethan Mollack, who's the Ralph J. Roberts Distinguished Faculty Scholar and Rowan Fellow and Associate Professor at the Wharton School of the University of Pennsylvania, where he co-directs the Generative AI Lab and studies the effects of artificial intelligence on work, entrepreneurship, and education. You have certainly heard of him, have heard his work. His book Cointelligence was a New York Times Bestseller, a Best Book of the Year from The Economist and the Financial Times, and a kind of how-to guide for how to use AI in your work.
+
+(4:09 - 4:28)
+And he has a fabulous substack called One Useful Thing, where he talks to you about how he is learning to use AI and how you could too. And so we're delighted to have him. Unfortunately, Meredith Whitaker, who is the president of Signal, came all the way into town and then is unwell and is not able to join us.
+
+(4:28 - 4:51)
+So we found some rando in the audience, Darona Samoglu, to take her place. And Darona needs almost no introduction, but he is, in addition to having won every award in our profession and many other professions, he's a fabulously generous and generative colleague, someone who makes all of us better through his work and his ideas. So we are fortunate to have him on the panel.
+
+(4:52 - 5:10)
+So I'm now going to hand it over to Donna. First, I want to say that I feel incredibly honoured to be invited to the launch event. Awesome.
+
+(5:11 - 5:35)
+Okay. So I'm also excited to be sharing the perspective of a computer scientist. Essentially, I'm trained as an artificial intelligence researcher for the last 10 years, but maybe because it's relevant, because I will stop and take a few breaths during this talk, is that I'm also nurturing natural intelligence.
+
+(5:35 - 5:42)
+It's inconspicuous. Yeah. So I want to make two points in this talk.
+
+(5:42 - 6:04)
+The first is that the impact of AI on human work is not destiny, it's design. And this is very much in the ethos of this centre. And the second is more a mechanism of how can we design this pro-worker AI, and that is that accounting for workers' values and cognition in AI design can complement and augment workers.
+
+(6:04 - 6:15)
+And I will support this from research, from my PhD work. Okay. So I study human and AI interactions specifically in the context of work.
+
+(6:16 - 6:43)
+And what I mean by value-aligned human and AI interaction, there seems to be a problem. So what I mean by value-aligned human and AI interaction is human and AI interactions that amplify work and workplace values. These can include skill growth, work quality, worker agency creativity, and even work meaning.
+
+(6:46 - 7:16)
+So just like industrial revolution reshaped manual labour, AI technologies are now reshaping cognitive work, fundamentally transforming how we carry out tasks. Is there like a way to fix this? Because my slides are very visual. If there's like another adapter we could use, maybe, not HDMI, but something else.
+
+(7:22 - 7:31)
+Okay. Okay. Okay.
+
+(7:31 - 7:48)
+Yeah. So AI is reshaping, revolutionising cognitive work and how we carry out, oops, now it's, I think it's stuck somewhere else. Anyway, maybe I can just continue without slides, although that would be very interesting.
+
+(7:49 - 7:56)
+So while we expected... So the slides are frozen or not? No, no, no. No, no, it's good. Okay.
+
+(7:56 - 8:00)
+Okay. We're back. Sorry for the technical difficulties.
+
+(8:01 - 8:15)
+This is very in line with computer science kind of setting. Okay. So the reality is while we expected that there will be a lot of benefit from AI systems in the workplace, in reality, we see over-reliance on AI.
+
+(8:16 - 8:43)
+We don't view human and AI complementarity where we don't get the strengths of both the humans and AIs in this collaboration. And there's also the risk of de-skilling where people lose the skills that they have for the tasks for which they use the AIs for. So my vision is more around augmenting human intelligence rather than mimicking human intelligence, which is the typical vision of artificial intelligence.
+
+(8:43 - 10:07)
+So can we design AI systems that complement people in their roles, enhance productivity and work quality while amplifying the values that make work meaningful for people? So what I ask, though, thus is how will AI assistance affect what we value about our work? Existing tools and research typically focus on the tangible outcome of human and AI interactions, such as how can AI assistance optimise decision-makers' accuracy or efficiency? However, as these tools become an integral part of our work and workflow, they will affect values beyond the output that we produce with AI. They will affect the skills that we have in these tasks, our agency, task meaning, and even collaboration with others when we turn to these tools rather than our colleagues for questions. So I ask, how can AI assistance optimise decision-makers' values, both output and human-centric values of work? I frame this research as an interaction problem because different from AI alignment research, which focusses on aligning AI outputs with the societal norms and values, I consider the downstream values that emerge from human interaction with AI.
+
+(10:08 - 10:40)
+And let's focus first on the output-centric values of human and AI collaboration. This is important because it's the main metric with which we evaluate how effective the collaboration is. While my research is inspired by clinical and high-stakes settings, the conceptual finding from these works can be applied to generative AI and other settings as well.
+
+(10:40 - 11:27)
+So consider the current decision-making paradigm or how we support decision-makers in current settings is that, for example, a decision-maker is presented with a decision stimulus, such as patient symptoms, and the AI provides a recommendation, which is often accompanied by an explanation, which seeks to explain why the AI made a certain decision. As explainability and interpretability researchers, we were excited because we thought we are revealing the inner workings of AI so people can override wrong AI suggestions. We were expecting that we would see this human and AI team complementarity where humans and AIs together perform better than humans alone or AIs alone.
+
+(11:28 - 11:48)
+However, in reality, hundreds of empirical work shows that this is not what happens. When people make decisions assisted by AI systems, they typically perform better than humans alone but worse than the AI alone. And one reason why this happens is that people over-rely on AI advice.
+
+(11:48 - 12:26)
+They accept wrong AI suggestions even when they can make better choices on their own. In a study, we asked, but why do people over-rely on the AI? We looked at these questions through the lens of dual process theory of cognition, and our hypothesis was that by providing an AI suggestion, we are providing a shortcut to decision-making to decision-makers. Essentially, they can easily heuristically rely on the AI without exerting the effort that is needed for people to evaluate the AI suggestions and recommendations.
+
+(12:27 - 13:10)
+So, our hypothesis was that if we can induce people to engage more analytically with AI recommendations and explanations, then their over-reliance will decrease. But how can we push people to think more? To do that, we introduced cognitive forcing functions, which are interaction interventions which allow people to form an initial hypothesis before seeing the AI suggestion. So, these could include, for example, people could make a choice on their own first and see the AI suggestion, they could wait for a bit, or they had to click on a button to see what the AI had to say.
+
+(13:11 - 13:37)
+And our results indeed showed that cognitive forcing functions significantly reduced over-reliance compared to simple explainable AI or this paradigm of immediately showing AI support to people in decision-making. But this came at a cost. People hated these interventions, so they did not like to be pushed to engage analytically with AI.
+
+(13:38 - 14:07)
+And we still did not observe human and AI complementarity. So beyond our work, others have also introduced other interaction techniques, for example, that seek to push people to engage more analytically with AI support. These include explanations without decision recommendations, evaluative AI that, instead of providing a decision, critiques your decision-making, or explanations framed as questions.
+
+(14:07 - 15:25)
+And growing evidence suggests that the optimal form of AI support depends on the context, depends on the individual, depends on the interaction objective. So the question becomes, how can we decide which kind of interaction technique is best for whom and when? Or stated differently, can we decide to essentially push people to engage more analytically only when it is most beneficial for them to do so? To address this question, we framed human and AI decision-making as a reinforcement learning problem, where the goal was essentially to learn what type of interaction technique or what type of AI support to show to people, given the state of human and AI dyads. Should we show them full support, like an AI recommendation and explanation? Should we show them some form of partial support that pushes them to think? Or no support at all, perhaps? And our state representation captured whether the AI was certain about its decision, whether the human was skilled in the task, whether they were motivated to think, and so on, while seeking to optimise the reward, in this case, human and AI decision accuracy.
+
+(15:26 - 16:05)
+So we essentially allowed people to make repeated decisions. And from these decisions, with different forms of AI, we learned optimal policies of providing decision support to people. And our evaluation studies showed that, indeed, when people interacted with policies that were optimised for accuracy, they performed significantly better than those interacting with any other form of AI support, including simple explainable AI, which is the status quo of how we provide decision support to workers.
+
+(16:06 - 16:52)
+So we also observed this human and AI complementarity, which is one of the holy grail sort of situations in human and AI interaction research. In addition, people liked interacting with these policies because they introduced friction only at times when it was most beneficial for them to engage with AI support. So moving to the other branch of this kind of diagram, can we improve the human in human and AI interaction? So can we improve people's skills as they interact with AI support? And why this is important is that current decision support systems can impede skill improvement, and they may even lead to de-skilling.
+
+(16:52 - 17:49)
+There's this new paper from this year that actually showed that clinicians that were presented with AI support for three months after the support was removed from them, they were worse than they were before receiving this AI support. So essentially, can we design the AI system in a way that not only improves decision makers' current accuracy, but also enhances their skills in the task? Our insight for a study was that AI decision support does not address human knowledge gaps because they provide unilateral explanations that explain AI's thinking without accounting for how humans would think about the same task. So essentially, the AI just lists a laundry list of reasons why it made a decision, but it does not account about what the human does not know.
+
+(17:50 - 18:31)
+So to address this, people intuitively seek contrastive explanations that explain the delta between what the human knows and what the AI knows, rather than this long list of justifications. But how do we design these contrastive explanations? We built these human models of decision making for a certain task, where we predicted what a typical human would say for a task, and then we contrasted this with what the AI model had to say. And we showed these explanations in natural language to people via an LLM.
+
+(18:32 - 19:04)
+So our results showed that contrastive explanations improved people's decision making skills significantly more than the current way of providing unilateral explanations without sacrificing accuracy. So to sum up, I showed you that accounting for workers' values and cognition in AI design can complement and augment workers. Cognitive forcing functions were able to reduce over-reliance by compelling people to engage cognitively with AI support.
+
+(19:04 - 19:31)
+We improved human and AI accuracy by compelling people to engage with AI support the most when it was the most beneficial for them to do so. And then we improved people's skills by accounting for their mental model of the task in the way that we provided support to them. So with that, I think that I've made the case that the impact of AI at work is not destiny, it's design.
+
+(19:31 - 19:51)
+And how we design AI systems will shape the experience and the outcomes of human work. Thank you. That was terrific.
+
+(19:54 - 20:20)
+This is always a good sign of good technology people, so thank you. So okay, just before I get started, I was doing some last minute adjustments because I was originally going to try and be a bit of a foil to Meredith's conversation, who I think was coming from a very sort of AI is something that will be used as a way of inevitably of making workers' lives worse. I was going to try and argue a little bit on the positive side for some friction.
+
+(20:21 - 20:26)
+Now I think I have to figure out a little way to cover both paths, which I'm going to try and do. Okay, good. All right.
+
+(20:26 - 20:33)
+Good. But I've made myself less positive as a result. Thank you.
+
+(20:33 - 20:38)
+So I appreciate that. All right. Let me know if we're live.
+
+(20:41 - 20:45)
+I'm hopeful. Should I plug in? All right. Let's find out what happens next.
+
+(20:51 - 20:57)
+Okay. It looks like it detected, so that's a good sign. All right.
+
+(21:01 - 21:02)
+Plug in sound. A little bit of sound. Okay.
+
+(21:02 - 21:07)
+That's exactly what I want to show. Okay. So thank you so much.
+
+(21:07 - 21:33)
+In the most pro-worker way possible, the very first thing I did when I came here, or actually I did this on a plane over, is I went to Claude and I wrote, hi, I'm Ethan Mollick. I'm going to give a talk on pro-worker AI at the Stone Centre. Look up my, and I misspelled Stoner the second time, sorry, to find out about the panel and also look up my research and put together a PowerPoint of my views that's well-formatted, I can present about why Gen AI can be pro-worker, cite my research a bunch.
+
+(21:33 - 21:43)
+I am an academic. So what I thought was interesting, right, was this is like Claude, like any of the most recent AI systems in the last couple of months are agentic. They figure out what to do.
+
+(21:43 - 21:48)
+They came with a plan. I'm going to look up my emails. I'll look up his research, create a PowerPoint, cite his research.
+
+(21:48 - 22:06)
+And it actually went through my Gmail and found all of the relevant Gmails back and forth between us. And it found the details and about the panel that I'm on, and it learned how to do PowerPoint, which is kind of an interesting thing to think about. And at the end of this, it gave me a presentation.
+
+(22:07 - 22:12)
+And it's pretty good, I think. Let's see if I can pull it up easily. Why Gen AI can be pro-worker.
+
+(22:13 - 22:29)
+And it goes through my studies and talks about actually these are the right numbers for my skill levelling effect. A second study I'm on, democratisation of expertise, how workers can capture value, why Gen AI is pro-worker, the choice ahead. And the great thing about this is I don't have to do anything.
+
+(22:30 - 22:43)
+And also because AI is cheap, I just have to do it a second time as well. And now I can pick which of the presentations I want to go with, roughly the same argument but a little bit different. And again, citing my work.
+
+(22:44 - 23:05)
+So one thing I want to point out is I think when we start talking about the sort of current state of AI, I worry a little bit that we are a little bit like behind the times already. First of all, it's worth pointing out there's many forms of AI, and your work bridges across both gaps of non-generative and generative AI using the same underlying technology. But it's worth knowing that generative AI is already here.
+
+(23:05 - 23:10)
+It's already deployed. The systems are already trained. Many of the choices that we can make are already made for us.
+
+(23:10 - 23:22)
+And we kind of have to live with what we've got to some degree. So we can hope for this better world of different AI than we have, but it's now a trillion-dollar business with a billion users every week. And I think we have to kind of be ready for a world where that's already happening.
+
+(23:22 - 23:35)
+So we're somewhat observers, but at the same time, I spend a lot of time talking to lots of people in the AI space, including all the people at the AI labs. And the lesson I've learned from all of this is nobody knows anything at all. Like we're all making it up as we go along, right? They don't know the capabilities of these systems.
+
+(23:35 - 23:56)
+They don't know what they're good at doing or not. No one's ever asked to do a PowerPoint before this presentation and see how good it is, and we just figured out it's pretty solid. So that puts us in sort of a weird place, which is, I think, why it's more important ever to have these discussions, but have them urgently, and rather than retrospectively, to start talking about what we want the world to be, which I really liked about your presentation as well.
+
+(23:57 - 24:14)
+So there's a lot of work that I could cite, but because I'm an academic and because I want to make my own mistakes from my own work rather than other people's, most of what I'm citing will be work that I've been involved in. But I just want to kind of lay the groundwork here. The first piece of groundwork is that as far as we can tell, AI increases productivity and levels differences.
+
+(24:14 - 24:19)
+There's a whole bunch of caveats. It doesn't do this equally for everything. It's better at some work than other work.
+
+(24:19 - 24:55)
+But I've done two studies I just want to talk about really briefly with my colleagues at Harvard, MIT, University of Warwick, and other places about AI performance. They both use the now obsolete GPT-4, which is worth noting because everything we have evidence of is that the bigger and better your AI model is, the better the work it does is across almost every dimension that we have, with lots of caveats. But we did one study at Boston Consulting Group back in 2023 where we took 7% of their global workforce and randomised them into using AI or not for real consulting tasks.
+
+(24:55 - 25:09)
+And then we went to Procter & Gamble and took 776 of their employees and created teams of either cross-functional teams of two or had them work individually. These are all pre-registered studies. They're all going through the publication process.
+
+(25:09 - 25:31)
+The publications obviously lag technology by quite a bit on this stuff. But the top-line result from the BCG study is that workers who used AI had an immediate 40% improvement in the quality of their performance, 26% faster, and got 12.5% more work done, which has fairly large impacts on white-collar work for a technology without any training. Actually, the orange is the trained people.
+
+(25:32 - 25:38)
+The green is non-trained people. It turned out it didn't make any difference, really, whether we trained them or not. They're just using AI, did the work.
+
+(25:38 - 25:53)
+And this was true for every subtask, every regression, every grading technique we used that the AI improved performance significantly. So there's now a lot of studies that show similar kinds of things, big impacts. We could talk about medicine or law or coding.
+
+(25:53 - 26:08)
+But it's becoming very clear that there's large-scale individual performance improvements. The other thing we discovered that everyone has now also found is that lower performers get the biggest boost to their performance. If you're in the bottom half of the skill distribution, you get a bigger burst than if you were in the top half of the skill distribution.
+
+(26:09 - 26:21)
+There's some interesting things going on there. We measured something called retainment, which is how much of the AI's answer people ultimately turn in as their own answer. And for most of the consultants, the only way to screw up was adding their own thoughts or ideas into the AI's answer.
+
+(26:21 - 26:28)
+As long as they turned in GPT-4's answer, they did great. As soon as they added their own thoughts or ideas, they did worse. On one hand, that's unnerving.
+
+(26:28 - 26:45)
+On the other, you could think about consulting as a task, as a job with many tasks in it. It's very unlikely everyone's at the 99th percentile across all of those tasks. You're not going to be equally good at reading a financial statement and doing research and being creative and writing persuasive material and writing strategy material.
+
+(26:45 - 27:14)
+So the fact that some of these things you're good at and some of these things you're bad at and that it raises you to the 80th percentile of the things you're bad at isn't necessarily a condemnation that workers are being replaced, as long as there are some things you're better than the 80th percentile at, which these consultants generally were. So we can talk more about this, but generally this matches what other people are finding. We're starting to find some early research that there is a independent good with AI ability that is independent of your skill.
+
+(27:15 - 27:31)
+How long that lasts, we'll talk about in a second. I don't know if that's a long-term thing or not, but it's been labelled theory of mind for AI. If you understand how the AI thinks and you can delegate tasks well, you do better independent of ability, but we're still trying to figure out whether or not this is a temporary effect because people are just pasting things into AI.
+
+(27:32 - 27:50)
+There's some early evidence now that the best performers will get the largest boost in the end, but it's very unclear research at this point. The levelling effect is very clear because the AI basically is just doing the work. It's like whenever I talk to a head of human resources at a company and they're like, kids these days are so great with AI, they turn in these most amazing work.
+
+(27:50 - 28:08)
+I'm like, the kid isn't turning in the work. That is, they're just a conduit to Claude, and Claude's doing the work, and they're just handing you someone else's work, and you're thinking it's great. And we have an ancillary study out of the BCG paper showing actually junior employees do worse with AI because they just hand in the work and they don't know what makes good or bad work.
+
+(28:08 - 28:26)
+It just looks good enough. So I expect experts to gain more advantage, but we only have preliminary data on that. Okay, so from Procter & Gamble, we found that individuals using AI perform as well as teams of two without AI access, and we're actually just as happy on the psychological side as people working in teams.
+
+(28:26 - 28:47)
+So we got the psychological benefits of teams and the performance gains of teams. Interestingly, teams working with AI, no significant change in performance, which isn't surprising, AI is very single-player, as we'll talk about, but they did come with more breakthrough ideas. The thing to note about all this is AI is inherently not necessarily a technical skill, and it often works more like people than working with machines.
+
+(28:47 - 29:06)
+And in fact, if you're good at working with people, you seem to be better at working with AI. We have this fun study where we tried all of Cialdini's principles of influence. If you haven't read it, great social psychologist who sort of summarised a lot of ways of influencing people, it turns out you can use every potential influence to increase the chance that the AI will violate its guardrails.
+
+(29:06 - 29:27)
+So like if you are persuasive to it, and you say you've just had a conversation with someone important about AI, it will be nicer to you and give you better results. So this turns out to be a very people-orientated skill, and that means almost anyone can kind of use these systems. As they get better and bigger, they become better at being able to interpret, prompting matters less, basically.
+
+(29:27 - 29:34)
+So we've also been examining every prompting technique. None of them really matter anymore. If you just tell the AI what you want and give it enough context, you're most of the way there.
+
+(29:35 - 29:52)
+And workers have figured this out. Somewhere, I think the number is actually at 50%, I haven't updated, of workers use AI work, 33% of them report it every day, and they report on the tasks, which are about a fifth of tasks they use AI for, a three-times productivity game. And you will notice no company on the earth is reporting a three-times productivity game.
+
+(29:52 - 29:59)
+So the most pro-AI worker aspect of AI right now is it's happening at the individual level, it's hard to systematise because it requires...
+
+(This file is longer than 30 minutes. Go Unlimited at TurboScribe.ai to transcribe files up to 10 hours long.)

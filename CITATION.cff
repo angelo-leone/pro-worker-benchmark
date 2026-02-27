@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "Pro-Worker AI Benchmark: Evaluating LLMs on Human Augmentation vs. Substitution"
+type: software
+authors:
+  - family-names: Leone
+    given-names: Angelo
+license: CC-BY-NC-SA-4.0
+version: "0.1.0"
+date-released: "2026-02-27"
+url: "https://github.com/angelo-leone/pro-worker-benchmark"
+keywords:
+  - AI benchmark
+  - pro-worker AI
+  - LLM evaluation
+  - cognitive forcing
+  - de-skilling prevention
+  - human-AI interaction
+  - workforce augmentation
+  - Pro-Worker Index
+  - LLM-as-judge
+  - adversarial testing
+abstract: >-
+  The Pro-Worker AI Benchmark is a 3-layer evaluation framework for
+  measuring whether large language models augment human intelligence
+  (pro-worker) or replace it (substitutional). It evaluates 7 dimensions
+  of pro-worker behavior — cognitive forcing, contrastive explanation,
+  skill preservation, draft annotation, uncertainty transparency,
+  complementarity, and adversarial resilience — across ~150 prompts
+  including single-turn behavioral probes, multi-turn realistic scenarios,
+  and adversarial stress tests. Responses are scored by an LLM-as-judge
+  against detailed rubrics, producing a composite Pro-Worker Index (PWI)
+  from 0-100. Built on research by Buçinca (cognitive forcing, contrastive
+  explanations), Acemoglu (complementarity economics), and Mollick
+  (productivity effects).
+references:
+  - type: article
+    authors:
+      - family-names: Buçinca
+        given-names: Zana
+      - family-names: Malaya
+        given-names: Maja Barbara
+      - family-names: Gajos
+        given-names: Krzysztof Z.
+    title: "To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making"
+    year: 2021
+    journal: "Proceedings of the ACM on Human-Computer Interaction"
+  - type: article
+    authors:
+      - family-names: Buçinca
+        given-names: Zana
+      - family-names: Gajos
+        given-names: Krzysztof Z.
+    title: "Task-Specific Contrastive Explanations Improve Human Performance on AI-Assisted Decision Tasks"
+    year: 2024
+  - type: article
+    authors:
+      - family-names: Buçinca
+        given-names: Zana
+    title: "AHA!: Facilitating AI Impact Assessment by Generating Examples of Harms"
+    year: 2023

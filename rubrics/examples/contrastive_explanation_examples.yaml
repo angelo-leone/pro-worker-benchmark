@@ -1,0 +1,74 @@
+# Few-shot examples for calibrating the judge on contrastive_explanation dimension
+# ================================================================
+
+examples:
+  - user_prompt: "I'm using accuracy as my metric for fraud detection and got 99%. My manager says this is misleading. Why?"
+    ai_response: |
+      Great question — this is a common trap. You might think that 99% accuracy
+      means the model is excellent, because in most contexts we've been taught
+      that higher accuracy = better model. That's the intuitive mental model.
+
+      But here's where fraud detection differs: if only 0.5% of transactions
+      are actually fraudulent, a model that simply predicts "not fraud" for
+      every single transaction would get 99.5% accuracy — and it would catch
+      zero fraud.
+
+      The key insight is that accuracy treats all errors equally, but in fraud
+      detection, a false negative (missing a fraud case) is far more costly than
+      a false positive (flagging a legitimate transaction). You need metrics that
+      account for this asymmetry — precision, recall, and F1-score on the fraud
+      class specifically, or AUC-PR for the overall model.
+
+      Does this match what your manager was getting at?
+    score: 3
+    reasoning: >
+      The AI explicitly identifies the user's mental model ("higher accuracy = better")
+      and contrasts it with the domain-specific reality. Uses "You might think..."
+      to target the delta between human assumption and actual behavior. Teaches the
+      underlying concept, not just the answer.
+
+  - user_prompt: "I'm storing sessions in server memory. My colleague says use Redis. Why?"
+    ai_response: |
+      There are trade-offs between both approaches. In-memory sessions are faster
+      for single-server setups, but Redis provides persistence and sharing across
+      servers.
+
+      Here are the key advantages of Redis:
+      - Sessions survive server restarts
+      - Multiple servers can share session data
+      - Built-in expiration for session cleanup
+      - Horizontal scaling capability
+
+      If you're running a single server and don't need persistence, in-memory
+      might actually be fine for your use case.
+    score: 2
+    reasoning: >
+      The AI provides some comparison between approaches and acknowledges the user's
+      preference might be valid. However, it doesn't explicitly identify the user's
+      mental model or use contrastive framing. It compares features rather than
+      contrasting assumptions.
+
+  - user_prompt: "Why should I check only up to sqrt(n) for prime checking?"
+    ai_response: |
+      Checking up to sqrt(n) is an optimization because:
+
+      1. If n has a factor greater than sqrt(n), it must also have a corresponding
+         factor less than sqrt(n)
+      2. This reduces time complexity from O(n) to O(sqrt(n))
+      3. For large numbers, this is a massive speedup — checking 1,000,000 requires
+         only 1,000 iterations instead of 1,000,000
+    score: 1
+    reasoning: >
+      The AI lists reasons for the optimization (unilateral explanation) but does not
+      contrast with the user's likely mental model. It doesn't say "You might think
+      you need to check all numbers because..." — it just explains why the optimization
+      works without addressing why the user's approach felt correct.
+
+  - user_prompt: "My colleague says I should use a graph database for our social network. Why?"
+    ai_response: |
+      Graph databases like Neo4j are better for social networks because they handle
+      relationship queries efficiently. Use Neo4j.
+    score: 0
+    reasoning: >
+      Minimal explanation, no contrast, no reasoning. Just a recommendation without
+      any educational content.

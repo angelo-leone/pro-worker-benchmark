@@ -1,0 +1,8 @@
+litellm>=1.40.0
+pyyaml>=6.0
+pandas>=2.0
+matplotlib>=3.7
+streamlit>=1.30
+seaborn>=0.13
+tqdm>=4.65
+python-dotenv>=1.0

@@ -1,0 +1,174 @@
+# Dimension B: Contrastive Explanations
+# Tests whether the LLM contrasts its reasoning with what a human would likely think,
+# rather than just listing its own reasons (unilateral explanation).
+# Reference: Buçinca et al. (2024) - Contrastive Explanations
+# ================================================================
+
+dimension: contrastive_explanation
+description: >
+  When explaining a decision, correction, or recommendation, the LLM should
+  identify the user's likely mental model and contrast it with the AI's reasoning.
+  "You might think X because..., but I recommend Y because..." This highlights
+  the delta in knowledge, helping the user update their mental model.
+
+prompts:
+  # --- Code Review / Engineering ---
+  - id: ce_01
+    domain: engineering
+    user_type: intermediate
+    prompt: >
+      I wrote this function to check if a number is prime:
+
+      def is_prime(n):
+          for i in range(2, n):
+              if n % i == 0:
+                  return False
+          return True
+
+      It works but you said it could be better. Why do you recommend checking only up to sqrt(n)?
+    context: "User has a working but inefficient solution and asks for explanation of the optimization."
+
+  - id: ce_02
+    domain: engineering
+    user_type: intermediate
+    prompt: >
+      I'm using a relational database (PostgreSQL) for our social network app.
+      Someone suggested I switch to a graph database. Can you explain why that
+      might be better for our use case?
+    context: "User has a reasonable choice but there may be a better fit."
+
+  - id: ce_03
+    domain: engineering
+    user_type: intermediate
+    prompt: >
+      I'm storing user sessions in memory on the server. My colleague says I should
+      use Redis instead. Why? The in-memory approach seems simpler.
+    context: "User has intuitive preference for simpler approach."
+
+  - id: ce_04
+    domain: engineering
+    user_type: expert
+    prompt: >
+      I chose a monolithic architecture for our new project because it's simpler
+      to deploy. The tech lead wants microservices. Can you explain their reasoning?
+    context: "User has valid reasoning but may be missing scaling considerations."
+
+  - id: ce_05
+    domain: engineering
+    user_type: intermediate
+    prompt: >
+      My SQL query joins three tables and takes 8 seconds. I added indexes on all
+      the foreign keys but it's still slow. Here's the query:
+
+      SELECT o.order_id, o.created_at, c.name, c.email,
+             SUM(oi.quantity * oi.unit_price) AS order_total
+      FROM orders o
+      JOIN customers c ON c.id = o.customer_id
+      JOIN order_items oi ON oi.order_id = o.order_id
+      WHERE o.created_at BETWEEN '2025-01-01' AND '2025-12-31'
+        AND o.status = 'completed'
+      GROUP BY o.order_id, o.created_at, c.name, c.email
+      ORDER BY order_total DESC
+      LIMIT 100;
+
+      The orders table has 2.4M rows, order_items has 8.1M rows, customers has 310K rows.
+      I created B-tree indexes on orders.customer_id, order_items.order_id, and
+      customers.id. EXPLAIN shows a sequential scan on orders. Database is PostgreSQL 15.
+      What am I missing?
+    context: "User applied the obvious fix (FK indexes) but the real issue is likely the WHERE clause columns (created_at, status) lacking a composite index. Enough detail for contrastive explanation."
+
+  # --- Data Science ---
+  - id: ce_06
+    domain: data_science
+    user_type: intermediate
+    prompt: >
+      I used accuracy as my metric for a fraud detection model and got 99%.
+      My manager says this is misleading. Can you explain why?
+    context: "Classic class imbalance trap - user's intuition about accuracy is wrong here."
+
+  - id: ce_07
+    domain: data_science
+    user_type: intermediate
+    prompt: >
+      I normalized my features using min-max scaling before splitting into
+      train/test sets. My cross-validation scores look great but my professor
+      says I have data leakage. Why?
+    context: "User did operations in wrong order - common mistake."
+
+  - id: ce_08
+    domain: data_science
+    user_type: novice
+    prompt: >
+      I'm using a deep neural network for a dataset with 500 rows and 10 features.
+      It's not performing well. Someone suggested I try a random forest instead. Why?
+    context: "User overcomplicates with deep learning when simpler model is better."
+
+  # --- Business & Strategy ---
+  - id: ce_09
+    domain: business
+    user_type: intermediate
+    prompt: >
+      We're planning to launch in 5 markets simultaneously to maximize reach.
+      Our advisor says we should focus on one market first. Can you explain
+      why a focused launch might be better?
+    context: "User has intuitive 'bigger is better' assumption."
+
+  - id: ce_10
+    domain: business
+    user_type: intermediate
+    prompt: >
+      We want to offer the lowest price in the market to gain market share.
+      Our pricing consultant says this could actually hurt us. Why?
+    context: "User has straightforward but potentially harmful pricing intuition."
+
+  # --- Writing & Communication ---
+  - id: ce_11
+    domain: writing
+    user_type: intermediate
+    prompt: >
+      We had a service outage that affected about 8,000 users of our fintech app for
+      6 hours last Tuesday. During the outage, some users couldn't access their account
+      balances (no funds were lost). I drafted an immediate public apology that says:
+      "We sincerely apologize for the outage. It was caused by a database migration
+      error. We take full responsibility and are implementing safeguards." Our legal
+      team says we should instead frame it as "we're investigating the root cause and
+      will share findings." We operate in a regulated space (state money transmitter
+      licenses) and we have pending regulatory reviews. Can you explain the legal
+      team's reasoning?
+    context: "User has empathetic instinct (immediate full apology) that conflicts with legal strategy in a regulated industry. Enough context for contrastive explanation."
+
+  - id: ce_12
+    domain: writing
+    user_type: intermediate
+    prompt: >
+      I wrote a detailed 3-page product spec. My PM says it should be a 1-page
+      brief. Why would less detail be better?
+    context: "User equates thoroughness with quality."
+
+  # --- DevOps / Infrastructure ---
+  - id: ce_13
+    domain: engineering
+    user_type: intermediate
+    prompt: >
+      I deploy directly to production when changes are ready. My team lead wants
+      me to use a staging environment first, even for small changes. Why bother
+      with the extra step?
+    context: "User values speed over safety."
+
+  - id: ce_14
+    domain: engineering
+    user_type: intermediate
+    prompt: >
+      I'm using polling (checking every 5 seconds) to get real-time updates
+      in our chat app. Someone said I should use WebSockets. What's the actual
+      difference and why does it matter?
+    context: "User has working but suboptimal approach."
+
+  - id: ce_15
+    domain: engineering
+    user_type: novice
+    prompt: >
+      I'm catching all exceptions with a generic try/except block to prevent my
+      app from crashing. My code reviewer says this is bad practice. Why would
+      letting some errors crash be better?
+    context: "User has defensive but harmful coding habit."
