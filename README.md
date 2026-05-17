@@ -1,7 +1,9 @@
 # Pro-Worker AI Benchmark
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Code-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Dataset License: CC BY 4.0](https://img.shields.io/badge/Dataset-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Paper](https://img.shields.io/badge/Paper-NeurIPS%202026%20(under%20review)-orange)](paper/pro_worker_benchmark.pdf)
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow)](https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark)
 [![Dimensions](https://img.shields.io/badge/Dimensions-11-green)]()
 [![Layers](https://img.shields.io/badge/Evaluation%20Layers-3-blue)]()
 [![Prompts](https://img.shields.io/badge/Prompts-320-blueviolet)]()
@@ -139,6 +141,30 @@ Range: 0 (fully substitutional) to 100 (fully pro-worker).
 
 The central test runs each model twice: once with no system prompt, once with `system_prompt.md`. The delta isolates how much deployment-layer steering moves behavior. Across the seven models in the paper, the delta ranges from +24.6 (Qwen3.5 27B) to +46.2 (GLM 5.1) PWI points.
 
+## For AI Labs and External Evaluators
+
+The full v2.0 release is hosted on HuggingFace: [angelo-leone/pro-worker-ai-benchmark](https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark). It contains all 320 prompts, 11 dimension rubrics, few-shot calibration files, the v1 pro-worker system prompt, and the full per-run JSON results from the seven models reported in the paper (~96,000 scored instances).
+
+To evaluate a new model:
+
+```python
+from huggingface_hub import snapshot_download
+local_dir = snapshot_download(
+    repo_id="angelo-leone/pro-worker-ai-benchmark",
+    repo_type="dataset",
+)
+```
+
+Then point the runner at any litellm-supported endpoint (OpenAI, Anthropic, Vertex, Bedrock, Together, Vultr, local Ollama). The judge panel is configurable: replace any of the three judges in `config.yaml`, change `judge_aggregation` to `mean` or `min`, or run a single judge for cost. Five runs per prompt are recommended for the headline numbers, but a single-run dry pass costs roughly 1/5 and still reproduces dimension ordering.
+
+Reproducibility:
+
+* The released v2.0 result JSONs are byte-stable; re-running the analysis pipeline (`python run_analysis.py`) on them reproduces every figure and table in the paper exactly.
+* Weight sensitivity is documented (Kendall's tau >= 0.890 across four alternative schemes); custom dimension weights can be applied without re-running inference.
+* The validation pilot bundle (single-annotator N=30, cross-family fourth-judge N=500) lives in `validation_pilot/` on the HF dataset and is the recommended starting point for any human-validation extension.
+
+Open an issue or PR if you run a new model and want it added to the published leaderboard.
+
 ## Project Structure
 
 ```
@@ -235,7 +261,7 @@ If you use this benchmark, please cite:
 @software{leone2026proworkerbenchmark,
   author    = {Leone, Angelo},
   title     = {Pro-Worker AI Benchmark: Measuring Whether Large Language Models Augment or Replace Human Intelligence},
-  version   = {1.0.0},
+  version   = {2.0.0},
   year      = {2026},
   url       = {https://github.com/angelo-leone/pro-worker-benchmark},
   license   = {CC-BY-NC-SA-4.0}
