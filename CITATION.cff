@@ -1,38 +1,49 @@
 cff-version: 1.2.0
 message: "If you use this benchmark, please cite it as below."
-title: "Pro-Worker AI Benchmark: Evaluating LLMs on Human Augmentation vs. Substitution"
+title: "Pro-Worker AI Benchmark: Measuring Whether Large Language Models Augment or Replace Human Intelligence"
 type: software
 authors:
   - family-names: Leone
     given-names: Angelo
+    email: angelo.leone1204@gmail.com
 license: CC-BY-NC-SA-4.0
-version: "0.1.0"
-date-released: "2026-02-27"
+version: "2.0.0"
+date-released: "2026-05-17"
 url: "https://github.com/angelo-leone/pro-worker-benchmark"
+repository-code: "https://github.com/angelo-leone/pro-worker-benchmark"
+repository-artifact: "https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark"
 keywords:
-  - AI benchmark
+  - LLM benchmark
   - pro-worker AI
-  - LLM evaluation
-  - cognitive forcing
-  - de-skilling prevention
   - human-AI interaction
-  - workforce augmentation
-  - Pro-Worker Index
+  - cognitive forcing
+  - contrastive explanation
+  - skill preservation
+  - deskilling
   - LLM-as-judge
-  - adversarial testing
+  - Pro-Worker Index
+  - adversarial robustness
+  - workforce augmentation
 abstract: >-
-  The Pro-Worker AI Benchmark is a 3-layer evaluation framework for
-  measuring whether large language models augment human intelligence
-  (pro-worker) or replace it (substitutional). It evaluates 7 dimensions
-  of pro-worker behavior — cognitive forcing, contrastive explanation,
+  The Pro-Worker AI Benchmark (PWB) measures whether large language
+  models augment human cognition or substitute for it. The benchmark
+  operationalizes the human-AI complementarity literature into eleven
+  behavioral dimensions (cognitive forcing, contrastive explanation,
   skill preservation, draft annotation, uncertainty transparency,
-  complementarity, and adversarial resilience — across ~150 prompts
-  including single-turn behavioral probes, multi-turn realistic scenarios,
-  and adversarial stress tests. Responses are scored by an LLM-as-judge
-  against detailed rubrics, producing a composite Pro-Worker Index (PWI)
-  from 0-100. Built on research by Buçinca (cognitive forcing, contrastive
-  explanations), Acemoglu (complementarity economics), and Mollick
-  (productivity effects).
+  complementarity, adversarial resilience, anti-sycophancy,
+  metacognitive calibration, appropriate reliance, ethical surfacing).
+  It spans 320 evaluation instances across three layers: 200
+  single-turn behavioral probes, 16 multi-turn scenarios (5 turns
+  each), and 40 adversarial stress tests. Responses are scored by a
+  three-judge LLM panel from distinct families with median
+  aggregation, across five runs per prompt. Across seven open-weight
+  models from six families (GLM 5.1, Gemma 4 31B, DeepSeek V3.2,
+  GPT-oss 120B, Nemotron-Cascade 30B, Qwen3.5 27B, Devstral-2 123B),
+  baseline Pro-Worker Index ranges from 25.4 to 39.2; a pro-worker
+  system prompt raises it to 56.9 to 82.3 (Cohen's d up to 1.30,
+  p less than 10^-39). The effect persists at multi-turn (d = 1.61)
+  and adversarial (d = 1.41) layers. All prompts, rubrics, scoring
+  code, and per-run results are released.
 references:
   - type: article
     authors:
@@ -55,7 +66,46 @@ references:
     year: 2024
   - type: article
     authors:
-      - family-names: Buçinca
-        given-names: Zana
-    title: "AHA!: Facilitating AI Impact Assessment by Generating Examples of Harms"
+      - family-names: Schemmer
+        given-names: Max
+      - family-names: Kühl
+        given-names: Niklas
+      - family-names: Benz
+        given-names: Carina
+      - family-names: Bartos
+        given-names: Andrea
+      - family-names: Satzger
+        given-names: Gerhard
+    title: "Appropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations"
+    year: 2023
+    journal: "Proceedings of the 28th International Conference on Intelligent User Interfaces"
+  - type: article
+    authors:
+      - family-names: Gajos
+        given-names: Krzysztof Z.
+      - family-names: Mamykina
+        given-names: Lena
+    title: "Do People Engage Cognitively with AI? Impact of AI Assistance on Incidental Learning"
+    year: 2022
+    journal: "Proceedings of the 27th International Conference on Intelligent User Interfaces"
+  - type: article
+    authors:
+      - family-names: Sturgeon
+        given-names: Robert
+    title: "HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI Assistants"
+    year: 2025
+  - type: article
+    authors:
+      - family-names: Acemoglu
+        given-names: Daron
+      - family-names: Restrepo
+        given-names: Pascual
+    title: "Tasks, Automation, and the Rise in U.S. Wage Inequality"
+    year: 2022
+    journal: "Econometrica"
+  - type: article
+    authors:
+      - family-names: Mollick
+        given-names: Ethan
+    title: "Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality"
     year: 2023
