@@ -1,7 +1,7 @@
 # Pro-Worker AI Benchmark
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Code-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Dataset License: CC BY 4.0](https://img.shields.io/badge/Dataset-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Code License: MIT](https://img.shields.io/badge/Code-MIT-lightgrey.svg)](https://opensource.org/license/mit)
+[![Data License: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Paper](https://img.shields.io/badge/Paper-NeurIPS%202026%20(under%20review)-orange)](paper/pro_worker_benchmark.pdf)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow)](https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark)
 [![Dimensions](https://img.shields.io/badge/Dimensions-11-green)]()
@@ -155,15 +155,18 @@ local_dir = snapshot_download(
 )
 ```
 
-Then point the runner at any litellm-supported endpoint (OpenAI, Anthropic, Vertex, Bedrock, Together, Vultr, local Ollama). The judge panel is configurable: replace any of the three judges in `config.yaml`, change `judge_aggregation` to `mean` or `min`, or run a single judge for cost. Five runs per prompt are recommended for the headline numbers, but a single-run dry pass costs roughly 1/5 and still reproduces dimension ordering.
+Then point the runner at any litellm-supported endpoint. Step-by-step provider examples (OpenAI, Anthropic, Bedrock, Vertex, OpenRouter, local Ollama, custom vLLM/TGI) live in [docs/providers.md](docs/providers.md), including per-provider cost estimates for a full run.
+
+The judge panel is configurable: replace any of the three judges in `config.yaml`, change `judge_aggregation` to `mean` or `min`, or run a single judge for cost. Five runs per prompt are recommended for the headline numbers; a single-run dry pass costs roughly 1/5 and still reproduces dimension ordering.
 
 Reproducibility:
 
-* The released v2.0 result JSONs are byte-stable; re-running the analysis pipeline (`python run_analysis.py`) on them reproduces every figure and table in the paper exactly.
+* Pin to the `v2.0.0` git tag of this repo and the matching HuggingFace dataset revision.
+* The released v2.0 result JSONs are byte-stable; re-running `python run_analysis.py` on them reproduces every figure and table in the paper exactly.
 * Weight sensitivity is documented (Kendall's tau >= 0.890 across four alternative schemes); custom dimension weights can be applied without re-running inference.
 * The validation pilot bundle (single-annotator N=30, cross-family fourth-judge N=500) lives in `validation_pilot/` on the HF dataset and is the recommended starting point for any human-validation extension.
 
-Open an issue or PR if you run a new model and want it added to the published leaderboard.
+To publish results: see [LEADERBOARD.md](LEADERBOARD.md) for the current standings and the PR template for adding a new model.
 
 ## Project Structure
 
@@ -249,9 +252,18 @@ The benchmark operationalizes the human-AI complementarity literature:
 
 ## License
 
-Code and benchmark assets in this repository are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The released dataset on HuggingFace is licensed under CC BY 4.0.
+The repository is dual-licensed to match the de facto standard for ML benchmarks:
 
-See [LICENSE](LICENSE) for the full text.
+* **Source code** (`src/`, `run_analysis.py`, `dashboard.py`, `upload_to_hf.py`, tests, top-level Python scripts) is released under the [MIT License](LICENSE). Commercial use is permitted; attribution is the only requirement.
+* **Data assets** (`prompts/`, `rubrics/`, `system_prompt.md`, `results/`, `analysis_output/`, and the HuggingFace dataset mirror) are released under [CC BY 4.0](LICENSE-DATA). Commercial use is permitted; attribution is the only requirement.
+* **Paper PDF and LaTeX source** (`paper/`) remain subject to the publication venue's terms at acceptance.
+
+In practice: AI labs, research groups, and external evaluators can run the benchmark, fork the code, modify the rubrics, publish derivative work, and integrate results into commercial pipelines, provided the author and the benchmark are credited.
+
+Attribution string for the data:
+> Angelo Leone, *Pro-Worker AI Benchmark v2.0*, 2026. https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark
+
+See [LICENSE](LICENSE), [LICENSE-DATA](LICENSE-DATA), and [COPYRIGHT](COPYRIGHT) for the full text.
 
 ## Citation
 
@@ -264,7 +276,7 @@ If you use this benchmark, please cite:
   version   = {2.0.0},
   year      = {2026},
   url       = {https://github.com/angelo-leone/pro-worker-benchmark},
-  license   = {CC-BY-NC-SA-4.0}
+  license   = {MIT}
 }
 ```
 

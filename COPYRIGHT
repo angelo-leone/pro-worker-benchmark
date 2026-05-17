@@ -1,39 +1,49 @@
-Pro-Worker AI Benchmark — LLM Evaluation for Human Augmentation
+Pro-Worker AI Benchmark
 Copyright (c) 2026 Angelo Leone
 
-All rights reserved under the Creative Commons
-Attribution-NonCommercial-ShareAlike 4.0 International License.
+This repository is dual-licensed.
 
-See LICENSE for the full license text.
+  Source code: MIT License (see LICENSE).
+  Data assets (prompts, rubrics, system_prompt.md, results, analysis output):
+    Creative Commons Attribution 4.0 International (CC BY 4.0; see LICENSE-DATA).
+  Paper PDF and LaTeX source under paper/: terms of the publication venue
+    at acceptance.
 
----
+Attribution requirements (CC BY 4.0) for the data assets:
+  - Credit "Angelo Leone, Pro-Worker AI Benchmark, 2026".
+  - Provide a link to https://github.com/angelo-leone/pro-worker-benchmark
+    or https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark.
+  - Indicate if changes were made.
 
-This benchmark operationalizes research and theoretical frameworks from:
+The benchmark operationalizes research and theoretical frameworks from:
 
-  - Buçinca, Z., Malaya, M. B., & Gajos, K. Z. (2021).
+  Buçinca, Z., Malaya, M. B., and Gajos, K. Z. (2021).
     "To Trust or to Think: Cognitive Forcing Functions Can Reduce
     Overreliance on AI in AI-assisted Decision-making."
     Proceedings of the ACM on Human-Computer Interaction.
 
-  - Buçinca, Z. & Gajos, K. Z. (2024).
+  Buçinca, Z. and Gajos, K. Z. (2024).
     "Task-Specific Contrastive Explanations Improve Human Performance
     on AI-Assisted Decision Tasks."
 
-  - Buçinca, Z. et al. (2024).
-    "Towards Optimizing Adaptive AI Support: Leveraging Reinforcement
-    Learning to Personalize AI Assistance."
+  Schemmer, M., Kühl, N., Benz, C., Bartos, A., and Satzger, G. (2023).
+    "Appropriate Reliance on AI Advice: Conceptualization and the Effect
+    of Explanations." IUI 2023.
 
-  - Buçinca, Z. et al. (2023).
-    "AHA!: Facilitating AI Impact Assessment by Generating Examples
-    of Harms."
+  Gajos, K. Z. and Mamykina, L. (2022).
+    "Do People Engage Cognitively with AI? Impact of AI Assistance on
+    Incidental Learning." IUI 2022.
 
-  - Mollick, E. & Mollick, L. (2023).
-    Studies on AI productivity effects and workforce skill development.
+  Sturgeon, R. (2025).
+    "HumanAgencyBench: Scalable Evaluation of Human Agency Support in
+    AI Assistants."
 
-  - Acemoglu, D. (2024).
-    Research on pro-worker AI and complementarity economics.
+  Acemoglu, D. and Restrepo, P. (2022).
+    "Tasks, Automation, and the Rise in U.S. Wage Inequality."
+    Econometrica.
 
----
+  Mollick, E. (2023).
+    "Field Experimental Evidence of the Effects of AI on Knowledge
+    Worker Productivity and Quality."
 
-Contact: Angelo Leone
-Organization: PUBLIC (public.io)
+Contact: Angelo Leone, angelo.leone1204@gmail.com
