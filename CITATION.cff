@@ -6,7 +6,8 @@ authors:
   - family-names: Leone
     given-names: Angelo
     email: angelo.leone1204@gmail.com
-license: CC-BY-NC-SA-4.0
+license: MIT
+license-url: "https://opensource.org/license/mit"
 version: "2.0.0"
 date-released: "2026-05-17"
 url: "https://github.com/angelo-leone/pro-worker-benchmark"
