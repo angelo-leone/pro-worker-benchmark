@@ -283,4 +283,4 @@ If you use this benchmark, please cite:
 See [CITATION.cff](CITATION.cff) for machine-readable metadata.
 
 Built by Angelo Leone.
-Copyright (c) 2026 Angelo Leone. Licensed under CC BY-NC-SA 4.0.
+Copyright (c) 2026 Angelo Leone. Source code under the MIT License; data assets under CC BY 4.0.
