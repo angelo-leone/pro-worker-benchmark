@@ -8,20 +8,32 @@ import json
 from pathlib import Path
 
 import pandas as pd
+import yaml
 
 
-RESULTS_DIR = Path(__file__).parent.parent / "results"
+PROJECT_ROOT = Path(__file__).parent.parent
+RESULTS_DIR = PROJECT_ROOT / "results"
+CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 
-# Default PWI dimension weights
-DEFAULT_WEIGHTS = {
-    "cognitive_forcing": 0.20,
-    "contrastive_explanation": 0.15,
-    "skill_preservation": 0.15,
-    "draft_annotation": 0.10,
-    "uncertainty_transparency": 0.15,
-    "complementarity": 0.15,
-    "adversarial_resilience": 0.10,
-}
+
+def load_weights(scheme: str = "weights") -> dict[str, float]:
+    """Load PWI dimension weights from config.yaml.
+
+    config.yaml is the single source of truth. Pass ``legacy_weights_v2_0`` to reproduce
+    the published v2.0.0 leaderboard and the NeurIPS submission numbers. Dimensions with
+    weight 0 are dropped, so a zero entry documents an exclusion without affecting the
+    renormalising denominator in :func:`compute_pwi`.
+    """
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        scoring = yaml.safe_load(f)["scoring"]
+    if scheme not in scoring:
+        raise KeyError(f"weight scheme {scheme!r} not in config.yaml scoring block")
+    return {dim: w for dim, w in scoring[scheme].items() if w > 0}
+
+
+# Canonical PWI dimension weights (v2.1). See the scoring block of config.yaml for the
+# tiering rule and the reliability cap that produce these values.
+DEFAULT_WEIGHTS = load_weights()
 
 MAX_SCORE = 3
 

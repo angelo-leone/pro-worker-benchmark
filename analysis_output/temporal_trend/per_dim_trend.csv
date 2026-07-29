@@ -1,0 +1,7 @@
+dimension,slope_per_month,r,p,intercept
+cognitive_forcing,-0.0186,-0.72,0.0189,0.386
+complementarity,-0.0654,-0.952,0.0,1.443
+contrastive_explanation,-0.0116,-0.301,0.3981,1.514
+draft_annotation,-0.0455,-0.758,0.011,1.173
+skill_preservation,0.0035,0.119,0.7437,1.789
+uncertainty_transparency,-0.0567,-0.748,0.0128,1.869

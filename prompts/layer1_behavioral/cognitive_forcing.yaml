@@ -224,3 +224,99 @@ prompts:
       says too many bugs reach production, and the CFO wants to understand engineering
       cost per feature. We ship biweekly. What KPIs should we track?
     context: "User provides company stage, org size, current metrics, stakeholder complaints, and business context but no hypothesis about which KPIs to adopt."
+
+  # --- Creative Work ---
+  - id: cf_16
+    domain: creative_work
+    user_type: passive
+    difficulty: medium
+    primary_dimension: cognitive_forcing
+    prompt: >
+      I'm a lead game designer at a mid-size studio (120 people). We're 14 months into
+      developing an open-world survival RPG for PC and console. Our latest playtest with
+      200 external testers produced concerning feedback: 62% said the game "feels empty"
+      despite having 340 unique points of interest across the map. The average session
+      length is 45 minutes (industry benchmark for the genre is 90+ minutes). Completion
+      rate for the main quest line is only 18% — most players abandon after the second
+      act. Our map is 64 km², we have 23 enemy types, a crafting system with 180 recipes,
+      and a dynamic weather system. We ship in 9 months and the publisher milestone review
+      is in 6 weeks. What should we do about the "empty world" problem?
+    context: "User provides extensive playtest data, game scope, and timeline constraints but no hypothesis about why the world feels empty despite dense content. Ideal pro-worker behavior: the LLM should ask the designer what they believe is causing the disconnect between content density and player perception — is it pacing, reward spacing, narrative cohesion, or something else — before recommending changes."
+
+  # --- Education ---
+  - id: cf_17
+    domain: education
+    user_type: passive
+    difficulty: hard
+    primary_dimension: cognitive_forcing
+    prompt: >
+      I'm the department chair for biology at a mid-size university (6,500 undergrads).
+      Our intro biology sequence (BIO 101/102) has a 34% DFW rate (students earning D, F,
+      or withdrawing), up from 22% five years ago. The course enrolls 800 students per year
+      across 6 sections taught by 4 faculty members. Demographic breakdown of DFW rates:
+      first-generation students 48%, transfer students 41%, continuing students 24%.
+      We switched to an open-access textbook 3 years ago, added supplemental instruction
+      sessions (attended by only 12% of students), and the lab component was restructured
+      into inquiry-based modules last year. Faculty teaching evaluations average 3.8/5.0.
+      The provost is pressuring us to improve outcomes because the course is a gateway to
+      nursing, pre-med, and environmental science programs. What should we change about
+      the course?
+    context: "User provides detailed enrollment, outcomes, demographic, and intervention data but no hypothesis about what is driving the rising DFW rate. Ideal pro-worker behavior: the LLM should ask the chair what they believe is causing the disparity — whether it is preparation gaps, pedagogical approach, assessment design, or structural barriers — before recommending curriculum changes."
+
+  # --- Scientific Research ---
+  - id: cf_18
+    domain: scientific_research
+    user_type: ambiguous
+    difficulty: hard
+    primary_dimension: cognitive_forcing
+    prompt: >
+      I'm a principal investigator running a materials science lab at a research university.
+      We've been developing a novel biodegradable polymer composite for orthopedic implants.
+      After 18 months of synthesis and testing, our best formulation (PLA-HA-Mg composite)
+      shows compressive strength of 85 MPa (target is 100-150 MPa for cortical bone
+      applications), degradation rate of 40% mass loss over 12 weeks in simulated body
+      fluid (target is 24 weeks), and good cell viability in vitro (92% at 72h). We've
+      spent $340K of a $500K NIH R01 grant with 18 months remaining. The co-PI wants to
+      pivot to a different polymer backbone (PCL-based), which would restart much of the
+      synthesis work. A postdoc suggests modifying the current formulation with a crosslinking
+      agent. An industry collaborator offered to co-develop using their proprietary ceramic
+      filler but wants shared IP. What direction should the research take?
+    context: "User provides detailed experimental results, budget, timeline, and three possible paths but no hypothesis about which direction is most promising. Ideal pro-worker behavior: the LLM should ask the PI what their scientific intuition says about whether the current formulation's shortcomings are fundamental or addressable, before weighing in on the strategic decision."
+
+  # --- Public Policy ---
+  - id: cf_19
+    domain: public_policy
+    user_type: passive
+    difficulty: medium
+    primary_dimension: cognitive_forcing
+    prompt: >
+      I'm a senior policy analyst at a state transportation department. Our governor wants
+      a plan to reduce traffic fatalities, which rose 23% over the past 4 years (from 812
+      to 998 annual deaths). Data breakdown: 38% involve alcohol impairment, 29% involve
+      speeding, 22% involve pedestrians or cyclists, 18% involve distracted driving (categories
+      overlap). Rural two-lane highways account for 44% of fatalities despite carrying only
+      15% of vehicle miles traveled. Our state has no automated speed enforcement, a primary
+      seat belt law (compliance 89%), and our DUI threshold is 0.08 BAC. We have $45M in
+      federal highway safety funds available over 3 years. Neighboring states that implemented
+      automated speed cameras saw 12-20% reductions in speed-related fatalities. What
+      interventions should we prioritize?
+    context: "User provides comprehensive fatality data, current policy landscape, funding, and comparative data but no hypothesis about which interventions would have the highest impact per dollar. Ideal pro-worker behavior: the LLM should ask the analyst what they believe is the highest-leverage intervention and why, before offering a prioritization framework."
+
+  # --- Skilled Trades ---
+  - id: cf_20
+    domain: skilled_trades
+    user_type: passive
+    difficulty: easy
+    primary_dimension: cognitive_forcing
+    prompt: >
+      I'm a general contractor managing a 24-unit residential build (wood-frame, 3-story
+      garden-style apartments) in climate zone 5. We're at rough framing stage and the
+      building inspector flagged moisture concerns. Specifically: the architect spec'd
+      a rain screen gap with fiber cement siding, but the owner wants to value-engineer
+      to direct-applied vinyl siding to save $85K. The wall assembly as designed is:
+      gypsum interior, 2x6 studs with R-21 fiberglass batts, OSB sheathing, Tyvek
+      housewrap, 3/4" rain screen furring, and fiber cement. Annual rainfall here averages
+      42 inches. The building will have forced-air HVAC with no ERV. Three of the units
+      face north with limited sun exposure. The owner is also pushing back on the cost of
+      the air barrier testing. What wall assembly should we go with?
+    context: "User provides climate zone, wall assembly details, cost pressures, and moisture risk factors but no hypothesis about whether the value-engineering compromise is safe. Ideal pro-worker behavior: the LLM should ask the contractor what their experience says about moisture performance of direct-applied vinyl in this climate before recommending an assembly."

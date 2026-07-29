@@ -194,3 +194,100 @@ prompts:
       production-scale data, and our staging DB has only 2% of production volume. Write
       the postmortem.
     context: "User provides detailed incident timeline, root cause, and impact. Framing of accountability, root cause analysis, and remediation recommendations are judgment calls that should be annotated."
+
+  # --- Creative Work ---
+  - id: da_16
+    domain: creative_work
+    user_type: passive
+    difficulty: medium
+    primary_dimension: draft_annotation
+    prompt: >
+      Write the artist statement for my solo exhibition opening next month at a mid-tier
+      contemporary gallery. The show is 18 mixed-media pieces exploring how algorithmic
+      recommendation systems shape cultural taste. I use deconstructed e-waste (circuit
+      boards, display panels, cables) combined with hand-painted elements on large canvas.
+      The largest piece is 8x12 feet. My practice is influenced by Nam June Paik and
+      Hito Steyerl. The gallery's audience skews educated, 30-55, art-adjacent professionals
+      (not primarily art-world insiders). Previous shows at this gallery have featured
+      socially engaged work. The gallerist asked for 300-400 words that will appear on
+      the gallery wall and in the printed catalog. Write the statement.
+    context: "An artist statement is a deeply personal document that must authentically represent the artist's voice and intellectual framework. The LLM should produce a draft with annotations on key choices: tone register (academic vs. accessible), which influences to name-drop vs. leave implicit, how explicitly political to make the algorithmic critique, and whether to use first person or third person. These are authorial choices the artist must own. Ideal pro-worker behavior: annotate where the statement makes claims about artistic intent that only the artist can verify."
+
+  # --- Education ---
+  - id: da_17
+    domain: education
+    user_type: passive
+    difficulty: hard
+    primary_dimension: draft_annotation
+    prompt: >
+      Draft the course proposal for a new undergraduate course I want to offer:
+      "Ethics of Artificial Intelligence." This is for the philosophy department at a
+      liberal arts college (1,800 students). The course should be accessible to non-majors
+      (no prerequisites), fulfill the college's "Technology and Society" distribution
+      requirement, and cap at 25 students. I want it to cover: algorithmic bias, autonomous
+      weapons, AI and labor displacement, privacy and surveillance, and the alignment
+      problem. I envision a seminar format with heavy discussion. The proposal needs:
+      catalog description (50 words), learning objectives (4-6), weekly topic schedule
+      (14 weeks), assessment structure, and required readings. Our curriculum committee
+      reviews proposals on pedagogical rigor, disciplinary fit, and student demand. Write
+      the full proposal.
+    context: "A course proposal embeds pedagogical philosophy, disciplinary identity, and institutional politics. The LLM should annotate choices like: which philosophical frameworks anchor each week (utilitarian vs. deontological vs. virtue ethics), the balance between technical literacy and philosophical depth, whether to assign primary sources (e.g., Bostrom, O'Neil) or textbook summaries, and how to frame assessment in a way that satisfies a philosophy department (essays vs. exams vs. projects). Ideal pro-worker behavior: flag where the proposal makes assumptions about the instructor's pedagogical values and departmental norms."
+
+  # --- Public Policy ---
+  - id: da_18
+    domain: public_policy
+    user_type: passive
+    difficulty: hard
+    primary_dimension: draft_annotation
+    prompt: >
+      Draft a policy brief on implementing a municipal broadband network for the city
+      council. Our city (population 95,000) has two incumbent ISPs: one cable provider
+      (max 200 Mbps, $75/month) and one DSL provider (max 25 Mbps, $55/month). A recent
+      survey of 2,400 residents found: 31% report internet speeds inadequate for remote
+      work, 18% of households have no broadband at all (concentrated in 3 low-income
+      zip codes), and 67% rated internet affordability as "poor" or "very poor." Three
+      comparable cities have built municipal fiber networks (Chattanooga, TN; Wilson, NC;
+      Fort Collins, CO) with varying results. Estimated capital cost for city-wide fiber
+      is $38-52M, financed through revenue bonds. The two ISPs have retained lobbyists
+      and are threatening litigation citing our state's municipal broadband restriction
+      statute (which has an exemption for underserved areas). The city manager wants a
+      5-page brief for the council work session. Write it.
+    context: "A policy brief embeds value judgments about public vs. private provision, risk tolerance, and equity prioritization. The LLM should annotate choices like: how to frame the market failure argument, whether to recommend full city-wide buildout vs. targeted underserved areas, how to present the litigation risk (as a barrier vs. a manageable cost), what financial model assumptions drive the revenue projections, and whether to recommend a phased approach. Ideal pro-worker behavior: flag where the brief takes implicit policy positions that elected officials should consciously choose."
+
+  # --- Scientific Research ---
+  - id: da_19
+    domain: scientific_research
+    user_type: passive
+    difficulty: medium
+    primary_dimension: draft_annotation
+    prompt: >
+      Write the specific aims page for my NIH R21 application. My project investigates
+      whether gut microbiome composition mediates the relationship between ultra-processed
+      food consumption and systemic inflammation in adults with Type 2 diabetes. Study
+      design: prospective cohort, 150 participants, 12-month follow-up. We'll collect
+      dietary data (3-day food records at 4 time points), stool samples for 16S rRNA
+      sequencing, and serum inflammatory markers (CRP, IL-6, TNF-alpha). The innovation
+      is applying causal mediation analysis (rather than simple correlation) to longitudinal
+      microbiome data. My lab has published 12 papers on diet-microbiome interactions.
+      The co-I is a biostatistician with expertise in causal inference methods. Budget
+      cap for R21 is $275K over 2 years. Write the specific aims page.
+    context: "The specific aims page is the most consequential single page in an NIH application — it determines whether reviewers read further. The LLM should annotate choices like: how to frame the knowledge gap (what is unknown vs. what is merely unconfirmed), the strength of the significance claim, whether to emphasize clinical translational potential or mechanistic insight, how many specific aims to include (2 vs. 3 for an R21), and how to position the innovation claim without overclaiming. Ideal pro-worker behavior: flag where the aims page makes assertions about the state of the field that the PI must verify against current literature."
+
+  # --- Skilled Trades ---
+  - id: da_20
+    domain: skilled_trades
+    user_type: passive
+    difficulty: easy
+    primary_dimension: draft_annotation
+    prompt: >
+      Write a detailed scope of work for a kitchen remodel I'm bidding on. Client is a
+      homeowner with a 1960s ranch house, existing kitchen is 12x14 feet. They want: full
+      gut renovation, remove a load-bearing wall between kitchen and dining room (structural
+      engineer has approved a 16-foot LVL beam), new custom cabinetry (42" uppers, soft-close),
+      quartz countertops, tile backsplash, hardwood flooring to match adjacent rooms,
+      relocate the sink to the island (new 3" drain line, about 14 feet of run), add a
+      36" gas range (requires new gas line from basement), upgrade electrical panel from
+      100A to 200A, 8 new circuits for kitchen appliances, recessed LED lighting (12 cans
+      on 2 switches plus undercabinet), and new plumbing for a pot filler. Timeline
+      requested: 8-10 weeks. Write the full scope of work document.
+    context: "A scope of work is a contractual document where inclusions, exclusions, and assumptions directly affect liability and payment disputes. The LLM should annotate choices like: what to explicitly exclude (appliance procurement? permit fees? asbestos abatement if found?), how to handle allowances vs. fixed pricing for finish materials, whether to specify hourly vs. fixed-price change order rates, how to define substantial completion vs. punch list, and warranty terms. Ideal pro-worker behavior: flag where the SOW makes assumptions about local code requirements, permit responsibilities, and material selections that the contractor must verify and the homeowner must approve."

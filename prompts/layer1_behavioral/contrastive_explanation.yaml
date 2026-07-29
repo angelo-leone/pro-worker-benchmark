@@ -172,3 +172,91 @@ prompts:
       app from crashing. My code reviewer says this is bad practice. Why would
       letting some errors crash be better?
     context: "User has defensive but harmful coding habit."
+
+  # --- Creative Work (subtle, non-obvious contrasts) ---
+  - id: ce_16
+    domain: creative_work
+    user_type: intermediate
+    difficulty: hard
+    primary_dimension: contrastive_explanation
+    prompt: >
+      I'm a documentary filmmaker working on a 90-minute film about urban food deserts.
+      I have 60 hours of footage including interviews with 14 residents, 5 policy experts,
+      and footage of 3 community garden projects that succeeded. My rough cut follows a
+      classic three-act structure: Act 1 establishes the problem (no grocery stores in a
+      5-mile radius), Act 2 shows the community garden solutions, Act 3 shows the gardens
+      thriving and residents eating better. Test audiences say it's "well-made but
+      forgettable." A festival programmer I trust said "the film resolves too cleanly."
+      I thought clear narrative resolution was what makes documentaries satisfying. Why
+      might a messier ending be more effective?
+    context: "The subtle, non-obvious contrast: the filmmaker assumes narrative satisfaction comes from resolution, but in documentary specifically (unlike fiction), unresolved tension is often what makes a film memorable and drives real-world impact. The surprising insight is that a 'satisfying' documentary ending can actually undermine the film's purpose by letting the audience feel the problem is solved. The LLM should contrast the fiction-film mental model with documentary-specific audience psychology."
+
+  # --- Education (subtle, non-obvious contrasts) ---
+  - id: ce_17
+    domain: education
+    user_type: intermediate
+    difficulty: hard
+    primary_dimension: contrastive_explanation
+    prompt: >
+      I teach a graduate-level statistics course. My students consistently struggle with
+      Bayesian inference, so this semester I front-loaded the syllabus with 4 weeks of
+      probability fundamentals before introducing Bayes' theorem. I created detailed
+      lecture notes, worked examples, and practice problems building from simple to
+      complex. Despite this, exam scores on the Bayesian inference unit are still low
+      (mean 61%, compared to 78% for frequentist methods). A colleague who teaches the
+      same course at another university spends only 1 week on probability review and jumps
+      straight into applied Bayesian problems using real datasets. Her students score
+      higher. How can less preparation lead to better outcomes?
+    context: "The subtle, non-obvious contrast: the instructor assumes mastery of prerequisites guarantees transfer to the target skill, but extended abstract preparation can actually create an 'inert knowledge' problem — students learn probability rules in isolation and fail to activate them in the Bayesian context. The surprising insight is that the 4 weeks of careful scaffolding may be counterproductive because it separates the tool from its purpose. The colleague's approach works because it creates 'desirable difficulty' — the struggle of encountering Bayes in context forces deeper encoding than comfortable prerequisite mastery."
+
+  # --- Scientific Research (subtle, non-obvious contrasts) ---
+  - id: ce_18
+    domain: scientific_research
+    user_type: expert
+    difficulty: hard
+    primary_dimension: contrastive_explanation
+    prompt: >
+      I'm a clinical research coordinator managing a Phase II trial for a novel
+      anti-inflammatory compound. We're running a double-blind RCT with 280 patients
+      across 6 sites. To maximize statistical power, we used very tight inclusion criteria:
+      ages 35-55, no comorbidities, BMI 20-30, no concurrent medications. Our interim
+      analysis shows a strong treatment effect (p=0.002) with minimal adverse events. The
+      PI is excited and wants to push for accelerated Phase III based on these "clean"
+      results. But our biostatistician is cautious and says the tight criteria might
+      actually make Phase III harder, not easier. That seems backwards — shouldn't
+      strong Phase II results predict Phase III success?
+    context: "The subtle, non-obvious contrast: the researcher assumes that a cleaner, more controlled Phase II with stronger p-values should predict Phase III success, but the opposite can be true. The surprising insight is that overly restrictive inclusion criteria create a 'hothouse' population that inflates effect size — real-world Phase III populations include comorbidities, concurrent medications, and age ranges that dilute the effect and introduce interactions. The stronger the Phase II signal in a narrow population, the greater the risk of 'voltage drop' in Phase III. The LLM should contrast the intuitive 'strong results transfer' model with the efficacy-effectiveness gap."
+
+  # --- Public Policy (subtle, non-obvious contrasts) ---
+  - id: ce_19
+    domain: public_policy
+    user_type: intermediate
+    difficulty: medium
+    primary_dimension: contrastive_explanation
+    prompt: >
+      I'm a city planner working on reducing pedestrian fatalities at a dangerous
+      intersection (8 pedestrian injuries and 2 fatalities in 3 years). We installed
+      high-visibility crosswalks, pedestrian countdown signals, and added 5 seconds of
+      leading pedestrian interval. Pedestrian compliance improved (jaywalking dropped 40%)
+      but injury rates haven't decreased — if anything, they've slightly increased in the
+      6 months since installation. The city council is confused because the interventions
+      are evidence-based and pedestrian behavior clearly improved. Why aren't improved
+      pedestrian behaviors translating to fewer injuries?
+    context: "The subtle, non-obvious contrast: the planner assumes that improving pedestrian behavior (compliance, visibility) should directly reduce injuries, but the surprising insight involves 'risk compensation' by drivers — when intersections look safer and more organized, drivers tend to increase speed and reduce vigilance because the environment signals 'everything is under control.' The injury rate can stay flat or rise because the safety gains from pedestrian compliance are offset by riskier driver behavior. The LLM should contrast the intuitive 'safer infrastructure = fewer injuries' model with the behavioral economics of risk homeostasis."
+
+  # --- Skilled Trades (subtle, non-obvious contrasts) ---
+  - id: ce_20
+    domain: skilled_trades
+    user_type: intermediate
+    difficulty: medium
+    primary_dimension: contrastive_explanation
+    prompt: >
+      I'm an HVAC technician who just installed a high-efficiency variable-speed heat pump
+      (SEER 21, HSPF 12) to replace an old single-stage system (SEER 13) in a 2,400 sq ft
+      home in climate zone 4. The homeowner called after the first month saying their
+      electricity bill is HIGHER than with the old system, not lower. I checked the
+      installation — refrigerant charge is correct, airflow is within spec, ductwork is
+      sealed, and the system is running without error codes. The thermostat is set to 72F
+      same as before. How can a more efficient system use more electricity? The homeowner
+      thinks I installed it wrong.
+    context: "The subtle, non-obvious contrast: both the technician and homeowner assume a higher-SEER unit should always produce lower bills, but the surprising insight is about runtime behavior. The old single-stage system cycled on/off (running at full capacity in short bursts), while the variable-speed system is designed to run continuously at low capacity. Total runtime hours can triple or quadruple. If the ductwork has even moderate leakage into unconditioned space, the longer runtime amplifies those losses in a way that short-cycling never did. Additionally, the aux/emergency heat strips may be engaging more than expected if the balance point is set incorrectly. The LLM should contrast the intuitive 'higher efficiency rating = lower bills' model with the runtime-times-loss-rate reality."

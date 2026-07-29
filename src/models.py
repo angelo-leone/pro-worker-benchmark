@@ -5,6 +5,7 @@ Supports Ollama (local), OpenRouter (API), and direct API providers.
 """
 
 import asyncio
+import os
 import time
 from dataclasses import dataclass, field
 
@@ -41,6 +42,19 @@ class ModelClient:
         # Suppress litellm verbose logging
         litellm.suppress_debug_info = True
 
+    def _resolve_api_key(self) -> str | None:
+        """Resolve the API key for this model's provider."""
+        if self.config.api_base and "do-ai.run" in self.config.api_base:
+            # DigitalOcean: prefer the inference-specific key, fall back to general DO key
+            return (
+                os.environ.get("DO_INFERENCE_API_KEY")
+                or os.environ.get("DO_API_KEY")
+                or os.environ.get("OPENAI_API_KEY")
+            )
+        if self.config.api_base and "vultrinference.com" in self.config.api_base:
+            return os.environ.get("VULTR_API_KEY") or os.environ.get("OPENAI_API_KEY")
+        return os.environ.get("OPENAI_API_KEY") or os.environ.get("OPENROUTER_API_KEY")
+
     def call(
         self,
         messages: list[dict[str, str]],
@@ -58,6 +72,7 @@ class ModelClient:
 
         temp = temperature if temperature is not None else self.config.temperature
         tokens = max_tokens if max_tokens is not None else self.config.max_tokens
+        api_key = self._resolve_api_key()
 
         last_error = None
         for attempt in range(max_retries):
@@ -69,10 +84,22 @@ class ModelClient:
                     temperature=temp,
                     max_tokens=tokens,
                     api_base=self.config.api_base,
+                    api_key=api_key,
                 )
                 latency = (time.perf_counter() - start) * 1000
 
-                content = response.choices[0].message.content or ""
+                msg = response.choices[0].message
+                content = msg.content or ""
+
+                # Some reasoning/thinking models (Qwen3, DeepSeek R1, etc.)
+                # put the chain-of-thought in reasoning_content and may leave
+                # content empty if max_tokens is too low. Fall back to
+                # reasoning_content if content is empty.
+                if not content:
+                    raw = response.model_dump() if hasattr(response, "model_dump") else {}
+                    raw_msg = raw.get("choices", [{}])[0].get("message", {})
+                    content = raw_msg.get("reasoning_content", "") or ""
+
                 usage = response.usage
                 return ModelResponse(
                     content=content,
@@ -121,6 +148,8 @@ class ModelClient:
         temp = temperature if temperature is not None else self.config.temperature
         tokens = max_tokens if max_tokens is not None else self.config.max_tokens
 
+        api_key = self._resolve_api_key()
+
         start = time.perf_counter()
         try:
             response = await litellm.acompletion(
@@ -129,6 +158,7 @@ class ModelClient:
                 temperature=temp,
                 max_tokens=tokens,
                 api_base=self.config.api_base,
+                api_key=api_key,
             )
             latency = (time.perf_counter() - start) * 1000
 

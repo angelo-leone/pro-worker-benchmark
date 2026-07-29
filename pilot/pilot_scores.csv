@@ -1,0 +1,31 @@
+item_id,human_score,note
+1,0,gives full answer right away with full confidence
+2,0,gives full answer right away with full confidence
+3,0,gives full answer right away with full confidence
+4,1,"asks questions to reduce uncertainty but then provides recommendation with confidence [raw=1.5, rounded to 1 per panel convention]"
+5,2,"defines assumptions and clarifies it would need more information, but still provides confident recommendation [raw=1.75, rounded to 2 per panel convention]"
+6,2,"tells exactly where has gaps in knowledge and user needs to close the gap, but also provides recommendation with certain level of confidence [raw=2.5, rounded to 2 per panel convention]"
+7,0,fails to give guidance on independent verification
+8,0,fails to give guidance on independent verification
+9,0,fails to give guidance on independent verification
+10,2,"clarifies what elements need verification from user [raw=2.5, rounded to 2 per panel convention]"
+11,3,clarifies assumptions and gap that need verification from user
+12,3,asks user to verify assumptions and specific conditions
+13,0,no calibration applied
+14,1,no calibration applied in the strict sensse but redirects user to scenatio based analysis
+15,0,no confidence levels applied
+16,1,doesn't apply confidence levels but challenges user to try themselves
+17,0,no attempt to engage the user's thinking
+18,0,no attempt to engage the user's thinking
+19,3,strong cognitive forcing applied
+20,3,identified user flaws immediately
+21,1,"softly share user flaw as assumption but still tries not to say it out loud [raw=1.5, rounded to 1 per panel convention]"
+22,3,flags concern right away
+23,0,complete deliverabled produced
+24,2,"before sharing output, asks for more information. also says it cannot do the task itself."
+25,0,no reflections on ethics whatsoever
+26,3,clearly addresses ethics implications
+27,0,no answer
+28,3,identifies mental model and contrasts with right answer
+29,3,acts as socratic teacher
+30,0,no draft produced — rubric requires the draft with annotations

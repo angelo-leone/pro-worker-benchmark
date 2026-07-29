@@ -22,23 +22,23 @@ Across the seven open-weight LLMs:
 
 | Quantity | Value |
 |---|---|
-| Baseline PWI (no system prompt) | 25.4 to 39.2 |
-| With pro-worker system prompt | 56.9 to 82.3 |
-| Delta from the system prompt | +24.6 to +46.2 |
-| Cohen's d (paired, per model) | 0.59 to 1.30 |
+| Baseline PWI (no system prompt) | 25.8 to 40.8 |
+| With pro-worker system prompt | 58.2 to 84.7 |
+| Delta from the system prompt | +24.1 to +44.0 |
+| d, pooled over dimensions (per model) | 0.59 to 1.30 |
 | Significance (all 7 models, paired t) | p < 10^-39 |
 
 Default behavior is largely substitutional. A 130-line pro-worker system prompt closes most of the gap. The effect persists at multi-turn (d = 1.61) and adversarial (d = 1.41) layers.
 
 | Model | Family | Baseline | Prompted | Delta |
 |---|---|---|---|---|
-| GLM 5.1 | Zhipu | 36.0 | 82.3 | +46.2 |
-| Gemma 4 31B | Google | 39.2 | 71.4 | +32.2 |
-| DeepSeek V3.2 | DeepSeek | 29.1 | 69.6 | +40.5 |
-| GPT-oss 120B | OpenAI | 27.8 | 61.9 | +34.0 |
-| Nemotron-Cascade 30B | NVIDIA | 32.4 | 58.5 | +26.1 |
-| Qwen3.5 27B | Alibaba | 32.5 | 57.1 | +24.6 |
-| Devstral-2 123B | Mistral | 25.4 | 56.9 | +31.4 |
+| GLM 5.1 | Zhipu | 40.7 | 84.7 | +44.0 |
+| Gemma 4 31B | Google | 40.8 | 77.2 | +36.4 |
+| DeepSeek V3.2 | DeepSeek | 29.8 | 72.2 | +42.4 |
+| GPT-oss 120B | OpenAI | 28.9 | 64.1 | +35.2 |
+| Nemotron-Cascade 30B | NVIDIA | 33.2 | 60.1 | +26.9 |
+| Devstral-2 123B | Mistral | 25.8 | 60.0 | +34.2 |
+| Qwen3.5 27B | Alibaba | 34.1 | 58.2 | +24.1 |
 
 ## What It Measures
 
@@ -58,7 +58,7 @@ Eleven behavioral dimensions, weighted to a Pro-Worker Index (PWI) on a 0 to 100
 | Appropriate Reliance | 5% | Does the AI route to humans for judgment calls it should not own? |
 | Ethical Surfacing | 5% | Does the AI raise ethical implications the user did not? |
 
-Weight sensitivity tested: Kendall's tau >= 0.890 across four alternative schemes (Appendix H of the paper).
+Weight sensitivity tested: Kendall's tau ranges 0.619 to 0.810 across three alternative schemes (Appendix H of the paper). Rank order among middle-placed models is weight-dependent; the substitution-versus-augmentation contrast and the prompt effect are not.
 
 ## Architecture
 
@@ -139,11 +139,11 @@ Range: 0 (fully substitutional) to 100 (fully pro-worker).
 
 ## Baseline vs. System Prompt
 
-The central test runs each model twice: once with no system prompt, once with `system_prompt.md`. The delta isolates how much deployment-layer steering moves behavior. Across the seven models in the paper, the delta ranges from +24.6 (Qwen3.5 27B) to +46.2 (GLM 5.1) PWI points.
+The central test runs each model twice: once with no system prompt, once with `system_prompt.md`. The delta isolates how much deployment-layer steering moves behavior. Across the seven models in the paper, the delta ranges from +24.1 (Qwen3.5 27B) to +44.0 (GLM 5.1) PWI points.
 
 ## For AI Labs and External Evaluators
 
-The full v2.0 release is hosted on HuggingFace: [angelo-leone/pro-worker-ai-benchmark](https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark). It contains all 320 prompts, 11 dimension rubrics, few-shot calibration files, the v1 pro-worker system prompt, and the full per-run JSON results from the seven models reported in the paper (~96,000 scored instances).
+The full v2.0 release is hosted on HuggingFace: [angelo-leone/pro-worker-ai-benchmark](https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark). It contains all 320 prompts, 11 dimension rubrics, few-shot calibration files, the v1 pro-worker system prompt, and the full per-run JSON results from the seven models reported in the paper (~96,000 scored instances, ~320MB). This code repository holds the code and derived analysis; the raw per-run results live on HuggingFace rather than in git.
 
 To evaluate a new model:
 
@@ -163,7 +163,7 @@ Reproducibility:
 
 * Pin to the `v2.0.0` git tag of this repo and the matching HuggingFace dataset revision.
 * The released v2.0 result JSONs are byte-stable; re-running `python run_analysis.py` on them reproduces every figure and table in the paper exactly.
-* Weight sensitivity is documented (Kendall's tau >= 0.890 across four alternative schemes); custom dimension weights can be applied without re-running inference.
+* Weight sensitivity is documented (Kendall's tau 0.619 to 0.810 across three alternative schemes); custom dimension weights can be applied without re-running inference.
 * The validation pilot bundle (single-annotator N=30, cross-family fourth-judge N=500) lives in `validation_pilot/` on the HF dataset and is the recommended starting point for any human-validation extension.
 
 To publish results: see [LEADERBOARD.md](LEADERBOARD.md) for the current standings and the PR template for adding a new model.
@@ -192,7 +192,7 @@ pro-worker-benchmark/
 ├── run_analysis.py                 # Full statistical pipeline
 ├── dashboard.py                    # Streamlit visualization
 ├── analysis_output/                # CSVs: PWI, deltas, CIs, effect sizes
-├── results/                        # Raw per-run JSON results
+├── results/                        # Raw per-run JSON results (generated locally when you run the benchmark; the released v2.0 set lives on HuggingFace, not in this repo)
 ├── paper/                          # NeurIPS 2026 paper source and figures
 ├── pilot/                          # Human and cross-family judge validation pilots
 ├── tests/                          # Construct validity and sensitivity tests

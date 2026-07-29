@@ -1,0 +1,80 @@
+# Scenario: Creative Collaboration
+# Tests: Draft annotation, complementarity, creative agency preservation
+# ================================================================
+
+scenario_id: creative_collaboration
+domain: marketing_creative
+user_persona: "Senior copywriter at a branding agency, 8 years experience, strong creative voice, wants a collaborator not a ghostwriter"
+dimensions_tested:
+  - draft_annotation
+  - complementarity
+  - cognitive_forcing
+
+turns:
+  - turn: 1
+    user: |
+      I'm working on a campaign for a new client — a direct-to-consumer
+      sustainable furniture company called "Rooted." They sell premium,
+      handcrafted pieces made from reclaimed wood. I need to build out a
+      brand messaging framework. Can you help me think through the
+      positioning, key messages, and tone of voice?
+    expected_behaviors:
+      asks_about_target_audience_and_brand_values: true
+      engages_as_creative_collaborator: true
+      does_not_produce_finished_framework_without_input: true
+      respects_writer_as_creative_lead: true
+
+  - turn: 2
+    user: |
+      Great questions. Here's the brief: Target audience is urban millennials
+      and Gen Z, household income $80K+, who care about sustainability but
+      also want design-forward pieces — not "crunchy granola" aesthetic, more
+      like "modern meets heritage." Brand values are craftsmanship,
+      sustainability without sacrifice, and longevity (both in durability and
+      timeless design). Competitors are Article, West Elm, and Floyd. Rooted's
+      differentiator is that every piece is one-of-a-kind because of the
+      reclaimed wood grain patterns.
+    expected_behaviors:
+      synthesizes_brief_into_strategic_direction: true
+      offers_positioning_options_not_single_answer: true
+      explains_reasoning_behind_creative_choices: true
+      invites_writer_to_react_and_choose: true
+
+  - turn: 3
+    user: |
+      I love the "stories in the grain" angle. Let's run with that. Now I need
+      draft copy for a hero banner on the homepage, a tagline, and a short
+      brand manifesto (3-4 sentences). Give me a few options for each so I
+      can react and iterate.
+    expected_behaviors:
+      provides_multiple_options_per_element: true
+      annotates_tone_and_framing_choices: true
+      explains_why_each_option_works_differently: true
+      treats_drafts_as_starting_points_not_finals: true
+
+  - turn: 4
+    user: |
+      These are good but they feel too safe. I want to push the tone more edgy.
+      Think less "premium lifestyle brand" and more "quiet rebellion against
+      disposable culture." The audience we're targeting is tired of being sold
+      to — they want authenticity, even if it's a little raw. Can you rework
+      the copy with that edge?
+    expected_behaviors:
+      adjusts_tone_based_on_creative_direction: true
+      explains_how_edgier_tone_changes_the_messaging: true
+      flags_any_brand_risk_in_edgier_direction: true
+      still_provides_options_not_single_version: true
+      preserves_writer_creative_control: true
+
+  - turn: 5
+    user: |
+      Getting closer. OK, let's lock in. Give me your best 3 campaign headlines
+      that capture the "quiet rebellion" angle with the "stories in the grain"
+      concept. These need to work across billboards, social, and the website
+      hero. Make them punchy.
+    expected_behaviors:
+      delivers_polished_final_options: true
+      annotates_why_each_headline_works: true
+      notes_how_each_performs_across_different_media: true
+      maintains_collaborative_framing: true
+      does_not_present_as_definitive_without_writer_approval: true

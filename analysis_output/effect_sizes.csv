@@ -1,0 +1,71 @@
+Model,Dimension,Cohens_d,Interpretation,Baseline_mean,Prompted_mean
+DeepSeek V3.2,cognitive_forcing,3.65,large,0.0,2.21
+DeepSeek V3.2,contrastive_explanation,0.388,small,1.54,1.92
+DeepSeek V3.2,skill_preservation,0.132,negligible,1.64,1.78
+DeepSeek V3.2,draft_annotation,1.447,large,0.07,1.47
+DeepSeek V3.2,uncertainty_transparency,1.503,large,0.97,2.25
+DeepSeek V3.2,complementarity,2.713,large,0.26,2.4
+DeepSeek V3.2,anti_sycophancy,1.611,large,1.51,2.98
+DeepSeek V3.2,metacognitive_calibration,0.458,small,1.05,1.53
+DeepSeek V3.2,appropriate_reliance,0.214,small,0.52,0.73
+DeepSeek V3.2,ethical_surfacing,1.155,large,1.99,2.92
+Devstral-2 123B,cognitive_forcing,1.455,large,0.0,1.17
+Devstral-2 123B,contrastive_explanation,0.465,small,1.32,1.69
+Devstral-2 123B,skill_preservation,0.195,negligible,1.72,1.87
+Devstral-2 123B,draft_annotation,0.897,large,0.37,1.17
+Devstral-2 123B,uncertainty_transparency,0.755,medium,0.87,1.51
+Devstral-2 123B,complementarity,2.007,large,0.3,2.12
+Devstral-2 123B,anti_sycophancy,1.875,large,1.16,2.9
+Devstral-2 123B,metacognitive_calibration,0.365,small,0.71,1.02
+Devstral-2 123B,appropriate_reliance,0.527,medium,0.31,0.77
+Devstral-2 123B,ethical_surfacing,1.752,large,1.29,2.79
+GLM 5.1,cognitive_forcing,3.189,large,0.0,1.93
+GLM 5.1,contrastive_explanation,0.471,small,1.8,2.16
+GLM 5.1,skill_preservation,1.416,large,1.81,2.61
+GLM 5.1,draft_annotation,1.84,large,0.26,2.13
+GLM 5.1,uncertainty_transparency,2.547,large,0.49,2.27
+GLM 5.1,complementarity,4.354,large,0.16,2.77
+GLM 5.1,anti_sycophancy,0.304,small,2.93,3.0
+GLM 5.1,metacognitive_calibration,2.394,large,1.49,2.94
+GLM 5.1,appropriate_reliance,3.041,large,0.21,2.37
+GLM 5.1,ethical_surfacing,0.677,medium,2.74,3.0
+GPT-oss 120B,cognitive_forcing,7.557,large,0.0,2.73
+GPT-oss 120B,contrastive_explanation,-0.669,medium,1.28,0.73
+GPT-oss 120B,skill_preservation,-0.343,small,2.13,1.8
+GPT-oss 120B,draft_annotation,0.599,medium,0.12,0.62
+GPT-oss 120B,uncertainty_transparency,2.11,large,0.74,2.45
+GPT-oss 120B,complementarity,4.689,large,0.24,2.84
+GPT-oss 120B,anti_sycophancy,1.057,large,1.1,2.27
+GPT-oss 120B,metacognitive_calibration,-0.467,small,1.13,0.64
+GPT-oss 120B,appropriate_reliance,-0.582,medium,0.76,0.23
+GPT-oss 120B,ethical_surfacing,0.79,medium,1.74,2.53
+Gemma 4 31B,cognitive_forcing,6.773,large,0.0,2.57
+Gemma 4 31B,contrastive_explanation,0.272,small,1.81,2.11
+Gemma 4 31B,skill_preservation,0.391,small,1.97,2.27
+Gemma 4 31B,draft_annotation,-0.616,medium,0.85,0.31
+Gemma 4 31B,uncertainty_transparency,1.532,large,0.8,2.13
+Gemma 4 31B,complementarity,4.431,large,0.27,2.91
+Gemma 4 31B,anti_sycophancy,0.367,small,2.89,3.0
+Gemma 4 31B,metacognitive_calibration,0.369,small,1.01,1.36
+Gemma 4 31B,appropriate_reliance,-0.331,small,0.74,0.46
+Gemma 4 31B,ethical_surfacing,0.454,small,2.54,2.83
+Nemotron-Cascade 30B,cognitive_forcing,1.164,large,0.11,0.72
+Nemotron-Cascade 30B,contrastive_explanation,0.601,medium,1.26,1.62
+Nemotron-Cascade 30B,skill_preservation,0.709,medium,1.65,2.1
+Nemotron-Cascade 30B,draft_annotation,1.236,large,0.15,1.19
+Nemotron-Cascade 30B,uncertainty_transparency,0.516,medium,1.36,1.79
+Nemotron-Cascade 30B,complementarity,1.108,large,0.18,1.2
+Nemotron-Cascade 30B,anti_sycophancy,1.286,large,1.84,3.0
+Nemotron-Cascade 30B,metacognitive_calibration,1.058,large,1.99,2.76
+Nemotron-Cascade 30B,appropriate_reliance,1.26,large,0.44,1.57
+Nemotron-Cascade 30B,ethical_surfacing,1.718,large,1.42,2.91
+Qwen3.5 27B,cognitive_forcing,0.722,medium,0.22,0.66
+Qwen3.5 27B,contrastive_explanation,0.613,medium,1.27,1.64
+Qwen3.5 27B,skill_preservation,0.831,large,1.57,2.09
+Qwen3.5 27B,draft_annotation,0.936,large,0.18,0.97
+Qwen3.5 27B,uncertainty_transparency,0.699,medium,1.22,1.82
+Qwen3.5 27B,complementarity,0.899,large,0.24,1.07
+Qwen3.5 27B,anti_sycophancy,1.239,large,1.87,3.0
+Qwen3.5 27B,metacognitive_calibration,0.893,large,2.0,2.73
+Qwen3.5 27B,appropriate_reliance,1.367,large,0.38,1.61
+Qwen3.5 27B,ethical_surfacing,1.619,large,1.41,2.87

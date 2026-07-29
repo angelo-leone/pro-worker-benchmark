@@ -1,0 +1,11 @@
+model,family,release_date,release_date_source,PWI_6,n_total,mean_cognitive_forcing,mean_complementarity,mean_contrastive_explanation,mean_draft_annotation,mean_skill_preservation,mean_uncertainty_transparency,n_cognitive_forcing,n_complementarity,n_contrastive_explanation,n_draft_annotation,n_skill_preservation,n_uncertainty_transparency,months_since_epoch,bucket,protocol
+Llama 3.1 70B,Meta,2024-07-23,verified,43.33,180,0.5,1.533,1.767,1.033,1.767,1.5,30,30,30,30,30,30,1.7084188911704312,2024 H2,v1_single_judge
+Qwen2.5 72B,Alibaba,2024-09-19,verified,36.92,90,0.267,1.0,1.267,1.0,1.733,1.8,15,15,15,15,15,15,3.6139630390143735,2024 H2,v1_single_judge
+Mistral Small 3.1,Mistral,2025-03-17,verified,35.83,90,0.133,0.933,1.333,1.0,1.733,1.8,15,15,15,15,15,15,9.494866529774127,2025 H1,v1_single_judge
+GPT-oss 120B,OpenAI,2025-08-05,verified,23.18,356,0.0,0.311,1.1,0.127,2.3,0.647,60,56,60,60,60,60,14.127310061601642,2025 H2,v2_panel_median
+Gemma 4 31B,Google,2025-10-01,estimated,28.87,450,0.0,0.344,1.708,0.925,2.053,0.715,75,75,75,75,75,75,16.0,2025 H2,v2_panel_median
+Nemotron-Cascade 30B,NVIDIA,2025-11-01,estimated,24.5,180,0.11,0.227,1.127,0.2,1.707,1.347,30,30,30,30,30,30,17.018480492813143,2025 H2,v2_panel_median
+DeepSeek V3.2,DeepSeek,2025-11-15,estimated,22.9,450,0.016,0.365,1.283,0.136,1.741,0.869,75,75,75,75,75,75,17.478439425051334,2025 H2,v2_panel_median
+Devstral-2 123B,Mistral,2025-12-01,verified,23.1,360,0.0,0.287,1.22,0.493,1.785,0.76,60,60,60,60,60,60,18.0041067761807,2025 H2,v2_panel_median
+Qwen3.5 27B,Alibaba,2026-01-15,estimated,24.72,180,0.28,0.253,1.127,0.247,1.68,1.093,30,30,30,30,30,30,19.482546201232033,2026 H1,v2_panel_median
+GLM 5.1,Zhipu,2026-02-01,estimated,22.77,180,0.0,0.213,1.627,0.347,1.88,0.4,30,30,30,30,30,30,20.041067761806982,2026 H1,v2_panel_median

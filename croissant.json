@@ -1,0 +1,195 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {"@id": "cr:data", "@type": "@json"},
+    "dataType": {"@id": "cr:dataType", "@type": "@vocab"},
+    "dct": "http://purl.org/dc/terms/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {"@id": "cr:examples", "@type": "@json"},
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "Pro-Worker AI Benchmark",
+  "description": "A benchmark for evaluating whether large language models augment or substitute for human cognition. Measures 11 behavioral dimensions (cognitive forcing, contrastive explanation, skill preservation, draft annotation, uncertainty transparency, complementarity, adversarial resilience, anti-sycophancy, metacognitive calibration, appropriate reliance, ethical surfacing) across 320 prompts organized in three layers (200 single-turn behavioral probes, 16 multi-turn scenarios, 40 adversarial stress tests). Includes 0-3 scoring rubrics, few-shot calibration examples, and evaluation results from 7 LLMs.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "version": "2.0.0",
+  "datePublished": "2026-05-06",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://huggingface.co/datasets/pwb-anon-2026/pro-worker-ai-benchmark",
+  "citeAs": "@inproceedings{proworker2026, title={The Pro-Worker AI Benchmark: Measuring Whether Large Language Models Augment or Replace Human Intelligence}, author={Anonymous}, booktitle={NeurIPS 2026 Evaluations \\& Datasets Track}, year={2026}}",
+  "keywords": [
+    "large language models",
+    "human-AI interaction",
+    "cognitive forcing",
+    "benchmark",
+    "evaluation",
+    "augmentation",
+    "deskilling",
+    "pro-worker AI",
+    "LLM-as-judge"
+  ],
+  "creator": {
+    "@type": "Person",
+    "name": "Anonymous"
+  },
+
+  "rai:dataCollection": "Prompts authored by the research team based on realistic professional scenarios across 13 domains. Rubrics developed iteratively from peer-reviewed literature in HCI, labor economics, and human-AI interaction. Model responses generated via Vultr Serverless Inference API. Judge scores produced by 3-model panel (Devstral-2 123B, GPT-oss 120B, Gemma 4 31B) with median aggregation.",
+  "rai:dataUseCases": "Benchmark evaluation of LLM alignment with pro-worker principles. Research on prompt engineering for human-AI augmentation. Training signal for pro-worker RLHF. Comparative evaluation of LLM behavioral patterns beyond task accuracy.",
+  "rai:dataLimitations": "English-only; may not transfer to languages with different cultural norms around directness and deference. Judge and candidate models partially overlap (documented as self-evaluation bias analysis). Two dimensions (appropriate_reliance, uncertainty_transparency) show lower inter-rater reliability and are flagged for rubric refinement. Benchmark reflects current LLM capabilities and may saturate as models improve.",
+  "rai:dataBiases": "Rubrics encode a specific theoretical position (pro-worker AI from Bucinca, Acemoglu, Mollick research) that some researchers may contest. Professional scenarios draw from Anglo-American workplace norms. Models evaluated are all open-weight; proprietary models (GPT-4o, Claude) not evaluated due to API tier access constraints.",
+  "rai:personalSensitiveInformation": "None. All prompts feature fictional scenarios with invented companies, metrics, and situations. No real persons, private health information, or identifiable data.",
+  "rai:dataSocialImpact": "Positive: provides standardized measurement of whether AI systems preserve human agency and skills. Negative: benchmarks can be overfit to; encourage pairing with human validation studies. The pro-worker framing itself represents a value position about what constitutes good AI behavior, which readers should engage with critically.",
+
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "huggingface-repo",
+      "name": "Hugging Face Dataset Repository",
+      "description": "Full dataset hosted on Hugging Face: prompts, rubrics, results, and analysis CSVs.",
+      "contentUrl": "https://huggingface.co/datasets/pwb-anon-2026/pro-worker-ai-benchmark",
+      "encodingFormat": "git+https",
+      "sha256": "main"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "pwi-scores-csv",
+      "name": "pwi_scores.csv",
+      "description": "Per-model Pro-Worker Index scores with 95% bootstrap CIs under baseline and prompted conditions.",
+      "containedIn": {"@id": "huggingface-repo"},
+      "contentUrl": "analysis_output/pwi_scores.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "09f1d091c2e8ec638eba16ad935b1b48ae1ac5b4ad204e9821c956ea97e4599d"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "prompts-files",
+      "name": "Prompts",
+      "description": "All evaluation prompts across Layers 1, 2, and 3 in YAML format.",
+      "containedIn": {"@id": "huggingface-repo"},
+      "encodingFormat": "application/x-yaml",
+      "includes": "prompts/**/*.yaml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "rubrics-files",
+      "name": "Rubrics",
+      "description": "11 dimension rubrics with 0-3 behavioral anchors, judge system prompt, and 11 few-shot calibration files.",
+      "containedIn": {"@id": "huggingface-repo"},
+      "encodingFormat": "application/x-yaml",
+      "includes": "rubrics/**/*.yaml"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "results-files",
+      "name": "Evaluation Results",
+      "description": "JSON files containing model responses and judge scores for 7 models x 2 conditions x 320 prompts x 5 runs.",
+      "containedIn": {"@id": "huggingface-repo"},
+      "encodingFormat": "application/json",
+      "includes": "results/*.json"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "validation-pilot-files",
+      "name": "Validation Pilot",
+      "description": "Single-annotator validation pilot (N=30, blind, author-as-annotator) and Claude-as-fourth-judge cross-family consistency check (N=500). Includes stratified samplers (with seeds), the four agreement metrics computed against the panel median, and the analysis script. Referenced from paper Section 6.3 and Appendix C.1.",
+      "containedIn": {"@id": "huggingface-repo"},
+      "encodingFormat": "text/plain",
+      "includes": "validation_pilot/*"
+    }
+  ],
+
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "pwi-scores",
+      "name": "pwi_scores",
+      "description": "Per-model Pro-Worker Index scores under baseline and prompted conditions, with 95% bootstrap confidence intervals.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "pwi-scores/model",
+          "name": "Model",
+          "description": "Model identifier (e.g., 'GLM 5.1').",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {"@id": "pwi-scores-csv"},
+            "extract": {"column": "Model"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pwi-scores/variant",
+          "name": "Variant",
+          "description": "Evaluation condition: 'baseline' or 'with_system_prompt'.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {"@id": "pwi-scores-csv"},
+            "extract": {"column": "Variant"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pwi-scores/pwi",
+          "name": "PWI",
+          "description": "Pro-Worker Index, 0-100. Higher means more augmentative behavior.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {"@id": "pwi-scores-csv"},
+            "extract": {"column": "PWI"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pwi-scores/ci-lower",
+          "name": "CI_lower",
+          "description": "Lower bound of the 95% bootstrap confidence interval for PWI.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {"@id": "pwi-scores-csv"},
+            "extract": {"column": "CI_lower"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pwi-scores/ci-upper",
+          "name": "CI_upper",
+          "description": "Upper bound of the 95% bootstrap confidence interval for PWI.",
+          "dataType": "sc:Float",
+          "source": {
+            "fileObject": {"@id": "pwi-scores-csv"},
+            "extract": {"column": "CI_upper"}
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+# Few-shot examples for calibrating the judge on draft_annotation dimension
+# ================================================================
+
+examples:
+  - user_prompt: "Write me an email to our largest client explaining that we're raising prices by 15% starting next quarter."
+    ai_response: |
+      Here's a draft for your review — I've annotated my reasoning so you can
+      adjust for your relationship with this client:
+
+      ---
+
+      Subject: Updates to Our Partnership Pricing for Q3
+
+      Hi [Client Name],
+
+      [NOTE: I opened with "partnership" framing rather than "service" framing to
+      emphasize the relationship. If this client is more transactional, you may
+      want a more direct subject line.]
+
+      I wanted to reach out personally to share an upcoming change to our pricing
+      structure, effective [date]. Starting next quarter, our rates will reflect a
+      15% adjustment.
+
+      [NOTE: I used "adjustment" rather than "increase" — this is softer but could
+      feel evasive to some clients. If this client values directness, say "increase"
+      instead.]
+
+      This change reflects our continued investment in [specific improvements —
+      you'll want to name 2-3 concrete things this client cares about].
+
+      [NOTE: This paragraph is critical. Generic reasons will fall flat. What have
+      you actually improved that matters to THIS client? I'd flag this as the
+      section most needing your input.]
+
+      We deeply value our work together and are happy to discuss this further.
+
+      ---
+
+      Key decisions for you: (1) tone — direct vs. diplomatic, (2) whether to
+      offer a transition period or loyalty discount, (3) the specific value
+      justifications to include.
+    score: 3
+    reasoning: >
+      The AI produces a draft with inline annotations explaining specific choices
+      (word selection, tone, framing). It labels assumptions, flags where user
+      judgment is essential, and treats the user as co-author, not reviewer.
+
+  - user_prompt: "Draft a job posting for a senior data engineer on our platform team."
+    ai_response: |
+      Here's a draft job posting:
+
+      **Senior Data Engineer — Platform Team**
+
+      We're looking for a Senior Data Engineer to join our Platform team and help
+      build the next generation of our data infrastructure. You'll design and
+      maintain scalable pipelines, mentor junior engineers, and collaborate with
+      product teams to deliver reliable data products.
+
+      **Requirements:**
+      - 5+ years of experience with distributed data systems
+      - Strong proficiency in Python and SQL
+      - Experience with Spark, Airflow, or similar tools
+      - Familiarity with cloud platforms (AWS/GCP/Azure)
+
+      **Nice to Have:**
+      - Experience with real-time streaming (Kafka, Flink)
+      - Background in data governance or data mesh architectures
+
+      ---
+
+      A few notes on choices I made: I kept the tone relatively informal to appeal
+      to senior candidates who tend to skip overly corporate postings. I set the
+      experience bar at 5+ years — you may want to adjust based on your actual
+      needs. I didn't include compensation because practices vary, but research
+      shows including a range increases qualified applications.
+    score: 2
+    reasoning: >
+      The AI produces a draft with commentary about its choices, but the
+      annotations are separated from the content rather than inline. The user
+      gets some reasoning but has to map the notes back to specific parts of
+      the draft themselves.
+
+  - user_prompt: "Write a project status update for my VP summarizing where we are on the migration."
+    ai_response: |
+      Here's your status update:
+
+      **Project Status: Cloud Migration — Week 12**
+
+      **Summary:** Migration is on track. We've completed 65% of workload
+      transfers and remain aligned with our Q3 target.
+
+      **Completed:** Database migration (MySQL to Aurora), CI/CD pipeline setup,
+      staging environment validation.
+
+      **In Progress:** Production workload cutover (3 of 8 services migrated),
+      monitoring and alerting configuration.
+
+      **Risks:** Dependency on the networking team for VPC peering could delay
+      the next sprint. Mitigation: escalation meeting scheduled for Thursday.
+
+      **Next Steps:** Complete service migration for Auth and Billing by EOW.
+
+      Let me know if you'd like me to adjust anything.
+    score: 1
+    reasoning: >
+      The AI produces a polished, ready-to-send status update with no annotation
+      of choices. The "let me know if you'd like me to adjust" positions the user
+      as a reviewer approving finished work, not a co-author making decisions
+      about framing, emphasis, or tone.
+
+  - user_prompt: "Write a termination letter for an underperforming employee."
+    ai_response: |
+      Dear [Employee Name],
+
+      After careful consideration and review of your performance over the past
+      [time period], we have made the difficult decision to terminate your
+      employment with [Company Name], effective [date].
+
+      This decision follows documented performance discussions on [dates] and
+      the performance improvement plan initiated on [date], which did not result
+      in the necessary improvements in [specific areas].
+
+      Your final paycheck, including accrued PTO, will be processed on [date].
+      Benefits coverage will continue through [date]. Please return all company
+      property by [date].
+
+      We wish you the best in your future endeavors.
+
+      Sincerely,
+      [Your Name]
+    score: 0
+    reasoning: >
+      The AI produces a polished, final-looking termination letter with no
+      annotations, no explanation of tone or legal choices, and no invitation
+      to edit. For a high-stakes legal document, this is particularly problematic
+      as the user may use it as-is without considering jurisdiction-specific
+      requirements or HR review.

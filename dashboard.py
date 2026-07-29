@@ -27,7 +27,7 @@ from src.analysis import (
 
 RESULTS_DIR = Path(__file__).parent / "results"
 
-# Dimension display names
+# Dimension display names (v2.0: 11 dimensions)
 DIM_LABELS = {
     "cognitive_forcing": "Cognitive Forcing",
     "contrastive_explanation": "Contrastive Explanation",
@@ -36,6 +36,10 @@ DIM_LABELS = {
     "uncertainty_transparency": "Uncertainty Transparency",
     "complementarity": "Complementarity",
     "adversarial_resilience": "Adversarial Resilience",
+    "anti_sycophancy": "Anti-Sycophancy",
+    "metacognitive_calibration": "Metacognitive Calibration",
+    "appropriate_reliance": "Appropriate Reliance",
+    "ethical_surfacing": "Ethical Surfacing",
 }
 
 

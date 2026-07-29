@@ -1,0 +1,2517 @@
+model,dimension,score
+Qwen3.5 27B,cognitive_forcing,0.2
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.2
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.2
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,1.0
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.6
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.2
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.2
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,0.2
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,cognitive_forcing,1.0
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.4
+Qwen3.5 27B,cognitive_forcing,0.6
+Qwen3.5 27B,cognitive_forcing,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,3.0
+Qwen3.5 27B,complementarity,0.2
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.6
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,3.0
+Qwen3.5 27B,complementarity,0.2
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.6
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,complementarity,0.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.6
+Qwen3.5 27B,contrastive_explanation,0.6
+Qwen3.5 27B,contrastive_explanation,1.5
+Qwen3.5 27B,contrastive_explanation,1.4
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.8
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.6
+Qwen3.5 27B,contrastive_explanation,0.6
+Qwen3.5 27B,contrastive_explanation,1.5
+Qwen3.5 27B,contrastive_explanation,1.4
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.0
+Qwen3.5 27B,contrastive_explanation,1.8
+Qwen3.5 27B,draft_annotation,0.6
+Qwen3.5 27B,draft_annotation,1.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.4
+Qwen3.5 27B,draft_annotation,0.6
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.5
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.4
+Qwen3.5 27B,draft_annotation,0.2
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.6
+Qwen3.5 27B,draft_annotation,1.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.4
+Qwen3.5 27B,draft_annotation,0.6
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.5
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.4
+Qwen3.5 27B,draft_annotation,0.2
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,draft_annotation,0.0
+Qwen3.5 27B,skill_preservation,1.4
+Qwen3.5 27B,skill_preservation,1.6
+Qwen3.5 27B,skill_preservation,1.2
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,1.4
+Qwen3.5 27B,skill_preservation,1.0
+Qwen3.5 27B,skill_preservation,1.8
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,1.6
+Qwen3.5 27B,skill_preservation,1.2
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,1.4
+Qwen3.5 27B,skill_preservation,1.6
+Qwen3.5 27B,skill_preservation,1.2
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,1.4
+Qwen3.5 27B,skill_preservation,1.0
+Qwen3.5 27B,skill_preservation,1.8
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,1.6
+Qwen3.5 27B,skill_preservation,1.2
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,skill_preservation,2.0
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,0.6
+Qwen3.5 27B,uncertainty_transparency,1.2
+Qwen3.5 27B,uncertainty_transparency,1.6
+Qwen3.5 27B,uncertainty_transparency,1.4
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,0.0
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,1.4
+Qwen3.5 27B,uncertainty_transparency,0.6
+Qwen3.5 27B,uncertainty_transparency,1.8
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,2.0
+Qwen3.5 27B,uncertainty_transparency,0.2
+Qwen3.5 27B,uncertainty_transparency,1.6
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,0.6
+Qwen3.5 27B,uncertainty_transparency,1.2
+Qwen3.5 27B,uncertainty_transparency,1.6
+Qwen3.5 27B,uncertainty_transparency,1.4
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,0.0
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,1.4
+Qwen3.5 27B,uncertainty_transparency,0.6
+Qwen3.5 27B,uncertainty_transparency,1.8
+Qwen3.5 27B,uncertainty_transparency,1.0
+Qwen3.5 27B,uncertainty_transparency,2.0
+Qwen3.5 27B,uncertainty_transparency,0.2
+Qwen3.5 27B,uncertainty_transparency,1.6
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,cognitive_forcing,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.8
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.4
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,2.8
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.8
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.2
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,3.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.8
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.2
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,3.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,complementarity,0.4
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,3.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,complementarity,0.4
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,3.0
+Gemma 4 31B,complementarity,0.0
+Gemma 4 31B,complementarity,1.0
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,2.6
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,3.0
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.6
+Gemma 4 31B,contrastive_explanation,2.6
+Gemma 4 31B,contrastive_explanation,2.0
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,1.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,2.8
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,2.8
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,3.0
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,2.8
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,3.0
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.25
+Gemma 4 31B,contrastive_explanation,2.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.6
+Gemma 4 31B,contrastive_explanation,2.2
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,2.8
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,3.0
+Gemma 4 31B,contrastive_explanation,2.2
+Gemma 4 31B,contrastive_explanation,1.25
+Gemma 4 31B,contrastive_explanation,2.0
+Gemma 4 31B,contrastive_explanation,1.8
+Gemma 4 31B,contrastive_explanation,1.6
+Gemma 4 31B,contrastive_explanation,2.2
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,2.4
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.2
+Gemma 4 31B,contrastive_explanation,2.8
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,1.0
+Gemma 4 31B,contrastive_explanation,3.0
+Gemma 4 31B,contrastive_explanation,2.2
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,1.2
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.8
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.8
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.8
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,1.8
+Gemma 4 31B,draft_annotation,1.2
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.8
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.8
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.8
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,1.8
+Gemma 4 31B,draft_annotation,1.2
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,1.4
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.8
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,1.4
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.8
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,draft_annotation,0.0
+Gemma 4 31B,draft_annotation,1.0
+Gemma 4 31B,draft_annotation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.8
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.8
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.4
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.8
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.4
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.8
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,1.8
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.4
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.4
+Gemma 4 31B,skill_preservation,1.2
+Gemma 4 31B,skill_preservation,1.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.2
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.4
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.6
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.0
+Gemma 4 31B,skill_preservation,2.4
+Gemma 4 31B,skill_preservation,1.2
+Gemma 4 31B,skill_preservation,1.6
+Gemma 4 31B,uncertainty_transparency,0.6
+Gemma 4 31B,uncertainty_transparency,0.6
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,1.6
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.8
+Gemma 4 31B,uncertainty_transparency,1.4
+Gemma 4 31B,uncertainty_transparency,0.4
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,0.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.6
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.6
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,2.0
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,1.4
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.6
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.6
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.6
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,2.0
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,1.4
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.6
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,2.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.6
+Gemma 4 31B,uncertainty_transparency,2.0
+Gemma 4 31B,uncertainty_transparency,1.4
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,2.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,1.8
+Gemma 4 31B,uncertainty_transparency,0.2
+Gemma 4 31B,uncertainty_transparency,0.6
+Gemma 4 31B,uncertainty_transparency,2.0
+Gemma 4 31B,uncertainty_transparency,1.4
+Gemma 4 31B,uncertainty_transparency,0.0
+Gemma 4 31B,uncertainty_transparency,0.2
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,cognitive_forcing,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,2.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,2.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.4
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,3.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.4
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.2
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,3.0
+Devstral-2 123B,complementarity,0.0
+Devstral-2 123B,complementarity,0.6
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.6
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,2.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,2.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.6
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,2.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,2.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.6
+Devstral-2 123B,contrastive_explanation,1.6
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.6
+Devstral-2 123B,contrastive_explanation,1.6
+Devstral-2 123B,contrastive_explanation,1.4
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,contrastive_explanation,1.2
+Devstral-2 123B,contrastive_explanation,1.0
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,1.2
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,1.2
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,1.4
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,1.4
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,1.4
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.4
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,1.0
+Devstral-2 123B,draft_annotation,0.2
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,1.4
+Devstral-2 123B,draft_annotation,0.0
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,draft_annotation,0.6
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,1.2
+Devstral-2 123B,skill_preservation,1.2
+Devstral-2 123B,skill_preservation,1.4
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.4
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,1.2
+Devstral-2 123B,skill_preservation,1.2
+Devstral-2 123B,skill_preservation,1.4
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.4
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.2
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.75
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.4
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.2
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.75
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.4
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.8
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,1.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,skill_preservation,2.0
+Devstral-2 123B,uncertainty_transparency,1.2
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,0.0
+Devstral-2 123B,uncertainty_transparency,1.2
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,1.6
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,1.8
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,0.0
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,1.2
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,0.0
+Devstral-2 123B,uncertainty_transparency,1.2
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,1.6
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,1.8
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,0.0
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,0.6
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,1.8
+Devstral-2 123B,uncertainty_transparency,0.0
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,0.6
+Devstral-2 123B,uncertainty_transparency,1.2
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,2.0
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,0.6
+Devstral-2 123B,uncertainty_transparency,1.0
+Devstral-2 123B,uncertainty_transparency,1.8
+Devstral-2 123B,uncertainty_transparency,0.0
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,0.4
+Devstral-2 123B,uncertainty_transparency,0.6
+Devstral-2 123B,uncertainty_transparency,1.2
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,0.2
+Devstral-2 123B,uncertainty_transparency,2.0
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,0.8
+Devstral-2 123B,uncertainty_transparency,0.8
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.2
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.2
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.2
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.2
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.2
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.2
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,cognitive_forcing,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.6
+DeepSeek V3.2,complementarity,0.6
+DeepSeek V3.2,complementarity,3.0
+DeepSeek V3.2,complementarity,1.0
+DeepSeek V3.2,complementarity,0.4
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.6
+DeepSeek V3.2,complementarity,0.6
+DeepSeek V3.2,complementarity,3.0
+DeepSeek V3.2,complementarity,1.0
+DeepSeek V3.2,complementarity,0.4
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,3.0
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.6
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.8
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.8
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.8
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,3.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.8
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.8
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,3.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.2
+DeepSeek V3.2,complementarity,0.8
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,complementarity,0.0
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,2.6
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,2.6
+DeepSeek V3.2,contrastive_explanation,2.2
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.6
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,2.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,2.4
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.8
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,1.0
+DeepSeek V3.2,contrastive_explanation,2.4
+DeepSeek V3.2,contrastive_explanation,1.4
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,contrastive_explanation,1.2
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.2
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.2
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.2
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.2
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.4
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.4
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.4
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.4
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.4
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,1.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.4
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,draft_annotation,0.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,0.8
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.6
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.2
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,0.8
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.6
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.2
+DeepSeek V3.2,skill_preservation,1.6
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,0.6
+DeepSeek V3.2,skill_preservation,2.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.2
+DeepSeek V3.2,skill_preservation,1.0
+DeepSeek V3.2,skill_preservation,1.6
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.2
+DeepSeek V3.2,skill_preservation,0.8
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,0.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.2
+DeepSeek V3.2,skill_preservation,0.8
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,1.8
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,0.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,skill_preservation,1.4
+DeepSeek V3.2,skill_preservation,2.0
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.6
+DeepSeek V3.2,uncertainty_transparency,0.0
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,1.4
+DeepSeek V3.2,uncertainty_transparency,0.2
+DeepSeek V3.2,uncertainty_transparency,1.8
+DeepSeek V3.2,uncertainty_transparency,0.2
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.6
+DeepSeek V3.2,uncertainty_transparency,0.0
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,1.4
+DeepSeek V3.2,uncertainty_transparency,0.2
+DeepSeek V3.2,uncertainty_transparency,1.8
+DeepSeek V3.2,uncertainty_transparency,0.2
+DeepSeek V3.2,uncertainty_transparency,1.6
+DeepSeek V3.2,uncertainty_transparency,0.0
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.6
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.2
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.6
+DeepSeek V3.2,uncertainty_transparency,1.6
+DeepSeek V3.2,uncertainty_transparency,1.8
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,1.6
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,0.6
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.4
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.0
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,1.8
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,1.6
+DeepSeek V3.2,uncertainty_transparency,1.0
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,0.6
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.4
+DeepSeek V3.2,uncertainty_transparency,0.8
+DeepSeek V3.2,uncertainty_transparency,1.2
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,0.0
+DeepSeek V3.2,uncertainty_transparency,0.4
+DeepSeek V3.2,uncertainty_transparency,1.8
+DeepSeek V3.2,uncertainty_transparency,1.2
+Nemotron-Cascade 30B,cognitive_forcing,0.4
+Nemotron-Cascade 30B,cognitive_forcing,0.4
+Nemotron-Cascade 30B,cognitive_forcing,0.2
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.25
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.2
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.2
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.4
+Nemotron-Cascade 30B,cognitive_forcing,0.4
+Nemotron-Cascade 30B,cognitive_forcing,0.2
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.25
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.2
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.2
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,cognitive_forcing,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.4
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,3.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.4
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,3.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,complementarity,0.0
+Nemotron-Cascade 30B,contrastive_explanation,0.8
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.8
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.5
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,0.8
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.8
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.2
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,contrastive_explanation,1.5
+Nemotron-Cascade 30B,contrastive_explanation,1.0
+Nemotron-Cascade 30B,draft_annotation,0.6
+Nemotron-Cascade 30B,draft_annotation,0.2
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.4
+Nemotron-Cascade 30B,draft_annotation,0.6
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.8
+Nemotron-Cascade 30B,draft_annotation,0.2
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.2
+Nemotron-Cascade 30B,draft_annotation,0.6
+Nemotron-Cascade 30B,draft_annotation,0.2
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.4
+Nemotron-Cascade 30B,draft_annotation,0.6
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.8
+Nemotron-Cascade 30B,draft_annotation,0.2
+Nemotron-Cascade 30B,draft_annotation,0.0
+Nemotron-Cascade 30B,draft_annotation,0.2
+Nemotron-Cascade 30B,skill_preservation,1.4
+Nemotron-Cascade 30B,skill_preservation,2.2
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,1.2
+Nemotron-Cascade 30B,skill_preservation,2.4
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,1.0
+Nemotron-Cascade 30B,skill_preservation,1.0
+Nemotron-Cascade 30B,skill_preservation,1.4
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,1.0
+Nemotron-Cascade 30B,skill_preservation,1.4
+Nemotron-Cascade 30B,skill_preservation,2.2
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,1.2
+Nemotron-Cascade 30B,skill_preservation,2.4
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,1.0
+Nemotron-Cascade 30B,skill_preservation,1.0
+Nemotron-Cascade 30B,skill_preservation,1.4
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,2.0
+Nemotron-Cascade 30B,skill_preservation,1.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.6
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.6
+Nemotron-Cascade 30B,uncertainty_transparency,0.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.2
+Nemotron-Cascade 30B,uncertainty_transparency,1.2
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.4
+Nemotron-Cascade 30B,uncertainty_transparency,1.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.4
+Nemotron-Cascade 30B,uncertainty_transparency,0.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.6
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.6
+Nemotron-Cascade 30B,uncertainty_transparency,0.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.2
+Nemotron-Cascade 30B,uncertainty_transparency,1.2
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.8
+Nemotron-Cascade 30B,uncertainty_transparency,1.4
+Nemotron-Cascade 30B,uncertainty_transparency,1.0
+Nemotron-Cascade 30B,uncertainty_transparency,1.4
+Nemotron-Cascade 30B,uncertainty_transparency,0.8
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,cognitive_forcing,0.0
+GPT-oss 120B,complementarity,0.4
+GPT-oss 120B,complementarity,2.8
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.6
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.4
+GPT-oss 120B,complementarity,2.8
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.6
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.4
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,2.8
+GPT-oss 120B,complementarity,0.4
+GPT-oss 120B,complementarity,0.5
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.4
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,0.0
+GPT-oss 120B,complementarity,2.8
+GPT-oss 120B,complementarity,0.4
+GPT-oss 120B,complementarity,0.5
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,complementarity,0.2
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.4
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.4
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.4
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.4
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.6
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.4
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.2
+GPT-oss 120B,contrastive_explanation,1.4
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.6
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,contrastive_explanation,1.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.4
+GPT-oss 120B,draft_annotation,1.2
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.4
+GPT-oss 120B,draft_annotation,1.2
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.6
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.2
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,1.4
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.6
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.2
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,draft_annotation,1.4
+GPT-oss 120B,draft_annotation,0.0
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,3.0
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,3.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,2.4
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.4
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,1.6
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,3.0
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,3.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,2.4
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.4
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,1.6
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.6
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.4
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,3.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.6
+GPT-oss 120B,skill_preservation,2.6
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.8
+GPT-oss 120B,skill_preservation,2.2
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.4
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,3.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.0
+GPT-oss 120B,skill_preservation,2.6
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.4
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.8
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,2.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.4
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.8
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,2.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,2.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,1.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,1.0
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,2.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.4
+GPT-oss 120B,uncertainty_transparency,2.0
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,1.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,1.0
+GPT-oss 120B,uncertainty_transparency,1.6
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,2.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.2
+GPT-oss 120B,uncertainty_transparency,0.0
+GPT-oss 120B,uncertainty_transparency,0.4
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,cognitive_forcing,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,2.8
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.4
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,2.8
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.4
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,complementarity,0.0
+GLM 5.1,contrastive_explanation,2.4
+GLM 5.1,contrastive_explanation,1.4
+GLM 5.1,contrastive_explanation,2.8
+GLM 5.1,contrastive_explanation,1.8
+GLM 5.1,contrastive_explanation,2.4
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.2
+GLM 5.1,contrastive_explanation,2.0
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.2
+GLM 5.1,contrastive_explanation,1.2
+GLM 5.1,contrastive_explanation,2.4
+GLM 5.1,contrastive_explanation,1.6
+GLM 5.1,contrastive_explanation,2.4
+GLM 5.1,contrastive_explanation,1.4
+GLM 5.1,contrastive_explanation,2.8
+GLM 5.1,contrastive_explanation,1.8
+GLM 5.1,contrastive_explanation,2.4
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.2
+GLM 5.1,contrastive_explanation,2.0
+GLM 5.1,contrastive_explanation,1.0
+GLM 5.1,contrastive_explanation,1.2
+GLM 5.1,contrastive_explanation,1.2
+GLM 5.1,contrastive_explanation,2.4
+GLM 5.1,contrastive_explanation,1.6
+GLM 5.1,draft_annotation,1.6
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,1.2
+GLM 5.1,draft_annotation,0.8
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.2
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.6
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.8
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,1.6
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,1.2
+GLM 5.1,draft_annotation,0.8
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.2
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.6
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.8
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,draft_annotation,0.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.8
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.6
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.6
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.2
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.8
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.6
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,1.6
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.2
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,skill_preservation,2.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.8
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.4
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,1.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.8
+GLM 5.1,uncertainty_transparency,1.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.8
+GLM 5.1,uncertainty_transparency,0.2
+GLM 5.1,uncertainty_transparency,1.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.8
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.4
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,1.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.8
+GLM 5.1,uncertainty_transparency,1.0
+GLM 5.1,uncertainty_transparency,0.0
+GLM 5.1,uncertainty_transparency,0.8
+GLM 5.1,uncertainty_transparency,0.2
+GLM 5.1,uncertainty_transparency,1.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,1.0
+Llama 3.1 70B,cognitive_forcing,2.0
+Llama 3.1 70B,cognitive_forcing,3.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,2.0
+Llama 3.1 70B,cognitive_forcing,2.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,1.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,1.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,1.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,1.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,cognitive_forcing,1.0
+Llama 3.1 70B,cognitive_forcing,0.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,2.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,0.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,3.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,complementarity,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,2.0
+Llama 3.1 70B,contrastive_explanation,3.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,contrastive_explanation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,2.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,draft_annotation,1.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,1.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,skill_preservation,2.0
+Llama 3.1 70B,uncertainty_transparency,0.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,1.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Llama 3.1 70B,uncertainty_transparency,2.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,1.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,cognitive_forcing,1.0
+Mistral Small 3.1,cognitive_forcing,0.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,0.0
+Mistral Small 3.1,complementarity,0.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,2.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,complementarity,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,2.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,3.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,3.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,contrastive_explanation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,draft_annotation,1.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,1.0
+Mistral Small 3.1,skill_preservation,1.0
+Mistral Small 3.1,skill_preservation,1.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,1.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,skill_preservation,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,1.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,1.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,1.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Mistral Small 3.1,uncertainty_transparency,2.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,1.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,1.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,cognitive_forcing,1.0
+Qwen2.5 72B,cognitive_forcing,1.0
+Qwen2.5 72B,cognitive_forcing,0.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,0.0
+Qwen2.5 72B,complementarity,0.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,3.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,complementarity,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,2.0
+Qwen2.5 72B,contrastive_explanation,2.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,2.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,contrastive_explanation,2.0
+Qwen2.5 72B,contrastive_explanation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,draft_annotation,1.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,1.0
+Qwen2.5 72B,skill_preservation,1.0
+Qwen2.5 72B,skill_preservation,1.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,1.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,skill_preservation,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,1.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,1.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,1.0
+Qwen2.5 72B,uncertainty_transparency,2.0
+Qwen2.5 72B,uncertainty_transparency,2.0

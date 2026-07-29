@@ -1,0 +1,8 @@
+Model,PWI_baseline,PWI_prompted,Delta_PWI
+GLM 5.1,40.7,84.7,44.0
+Gemma 4 31B,40.8,77.2,36.4
+DeepSeek V3.2,29.8,72.2,42.3
+GPT-oss 120B,28.9,64.0,35.1
+Devstral-2 123B,25.8,60.0,34.2
+Nemotron-Cascade 30B,33.2,60.0,26.9
+Qwen3.5 27B,34.1,58.2,24.1

@@ -6,3 +6,40 @@ dist/
 build/
 .env
 .venv/
+.DS_Store
+
+# Internal process notes, not for public repo
+CLAUDE.md
+
+# Pre-decision peer review material (reviewer feedback + rebuttal responses)
+rebuttal/
+
+# Substack draft, publish externally rather than track here
+substack/
+
+# Frozen mirrors used for the anonymous NeurIPS/HF submission; do not touch or publish
+code_staging/
+dataset_staging/
+
+# Duplicate/superseded paper copies
+paper_overleaf/
+paper_overleaf.zip
+paper_arxiv/
+paper/paper/
+paper/publication_venues.md
+
+# Raw run logs, no external value
+benchmark_launcher.txt
+benchmark_log.txt
+benchmark_log_group1.txt
+benchmark_log_group2.txt
+pilot/fourth_judge_run.log
+
+# Promotional draft, not documentation
+linkedin_post.md
+
+# Raw per-run results (320MB); full v2.0 set is released on HuggingFace instead
+results/
+
+# NeurIPS submission process files (the useful docs were moved to docs/ and repo root)
+submission/

@@ -1,0 +1,141 @@
+Model,Variant,Dimension,Mean,HDI_lower,HDI_upper,N
+DeepSeek V3.2,baseline,cognitive_forcing,0.06,0.01,0.15,100
+DeepSeek V3.2,baseline,contrastive_explanation,1.54,1.4,1.69,100
+DeepSeek V3.2,baseline,skill_preservation,1.63,1.49,1.76,100
+DeepSeek V3.2,baseline,draft_annotation,0.12,0.06,0.22,100
+DeepSeek V3.2,baseline,uncertainty_transparency,0.99,0.84,1.14,100
+DeepSeek V3.2,baseline,complementarity,0.31,0.18,0.48,100
+DeepSeek V3.2,baseline,anti_sycophancy,1.51,1.26,1.75,100
+DeepSeek V3.2,baseline,metacognitive_calibration,1.07,0.89,1.25,100
+DeepSeek V3.2,baseline,appropriate_reliance,0.56,0.39,0.75,100
+DeepSeek V3.2,baseline,ethical_surfacing,1.97,1.76,2.17,100
+DeepSeek V3.2,with_system_prompt,cognitive_forcing,2.18,2.01,2.34,100
+DeepSeek V3.2,with_system_prompt,contrastive_explanation,1.9,1.67,2.12,100
+DeepSeek V3.2,with_system_prompt,skill_preservation,1.77,1.51,2.02,100
+DeepSeek V3.2,with_system_prompt,draft_annotation,1.47,1.21,1.73,100
+DeepSeek V3.2,with_system_prompt,uncertainty_transparency,2.22,2.03,2.39,100
+DeepSeek V3.2,with_system_prompt,complementarity,2.37,2.19,2.53,100
+DeepSeek V3.2,with_system_prompt,anti_sycophancy,2.92,2.83,2.98,100
+DeepSeek V3.2,with_system_prompt,metacognitive_calibration,1.53,1.31,1.75,100
+DeepSeek V3.2,with_system_prompt,appropriate_reliance,0.76,0.56,0.98,100
+DeepSeek V3.2,with_system_prompt,ethical_surfacing,2.86,2.74,2.95,100
+Devstral-2 123B,baseline,cognitive_forcing,0.06,0.01,0.15,100
+Devstral-2 123B,baseline,contrastive_explanation,1.33,1.21,1.46,100
+Devstral-2 123B,baseline,skill_preservation,1.71,1.61,1.8,99
+Devstral-2 123B,baseline,draft_annotation,0.41,0.29,0.55,100
+Devstral-2 123B,baseline,uncertainty_transparency,0.89,0.76,1.03,100
+Devstral-2 123B,baseline,complementarity,0.35,0.22,0.52,99
+Devstral-2 123B,baseline,anti_sycophancy,1.17,0.93,1.41,100
+Devstral-2 123B,baseline,metacognitive_calibration,0.74,0.59,0.9,100
+Devstral-2 123B,baseline,appropriate_reliance,0.36,0.23,0.51,100
+Devstral-2 123B,baseline,ethical_surfacing,1.3,1.1,1.5,100
+Devstral-2 123B,with_system_prompt,cognitive_forcing,1.18,0.97,1.41,100
+Devstral-2 123B,with_system_prompt,contrastive_explanation,1.68,1.5,1.86,100
+Devstral-2 123B,with_system_prompt,skill_preservation,1.86,1.65,2.04,100
+Devstral-2 123B,with_system_prompt,draft_annotation,1.18,0.97,1.4,100
+Devstral-2 123B,with_system_prompt,uncertainty_transparency,1.51,1.32,1.69,100
+Devstral-2 123B,with_system_prompt,complementarity,2.1,1.88,2.29,100
+Devstral-2 123B,with_system_prompt,anti_sycophancy,2.85,2.73,2.93,100
+Devstral-2 123B,with_system_prompt,metacognitive_calibration,1.04,0.86,1.22,100
+Devstral-2 123B,with_system_prompt,appropriate_reliance,0.8,0.61,1.01,100
+Devstral-2 123B,with_system_prompt,ethical_surfacing,2.74,2.58,2.86,100
+GLM 5.1,baseline,cognitive_forcing,0.06,0.01,0.15,100
+GLM 5.1,baseline,contrastive_explanation,1.79,1.64,1.94,100
+GLM 5.1,baseline,skill_preservation,1.8,1.68,1.9,100
+GLM 5.1,baseline,draft_annotation,0.31,0.2,0.44,100
+GLM 5.1,baseline,uncertainty_transparency,0.53,0.4,0.67,100
+GLM 5.1,baseline,complementarity,0.21,0.1,0.37,100
+GLM 5.1,baseline,anti_sycophancy,2.87,2.77,2.95,100
+GLM 5.1,baseline,metacognitive_calibration,1.49,1.34,1.65,100
+GLM 5.1,baseline,appropriate_reliance,0.26,0.17,0.37,100
+GLM 5.1,baseline,ethical_surfacing,2.69,2.56,2.8,100
+GLM 5.1,with_system_prompt,cognitive_forcing,1.91,1.75,2.08,100
+GLM 5.1,with_system_prompt,contrastive_explanation,2.14,1.98,2.28,100
+GLM 5.1,with_system_prompt,skill_preservation,2.57,2.43,2.69,100
+GLM 5.1,with_system_prompt,draft_annotation,2.11,1.84,2.35,100
+GLM 5.1,with_system_prompt,uncertainty_transparency,2.24,2.08,2.38,100
+GLM 5.1,with_system_prompt,complementarity,2.72,2.58,2.83,100
+GLM 5.1,with_system_prompt,anti_sycophancy,2.94,2.85,2.99,100
+GLM 5.1,with_system_prompt,metacognitive_calibration,2.88,2.78,2.95,100
+GLM 5.1,with_system_prompt,appropriate_reliance,2.34,2.14,2.51,100
+GLM 5.1,with_system_prompt,ethical_surfacing,2.94,2.85,2.99,100
+GPT-oss 120B,baseline,cognitive_forcing,0.06,0.01,0.15,99
+GPT-oss 120B,baseline,contrastive_explanation,1.29,1.18,1.42,100
+GPT-oss 120B,baseline,skill_preservation,2.11,1.97,2.24,100
+GPT-oss 120B,baseline,draft_annotation,0.17,0.09,0.29,100
+GPT-oss 120B,baseline,uncertainty_transparency,0.77,0.6,0.94,100
+GPT-oss 120B,baseline,complementarity,0.29,0.17,0.46,94
+GPT-oss 120B,baseline,anti_sycophancy,1.12,0.88,1.36,100
+GPT-oss 120B,baseline,metacognitive_calibration,1.15,0.96,1.33,100
+GPT-oss 120B,baseline,appropriate_reliance,0.79,0.6,1.0,100
+GPT-oss 120B,baseline,ethical_surfacing,1.73,1.5,1.95,100
+GPT-oss 120B,with_system_prompt,cognitive_forcing,2.68,2.56,2.79,100
+GPT-oss 120B,with_system_prompt,contrastive_explanation,0.76,0.58,0.96,100
+GPT-oss 120B,with_system_prompt,skill_preservation,1.79,1.56,2.01,100
+GPT-oss 120B,with_system_prompt,draft_annotation,0.65,0.45,0.88,100
+GPT-oss 120B,with_system_prompt,uncertainty_transparency,2.41,2.25,2.55,100
+GPT-oss 120B,with_system_prompt,complementarity,2.79,2.68,2.87,100
+GPT-oss 120B,with_system_prompt,anti_sycophancy,2.24,2.06,2.41,100
+GPT-oss 120B,with_system_prompt,metacognitive_calibration,0.67,0.46,0.9,100
+GPT-oss 120B,with_system_prompt,appropriate_reliance,0.28,0.14,0.45,100
+GPT-oss 120B,with_system_prompt,ethical_surfacing,2.49,2.31,2.63,100
+Gemma 4 31B,baseline,cognitive_forcing,0.06,0.01,0.15,100
+Gemma 4 31B,baseline,contrastive_explanation,1.8,1.65,1.96,97
+Gemma 4 31B,baseline,skill_preservation,1.95,1.85,2.05,100
+Gemma 4 31B,baseline,draft_annotation,0.88,0.71,1.04,100
+Gemma 4 31B,baseline,uncertainty_transparency,0.83,0.66,1.0,100
+Gemma 4 31B,baseline,complementarity,0.32,0.19,0.49,100
+Gemma 4 31B,baseline,anti_sycophancy,2.84,2.72,2.92,100
+Gemma 4 31B,baseline,metacognitive_calibration,1.03,0.87,1.19,100
+Gemma 4 31B,baseline,appropriate_reliance,0.77,0.62,0.93,100
+Gemma 4 31B,baseline,ethical_surfacing,2.5,2.33,2.64,100
+Gemma 4 31B,with_system_prompt,cognitive_forcing,2.53,2.41,2.64,100
+Gemma 4 31B,with_system_prompt,contrastive_explanation,2.09,1.83,2.33,100
+Gemma 4 31B,with_system_prompt,skill_preservation,2.24,2.04,2.42,100
+Gemma 4 31B,with_system_prompt,draft_annotation,0.36,0.2,0.56,100
+Gemma 4 31B,with_system_prompt,uncertainty_transparency,2.11,1.92,2.27,100
+Gemma 4 31B,with_system_prompt,complementarity,2.85,2.73,2.94,99
+Gemma 4 31B,with_system_prompt,anti_sycophancy,2.94,2.85,2.99,100
+Gemma 4 31B,with_system_prompt,metacognitive_calibration,1.37,1.16,1.58,100
+Gemma 4 31B,with_system_prompt,appropriate_reliance,0.5,0.34,0.69,100
+Gemma 4 31B,with_system_prompt,ethical_surfacing,2.78,2.64,2.88,100
+Nemotron-Cascade 30B,baseline,cognitive_forcing,0.16,0.09,0.26,99
+Nemotron-Cascade 30B,baseline,contrastive_explanation,1.27,1.16,1.37,98
+Nemotron-Cascade 30B,baseline,skill_preservation,1.64,1.53,1.76,100
+Nemotron-Cascade 30B,baseline,draft_annotation,0.2,0.12,0.31,100
+Nemotron-Cascade 30B,baseline,uncertainty_transparency,1.37,1.2,1.52,100
+Nemotron-Cascade 30B,baseline,complementarity,0.24,0.12,0.4,98
+Nemotron-Cascade 30B,baseline,anti_sycophancy,1.83,1.58,2.06,100
+Nemotron-Cascade 30B,baseline,metacognitive_calibration,1.97,1.8,2.13,99
+Nemotron-Cascade 30B,baseline,appropriate_reliance,0.48,0.36,0.62,100
+Nemotron-Cascade 30B,baseline,ethical_surfacing,1.43,1.21,1.65,99
+Nemotron-Cascade 30B,with_system_prompt,cognitive_forcing,0.75,0.62,0.89,100
+Nemotron-Cascade 30B,with_system_prompt,contrastive_explanation,1.62,1.48,1.75,100
+Nemotron-Cascade 30B,with_system_prompt,skill_preservation,2.08,1.93,2.21,100
+Nemotron-Cascade 30B,with_system_prompt,draft_annotation,1.2,0.99,1.42,100
+Nemotron-Cascade 30B,with_system_prompt,uncertainty_transparency,1.78,1.61,1.94,100
+Nemotron-Cascade 30B,with_system_prompt,complementarity,1.21,1.01,1.43,99
+Nemotron-Cascade 30B,with_system_prompt,anti_sycophancy,2.94,2.85,2.99,98
+Nemotron-Cascade 30B,with_system_prompt,metacognitive_calibration,2.71,2.57,2.82,99
+Nemotron-Cascade 30B,with_system_prompt,appropriate_reliance,1.57,1.36,1.77,100
+Nemotron-Cascade 30B,with_system_prompt,ethical_surfacing,2.85,2.73,2.94,99
+Qwen3.5 27B,baseline,cognitive_forcing,0.27,0.18,0.38,100
+Qwen3.5 27B,baseline,contrastive_explanation,1.27,1.16,1.4,98
+Qwen3.5 27B,baseline,skill_preservation,1.56,1.43,1.69,99
+Qwen3.5 27B,baseline,draft_annotation,0.23,0.14,0.35,99
+Qwen3.5 27B,baseline,uncertainty_transparency,1.23,1.07,1.39,100
+Qwen3.5 27B,baseline,complementarity,0.29,0.16,0.46,100
+Qwen3.5 27B,baseline,anti_sycophancy,1.85,1.6,2.09,99
+Qwen3.5 27B,baseline,metacognitive_calibration,1.98,1.78,2.16,99
+Qwen3.5 27B,baseline,appropriate_reliance,0.42,0.3,0.56,98
+Qwen3.5 27B,baseline,ethical_surfacing,1.42,1.19,1.64,99
+Qwen3.5 27B,with_system_prompt,cognitive_forcing,0.69,0.55,0.85,100
+Qwen3.5 27B,with_system_prompt,contrastive_explanation,1.64,1.51,1.77,98
+Qwen3.5 27B,with_system_prompt,skill_preservation,2.07,1.94,2.19,100
+Qwen3.5 27B,with_system_prompt,draft_annotation,0.99,0.78,1.21,100
+Qwen3.5 27B,with_system_prompt,uncertainty_transparency,1.81,1.63,1.97,100
+Qwen3.5 27B,with_system_prompt,complementarity,1.09,0.88,1.3,100
+Qwen3.5 27B,with_system_prompt,anti_sycophancy,2.94,2.85,2.99,99
+Qwen3.5 27B,with_system_prompt,metacognitive_calibration,2.68,2.54,2.8,100
+Qwen3.5 27B,with_system_prompt,appropriate_reliance,1.61,1.39,1.82,98
+Qwen3.5 27B,with_system_prompt,ethical_surfacing,2.82,2.69,2.91,100

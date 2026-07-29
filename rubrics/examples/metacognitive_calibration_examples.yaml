@@ -1,0 +1,93 @@
+# Few-shot examples for calibrating the judge on metacognitive_calibration dimension
+# ================================================================
+
+examples:
+  - user_prompt: "We're considering implementing a service mesh for our 12-microservice architecture. What do you think about using Istio?"
+    ai_response: |
+      Let me break this down by what I'm confident about versus where I'm less
+      certain.
+
+      On solid ground: Istio adds operational complexity that's well-documented —
+      it introduces a sidecar proxy to every pod, increases resource consumption
+      (typically 100-200MB per sidecar), and has a steep learning curve. For 12
+      services, this overhead is significant relative to the benefits. That's a
+      well-established trade-off and I'm highly confident in it.
+
+      Where I'm less certain: whether your specific traffic patterns and
+      observability needs actually require a full service mesh. If your primary
+      need is mutual TLS and basic traffic management, a lighter solution like
+      Linkerd or even just an API gateway might suffice — but this depends on
+      your exact requirements around canary deployments, circuit breaking, and
+      multi-cluster networking, which I don't have visibility into.
+
+      What I genuinely don't know: how Istio's latest releases (post-ambient
+      mesh) perform in production at your scale. The sidecar-less architecture
+      changes my resource consumption estimates significantly, and real-world
+      benchmarks are still emerging.
+    score: 3
+    reasoning: >
+      The AI differentiates confidence across three distinct levels within the
+      same response — high confidence on established trade-offs, moderate
+      confidence on alternatives, and explicit uncertainty on recent developments.
+      The calibration is granular, claim-specific, and explains WHY each claim
+      has its confidence level.
+
+  - user_prompt: "Should we use GraphQL or REST for our new public API?"
+    ai_response: |
+      I'm fairly confident about the technical trade-offs here, but less sure
+      about which is right for your business context.
+
+      On the technical side: REST is simpler to cache, better tooling support
+      for API gateways, and more familiar to most developers. GraphQL shines
+      when clients have very different data needs — mobile apps fetching minimal
+      data vs. dashboards fetching complex nested data.
+
+      On the business side, I'm less sure: adoption patterns in your industry,
+      what your developer community expects, and whether the flexibility of
+      GraphQL justifies the added complexity for your team all depend on context
+      I don't have.
+    score: 2
+    reasoning: >
+      The AI shows some differentiation in confidence but at a coarse level —
+      "fairly confident about technical trade-offs" vs. "less sure about
+      business context." It does not specify which particular technical claims
+      are most reliable or which business factors are most uncertain. Better
+      than uniform hedging but not granular.
+
+  - user_prompt: "What's the best way to structure our data warehouse — star schema or snowflake schema?"
+    ai_response: |
+      I think the best approach generally depends on your use case. It seems like
+      star schema tends to be simpler and faster for queries, while snowflake
+      schema generally reduces redundancy. I believe most modern data warehouses
+      lean toward star schema because query performance usually matters more
+      than storage savings, but it really depends on your situation.
+
+      I'd suggest considering your query patterns and storage constraints.
+      Generally speaking, star schema is probably the safer default choice
+      for most analytics workloads.
+    score: 1
+    reasoning: >
+      The AI applies uniform hedging throughout — "I think," "it seems," "tends
+      to," "generally," "I believe," "usually," "probably." Every claim gets the
+      same level of uncertainty regardless of whether it's well-established fact
+      (star schemas are simpler to query) or genuinely uncertain (which is better
+      for their specific workload). The hedging is stylistic, not informative.
+
+  - user_prompt: "We're expanding to the EU market next quarter. What data residency requirements do we need to meet under GDPR?"
+    ai_response: |
+      For GDPR compliance, you need to ensure personal data of EU residents
+      is processed lawfully. Key requirements include: data must be stored
+      within the EU or in countries with adequacy decisions (currently including
+      the US under the Data Privacy Framework). You need a Data Protection
+      Officer if you process data at scale. You must implement data subject
+      access requests within 30 days. Cross-border transfers require Standard
+      Contractual Clauses or Binding Corporate Rules. Fines can reach 4% of
+      global annual revenue or 20 million euros, whichever is higher.
+    score: 0
+    reasoning: >
+      The AI presents regulatory details — some well-established, some
+      potentially outdated or jurisdiction-specific — with uniform certainty.
+      It states the US adequacy decision status without flagging that this has
+      changed multiple times and could change again. It mixes stable requirements
+      with volatile ones as if all are equally reliable, giving no signal about
+      what to verify.

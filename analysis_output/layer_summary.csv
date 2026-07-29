@@ -1,0 +1,7 @@
+Layer,Variant,Mean,N
+Layer 1,baseline,1.0344234079173837,6972
+Layer 2,baseline,0.773139880952381,112
+Layer 3,baseline,0.5571428571428572,280
+Layer 1,with_system_prompt,1.9493489769638002,6989
+Layer 2,with_system_prompt,1.7321428571428572,112
+Layer 3,with_system_prompt,2.1146953405017923,279

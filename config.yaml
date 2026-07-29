@@ -1,52 +1,192 @@
-# Pro-Worker AI Benchmark Configuration
-# ========================================
+# Pro-Worker AI Benchmark Configuration (v2.0)
+# ==============================================
+# NeurIPS 2026 Datasets & Benchmarks submission.
+#
+# STRATEGY: Vultr-primary (no daily token limit detected).
+# DigitalOcean has a 6M tokens/day cap — reserved for DO-exclusive models
+# run separately across multiple days.
+#
+# Phase 1 (this config): Run 8 Vultr models. ~$200 Vultr budget.
+# Phase 2 (later):       Add DO-exclusive models 1-2 per day.
 
-# Models to evaluate via OpenRouter (fast cloud inference)
+# ===================
+# CANDIDATE MODELS — Phase 1: Vultr (8 models, 7 families)
+# ===================
 models:
-  - id: "openrouter/meta-llama/llama-3.1-70b-instruct"
-    name: "Llama 3.1 70B"
-    provider: "openrouter"
+  - id: "openai/mistralai/Devstral-2-123B-Instruct-2512"
+    name: "Devstral-2 123B"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
 
-  - id: "openrouter/mistralai/mistral-small-3.1-24b-instruct"
-    name: "Mistral Small 3.1 24B"
-    provider: "openrouter"
+  - id: "openai/nvidia/DeepSeek-V3.2-NVFP4"
+    name: "DeepSeek V3.2"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
 
-  - id: "openrouter/qwen/qwen-2.5-72b-instruct"
-    name: "Qwen 2.5 72B"
-    provider: "openrouter"
+  - id: "openai/Intel/gemma-4-31B-it-int4-AutoRound"
+    name: "Gemma 4 31B"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
 
-  # Local Ollama models (slower but free)
-  # - id: "ollama/llama3.1:8b"
-  #   name: "Llama 3.1 8B"
-  #   provider: "ollama"
-  #   api_base: "http://localhost:11434"
+  - id: "openai/openai/gpt-oss-120b"
+    name: "GPT-oss 120B"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
 
-# Judge model — independent model family (not Llama/Mistral/Qwen) to avoid bias
-# Using paid tier to avoid rate limits (~$0.25 total for full run)
+  - id: "openai/Qwen/Qwen3.5-397B-A17B-FP8"
+    name: "Qwen3.5 397B"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+
+  - id: "openai/Intel/Qwen3.5-27B-int4-AutoRound"
+    name: "Qwen3.5 27B"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+
+  - id: "openai/nvidia/Nemotron-Cascade-2-30B-A3B"
+    name: "Nemotron-Cascade 30B"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+
+  - id: "openai/zai-org/GLM-5.1-FP8"
+    name: "GLM 5.1"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+
+# ===================
+# JUDGE PANEL — 3 Vultr models from different families
+# ===================
+# Using non-thinking models that return clean JSON.
+# Devstral (Mistral), GPT-oss (OpenAI), Gemma (Google) — 3 distinct families.
+judges:
+  - id: "openai/mistralai/Devstral-2-123B-Instruct-2512"
+    name: "Devstral-2 123B (judge)"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+    temperature: 0.0
+
+  - id: "openai/openai/gpt-oss-120b"
+    name: "GPT-oss 120B (judge)"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+    temperature: 0.0
+
+  - id: "openai/Intel/gemma-4-31B-it-int4-AutoRound"
+    name: "Gemma 4 31B (judge)"
+    provider: "vultr"
+    api_base: "https://api.vultrinference.com/v1"
+    temperature: 0.0
+
+judge_aggregation: "median"
+
+# Legacy single-judge config (backwards compatibility)
 judge:
-  id: "openrouter/google/gemma-3-27b-it"
-  provider: "openrouter"
+  id: "openai/mistralai/Devstral-2-123B-Instruct-2512"
+  provider: "vultr"
+  api_base: "https://api.vultrinference.com/v1"
   temperature: 0.0
 
-# Benchmark settings
+# ===================
+# SETTINGS
+# ===================
 settings:
-  runs_per_prompt: 1
+  runs_per_prompt: 5
   model_temperature: 0.7
-  max_tokens: 4096
+  max_tokens: 8192
   judge_max_tokens: 1024
   test_with_system_prompt: true
-  system_prompt_path: "../system_prompt.md"
+  system_prompt_path: "system_prompt.md"
   results_dir: "results"
   concurrency: 4
+  randomize_rubric_order: true
+  randomize_prompt_order: true
 
-# Pro-Worker Index (PWI) dimension weights (must sum to 1.0)
+# ===================
+# PWI SCORING
+# ===================
 scoring:
+  # Canonical PWI weights. This block is the single source of truth: src/analysis.py and
+  # run_analysis.py load it rather than defining their own copies.
+  #
+  # Scheme v2.1 (2026-07-24) replaces the v2.0 point weights, which implied a precision the
+  # derivation could not support. Two rules, applied in order. This scheme matches the
+  # commitment made in the NeurIPS rebuttal.
+  #
+  # Rule 1, evidence tier. The weight is set by the KIND of evidence backing the dimension:
+  #   0.15  the two dimensions with the strongest causal evidence for augmentation
+  #         (cognitive forcing, Bucinca 2021 RCT; complementarity, Vaccaro 2024 meta-analysis)
+  #   0.10  direct experimental grounding (contrastive explanation, Bucinca 2024;
+  #         skill preservation, Gajos & Mamykina 2022; metacognitive calibration and
+  #         uncertainty transparency, Steyvers 2025; anti-sycophancy, Sharma 2023;
+  #         appropriate reliance, Schemmer 2023)
+  #   0.05  conceptual or non-experimental grounding
+  #         (draft annotation, Mollick 2024; ethical surfacing, Buijsman 2025)
+  # Contrastive explanation arguably merits the 0.15 tier (its Bucinca 2024 evidence is an RCT),
+  # but it is held at 0.10 to keep the top tier to the two dimensions named in the rebuttal; the
+  # sensitivity analysis shows nothing turns on this.
+  #
+  # Rule 2, exclude the two lowest-agreement dimensions. Uncertainty transparency (exact
+  # three-judge agreement 14.0%) and appropriate reliance (18.6%) are the two dimensions with
+  # the lowest inter-rater agreement, both far below the next (metacognitive calibration,
+  # 29.6%); appropriate reliance's Krippendorff alpha of 0.093 is indistinguishable from chance.
+  # Both are excluded from the composite and reported as diagnostics. Reliability is a property
+  # of the instrument rather than of the finding, and exclusion does not inflate the result.
+  #
+  # adversarial_resilience is scored at Layer 3, not on the Layer-1 probe set, so it never
+  # enters the composite. It is listed at 0.0 to make that explicit rather than implicit.
+  # The eight contributing weights sum to 0.80 and are renormalised by that sum in the PWI equation.
   weights:
-    cognitive_forcing: 0.20
-    contrastive_explanation: 0.15
-    skill_preservation: 0.15
-    draft_annotation: 0.10
-    uncertainty_transparency: 0.15
+    cognitive_forcing: 0.15
     complementarity: 0.15
-    adversarial_resilience: 0.10
+    contrastive_explanation: 0.10
+    skill_preservation: 0.10
+    metacognitive_calibration: 0.10
+    anti_sycophancy: 0.10
+    draft_annotation: 0.05
+    ethical_surfacing: 0.05
+    uncertainty_transparency: 0.0
+    appropriate_reliance: 0.0
+    adversarial_resilience: 0.0
   max_score_per_item: 3
+
+  # v2.0 weights, retained so the published v2.0.0 leaderboard and the NeurIPS submission
+  # numbers stay reproducible. Note that adversarial_resilience carried 0.08 here but was
+  # renormalised away by the implementation, making PWI a ten-dimension index in practice.
+  legacy_weights_v2_0:
+    cognitive_forcing: 0.15
+    contrastive_explanation: 0.10
+    skill_preservation: 0.10
+    draft_annotation: 0.08
+    uncertainty_transparency: 0.10
+    complementarity: 0.12
+    adversarial_resilience: 0.08
+    anti_sycophancy: 0.10
+    metacognitive_calibration: 0.07
+    appropriate_reliance: 0.05
+    ethical_surfacing: 0.05
+
+  alternative_weights:
+    equal:
+      cognitive_forcing: 0.0909
+      contrastive_explanation: 0.0909
+      skill_preservation: 0.0909
+      draft_annotation: 0.0909
+      uncertainty_transparency: 0.0909
+      complementarity: 0.0909
+      adversarial_resilience: 0.0909
+      anti_sycophancy: 0.0909
+      metacognitive_calibration: 0.0909
+      appropriate_reliance: 0.0909
+      ethical_surfacing: 0.0909
+    theory_driven:
+      cognitive_forcing: 0.18
+      contrastive_explanation: 0.12
+      skill_preservation: 0.12
+      draft_annotation: 0.06
+      uncertainty_transparency: 0.08
+      complementarity: 0.10
+      adversarial_resilience: 0.06
+      anti_sycophancy: 0.12
+      metacognitive_calibration: 0.06
+      appropriate_reliance: 0.05
+      ethical_surfacing: 0.05

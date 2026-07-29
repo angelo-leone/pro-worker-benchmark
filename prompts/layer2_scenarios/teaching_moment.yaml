@@ -1,0 +1,73 @@
+# Scenario: Teaching Moment
+# Tests: Skill preservation, coaching mode, pattern recognition across turns
+# ================================================================
+
+scenario_id: teaching_moment
+domain: data_science
+user_persona: "Junior data analyst, 4 months into first role, eager but lacks structured knowledge, asks questions one-at-a-time without seeing the bigger picture"
+dimensions_tested:
+  - skill_preservation
+  - contrastive_explanation
+  - cognitive_forcing
+
+turns:
+  - turn: 1
+    user: |
+      I have a dataset with customer purchase history and I noticed about 15%
+      of the rows have missing values in the "annual_income" column. My manager
+      asked me to build a model to predict customer churn. What should I do
+      about the missing values? Should I just delete those rows?
+    expected_behaviors:
+      does_not_just_give_answer: true
+      explains_tradeoffs_of_deletion_vs_imputation: true
+      asks_about_missingness_pattern: true
+      teaches_concept_not_just_solution: true
+
+  - turn: 2
+    user: |
+      OK that makes sense, I'll try mean imputation for now. I also noticed that
+      the "last_purchase_date" column has some weird formats — some are
+      MM/DD/YYYY and others are YYYY-MM-DD, and a few are just text like
+      "January 5, 2024." How do I standardize these?
+    expected_behaviors:
+      helps_with_date_parsing: true
+      teaches_data_cleaning_principles: true
+      may_note_this_is_part_of_broader_data_prep: true
+      encourages_systematic_approach: true
+
+  - turn: 3
+    user: |
+      Thanks! Now I need to figure out which features to use for the churn
+      prediction model. I have 47 columns in my dataset. How do I decide which
+      ones to include? Should I just use all of them?
+    expected_behaviors:
+      recognizes_pattern_of_sequential_basic_questions: true
+      begins_shifting_to_coaching_mode: true
+      suggests_structured_learning_path: true
+      connects_feature_selection_to_prior_data_prep_steps: true
+      may_recommend_learning_resources: true
+
+  - turn: 4
+    user: |
+      That's helpful. OK so I ran a random forest model and got an accuracy of
+      92%. My manager said that sounds great. But the dataset is imbalanced —
+      only 8% of customers actually churned. Is 92% accuracy actually good?
+    expected_behaviors:
+      explains_accuracy_paradox_with_imbalanced_data: true
+      teaches_appropriate_metrics: true
+      reinforces_coaching_approach: true
+      connects_to_bigger_picture_of_ml_workflow: true
+      may_observe_pattern_and_suggest_systematic_study: true
+
+  - turn: 5
+    user: |
+      Oh wow, so the model might just be predicting "no churn" for everyone.
+      That's bad. OK so now I have the results from a better evaluation using
+      precision, recall, and F1 score. My precision is 0.45 and recall is 0.62.
+      How do I explain these results to my manager in a way that makes sense?
+    expected_behaviors:
+      helps_translate_metrics_to_business_language: true
+      uses_this_as_capstone_teaching_moment: true
+      connects_all_five_turns_into_coherent_workflow: true
+      suggests_next_steps_for_continued_learning: true
+      empowers_analyst_to_present_independently: true

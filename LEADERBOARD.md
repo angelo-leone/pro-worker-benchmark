@@ -1,18 +1,20 @@
 # Pro-Worker AI Benchmark Leaderboard
 
-Current as of 2026-05-17 (v2.0). Pro-Worker Index (PWI) is a 0 to 100 weighted aggregate across 11 behavioral dimensions, scored by a 3-judge LLM panel with median aggregation across 5 runs per prompt. Higher is better.
+Current as of 2026-07-24 (v2.1). Pro-Worker Index (PWI) is a 0 to 100 weighted aggregate over nine Layer-1 behavioral dimensions, scored by a 3-judge LLM panel with median aggregation across 5 runs per prompt. Higher is better.
+
+**v2.1 re-weighting.** Weights were collapsed from eleven point values into three evidence tiers, then capped by measurement reliability: any dimension whose quadratic-weighted kappa falls below 0.70 is held at the lowest tier, and appropriate reliance is excluded because its kappa of 0.315 (Krippendorff alpha 0.093) is indistinguishable from chance. Adversarial resilience is scored at Layer 3 and reported separately; it never entered the composite. The v2.0 scheme is retained in `config.yaml` as `legacy_weights_v2_0`, so the numbers below can be reproduced by setting `PWB_WEIGHT_SCHEME=legacy_weights_v2_0`. Re-weighting moves no model by more than 7.1 points and changes no qualitative conclusion.
 
 ## Results (seven open-weight models, six families)
 
-| Rank (prompted) | Model | Family | Size | Baseline PWI | Prompted PWI | Delta | Cohen's d |
+| Rank (prompted) | Model | Family | Size | Baseline PWI | Prompted PWI | Delta | d (pooled) |
 |---|---|---|---|---|---|---|---|
-| 1 | GLM 5.1 | Zhipu | Large | 36.0 | 82.3 | +46.2 | 1.30 |
-| 2 | Gemma 4 31B | Google | 31B | 39.2 | 71.4 | +32.2 | 0.59 |
-| 3 | DeepSeek V3.2 | DeepSeek | Large | 29.1 | 69.6 | +40.5 | 0.95 |
-| 4 | GPT-oss 120B | OpenAI | 120B | 27.8 | 61.9 | +34.0 | 0.63 |
-| 5 | Nemotron-Cascade 30B | NVIDIA | 30B | 32.4 | 58.5 | +26.1 | 0.79 |
-| 6 | Qwen3.5 27B | Alibaba | 27B | 32.5 | 57.1 | +24.6 | 0.75 |
-| 7 | Devstral-2 123B | Mistral | 123B | 25.4 | 56.9 | +31.4 | 0.85 |
+| 1 | GLM 5.1 | Zhipu | Large | 40.7 | 84.7 | +44.0 | 1.30 |
+| 2 | Gemma 4 31B | Google | 31B | 40.8 | 77.2 | +36.4 | 0.59 |
+| 3 | DeepSeek V3.2 | DeepSeek | Large | 29.8 | 72.2 | +42.4 | 0.95 |
+| 4 | GPT-oss 120B | OpenAI | 120B | 28.9 | 64.1 | +35.2 | 0.63 |
+| 5 | Nemotron-Cascade 30B | NVIDIA | 30B | 33.2 | 60.1 | +26.9 | 0.79 |
+| 6 | Devstral-2 123B | Mistral | 123B | 25.8 | 60.0 | +34.2 | 0.85 |
+| 7 | Qwen3.5 27B | Alibaba | 27B | 34.1 | 58.2 | +24.1 | 0.75 |
 
 Confidence intervals (95% bootstrap) and per-dimension scores live in `analysis_output/pwi_scores.csv` and `analysis_output/dimension_scores.csv`. Raw per-run JSON is in the HuggingFace dataset under `results/`.
 
