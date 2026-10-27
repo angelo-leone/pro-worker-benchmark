@@ -1,5 +1,7 @@
 # Pro-Worker AI Benchmark Leaderboard
 
+> The current paper reports updated figures for the same seven models; see the README. The table below is the July 2026 v2.1 release and will be brought in line when the analysis outputs are regenerated.
+
 Current as of 2026-07-24 (v2.1). Pro-Worker Index (PWI) is a 0 to 100 weighted aggregate over nine Layer-1 behavioral dimensions, scored by a 3-judge LLM panel with median aggregation across 5 runs per prompt. Higher is better.
 
 **v2.1 re-weighting.** Weights were collapsed from eleven point values into three evidence tiers, then capped by measurement reliability: any dimension whose quadratic-weighted kappa falls below 0.70 is held at the lowest tier, and appropriate reliance is excluded because its kappa of 0.315 (Krippendorff alpha 0.093) is indistinguishable from chance. Adversarial resilience is scored at Layer 3 and reported separately; it never entered the composite. The v2.0 scheme is retained in `config.yaml` as `legacy_weights_v2_0`, so the numbers below can be reproduced by setting `PWB_WEIGHT_SCHEME=legacy_weights_v2_0`. Re-weighting moves no model by more than 7.1 points and changes no qualitative conclusion.
