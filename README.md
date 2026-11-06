@@ -2,7 +2,7 @@
 
 [![Code License: MIT](https://img.shields.io/badge/Code-MIT-lightgrey.svg)](https://opensource.org/license/mit)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Paper](https://img.shields.io/badge/Paper-NeurIPS%202026%20(under%20review)-orange)](paper/pro_worker_benchmark.pdf)
+[![Paper](https://img.shields.io/badge/Paper-preprint%20(SSRN)-orange)](https://ssrn.com/abstract=6773038)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow)](https://huggingface.co/datasets/angelo-leone/pro-worker-ai-benchmark)
 [![Dimensions](https://img.shields.io/badge/Dimensions-11-green)]()
 [![Layers](https://img.shields.io/badge/Evaluation%20Layers-3-blue)]()
@@ -12,9 +12,9 @@ A benchmark for measuring whether LLMs augment human intelligence or replace it.
 
 Operationalizes findings from Zana Buçinca (Harvard SEAS), Max Schemmer (KIT), Krzysztof Gajos (Harvard SEAS), Daron Acemoglu (MIT), and Ethan Mollick (Wharton).
 
-> **Status (May 2026).** Data collection complete: 7 open-weight models from 6 families, 3-judge LLM panel, 99%+ judge success across roughly 96,000 scored instances. Paper submitted to NeurIPS 2026 (Evaluations & Datasets Track).
+> **Status (October 2026).** Data collection complete: 7 open-weight models from 6 families and 2 frontier assistants, 3-judge LLM panel, validated against blind human annotators. The paper is under peer review. The figures below follow its current version; the [SSRN preprint](https://ssrn.com/abstract=6773038) is an earlier version and some figures differ.
 
-> **Related project.** [Worker-Augmenting AI Layer](https://github.com/angelo-leone/worker-augmenting-layer): the personalized augmentation layer this benchmark evaluates.
+> **Related project.** [TAOS](https://taoshq.com): the personalized augmentation layer this benchmark evaluates.
 
 ## Headline Findings
 
@@ -22,23 +22,23 @@ Across the seven open-weight LLMs:
 
 | Quantity | Value |
 |---|---|
-| Baseline PWI (no system prompt) | 25.8 to 40.8 |
-| With pro-worker system prompt | 58.2 to 84.7 |
-| Delta from the system prompt | +24.1 to +44.0 |
-| d, pooled over dimensions (per model) | 0.59 to 1.30 |
-| Significance (all 7 models, paired t) | p < 10^-39 |
+| Baseline PWI (no system prompt) | 20.4 to 37.8 |
+| With pro-worker system prompt | 50.9 to 82.8 |
+| Delta from the system prompt | +25.2 to +53.0 |
+| d, per model (six composite dimensions) | 0.76 to 1.52 |
+| Significance (all 7 models, paired, Bonferroni-corrected) | p < 10^-10 |
 
-Default behavior is largely substitutional. A 130-line pro-worker system prompt closes most of the gap. The effect persists at multi-turn (d = 1.61) and adversarial (d = 1.41) layers.
+Default behavior is largely substitutional. A 130-line pro-worker system prompt closes most of the gap. The effect persists at multi-turn (d = 1.61) and adversarial (d = 1.42) layers.
 
 | Model | Family | Baseline | Prompted | Delta |
 |---|---|---|---|---|
-| GLM 5.1 | Zhipu | 40.7 | 84.7 | +44.0 |
-| Gemma 4 31B | Google | 40.8 | 77.2 | +36.4 |
-| DeepSeek V3.2 | DeepSeek | 29.8 | 72.2 | +42.4 |
-| GPT-oss 120B | OpenAI | 28.9 | 64.1 | +35.2 |
-| Nemotron-Cascade 30B | NVIDIA | 33.2 | 60.1 | +26.9 |
-| Devstral-2 123B | Mistral | 25.8 | 60.0 | +34.2 |
-| Qwen3.5 27B | Alibaba | 34.1 | 58.2 | +24.1 |
+| Gemma 4 31B | Google | 37.8 | 82.8 | +45.0 |
+| GLM 5.1 | Zhipu | 35.9 | 82.1 | +46.1 |
+| DeepSeek V3.2 | DeepSeek | 24.8 | 77.8 | +53.0 |
+| GPT-oss 120B | OpenAI | 20.4 | 71.8 | +51.4 |
+| Devstral-2 123B | Mistral | 20.9 | 63.9 | +43.0 |
+| Nemotron-Cascade 30B | NVIDIA | 24.0 | 53.1 | +29.0 |
+| Qwen3.5 27B | Alibaba | 25.7 | 50.9 | +25.2 |
 
 ## What It Measures
 
@@ -193,7 +193,7 @@ pro-worker-benchmark/
 ├── dashboard.py                    # Streamlit visualization
 ├── analysis_output/                # CSVs: PWI, deltas, CIs, effect sizes
 ├── results/                        # Raw per-run JSON results (generated locally when you run the benchmark; the released v2.0 set lives on HuggingFace, not in this repo)
-├── paper/                          # NeurIPS 2026 paper source and figures
+├── paper/                          # Earlier paper source and figures (May 2026); see the SSRN preprint for the current version
 ├── pilot/                          # Human and cross-family judge validation pilots
 ├── tests/                          # Construct validity and sensitivity tests
 └── docs/                           # Quality standard, validation protocol, cost model
