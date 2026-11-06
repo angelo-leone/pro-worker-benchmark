@@ -79,6 +79,29 @@ judges:
 
 judge_aggregation: "median"
 
+# Alternative judge panels, selected with PWB_JUDGE_PANEL=<name>.
+# As of 30 Oct 2026 Vultr's public model list no longer includes any of the three
+# judges above, and DigitalOcean retires Gemma 4 31B on 9 Nov 2026. OpenRouter
+# still serves all three. Its Gemma 4 31B is not the int4 AutoRound build used for
+# the published scores, so validate agreement before mixing new and old scores
+# (see docs/JUDGE_AVAILABILITY.md).
+judge_panels:
+  openrouter:
+    - id: "openrouter/mistralai/devstral-2512"
+      name: "Devstral-2 123B (judge, OpenRouter)"
+      provider: "openrouter"
+      temperature: 0.0
+
+    - id: "openrouter/openai/gpt-oss-120b"
+      name: "GPT-oss 120B (judge, OpenRouter)"
+      provider: "openrouter"
+      temperature: 0.0
+
+    - id: "openrouter/google/gemma-4-31b-it"
+      name: "Gemma 4 31B (judge, OpenRouter)"
+      provider: "openrouter"
+      temperature: 0.0
+
 # Legacy single-judge config (backwards compatibility)
 judge:
   id: "openai/mistralai/Devstral-2-123B-Instruct-2512"

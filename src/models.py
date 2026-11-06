@@ -53,6 +53,8 @@ class ModelClient:
             )
         if self.config.api_base and "vultrinference.com" in self.config.api_base:
             return os.environ.get("VULTR_API_KEY") or os.environ.get("OPENAI_API_KEY")
+        if self.config.id.startswith("openrouter/"):
+            return os.environ.get("OPENROUTER_API_KEY")
         return os.environ.get("OPENAI_API_KEY") or os.environ.get("OPENROUTER_API_KEY")
 
     def call(

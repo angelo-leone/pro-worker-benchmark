@@ -6,6 +6,7 @@ metrics and rubric order randomization for bias mitigation.
 """
 
 import json
+import os
 import random
 import re
 from collections import Counter
@@ -485,8 +486,18 @@ def build_judge_panel(config: dict) -> "Judge | JudgePanel":
     from .models import build_client_from_dict
 
     if "judges" in config:
+        judges = config["judges"]
+        panel_name = os.environ.get("PWB_JUDGE_PANEL")
+        if panel_name:
+            panels = config.get("judge_panels", {})
+            if panel_name not in panels:
+                raise ValueError(
+                    f"PWB_JUDGE_PANEL={panel_name!r} is not in judge_panels "
+                    f"(available: {sorted(panels)})"
+                )
+            judges = panels[panel_name]
         judge_clients = []
-        for judge_cfg in config["judges"]:
+        for judge_cfg in judges:
             client = build_client_from_dict({
                 "id": judge_cfg["id"],
                 "name": judge_cfg.get("name", "judge"),
