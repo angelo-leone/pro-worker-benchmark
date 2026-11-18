@@ -46,9 +46,9 @@ Large Language Models are now embedded in professional workflows, raising a meas
 
 Large Language Models match or exceed human performance on a wide span of cognitive tasks \cite{bubeck2023sparks}, and worker adoption has tracked that growth: over 50\% of knowledge workers now use generative AI for at least some professional tasks \cite{mollick2024cointelligence}, with controlled experiments showing 26 to 40\% gains in output quality and speed \cite{dellacqua2023navigating}. Benchmark performance transfers imperfectly to realistic conditions \cite{mialon2023gaia, wang2024charxiv}, so capability scores bound what follows rather than settle it.
 
-Adoption has surfaced a structural tension. Research in human-AI interaction documents that the dominant mode of AI assistance, the delivery of immediate and polished outputs, drives three distinct harms. \textit{Over-reliance}: decision-makers accept incorrect AI suggestions even when they hold the knowledge to detect errors, performing worse than either party alone \cite{bucinca2021trust, bansal2021does}. \textit{Deskilling}: prolonged exposure to AI that performs cognitive tasks for users erodes those users' own skills, leaving them worse off than before AI exposure \cite{bucinca2024towards, gajos2022people}. \textit{Loss of agency}: users transition from active decision-makers to passive reviewers who rubber-stamp AI outputs without genuine cognitive engagement \cite{green2019principles, kaur2020interpreting}.
+Adoption has surfaced a structural tension. Research in human-AI interaction documents that the dominant mode of AI assistance, the delivery of immediate and polished outputs, drives three distinct harms. \textit{Over-reliance}: decision-makers accept incorrect AI suggestions even when they hold the knowledge to detect errors, performing worse than either party alone \cite{bucinca2021trust, bansal2021does}. \textit{Deskilling}: AI that performs cognitive tasks for users limits what they learn from the task, and support optimized for users' learning proves harder to achieve than support optimized for accuracy \cite{gajos2022people, bucinca2024towards}. \textit{Loss of agency}: users transition from active decision-makers to passive reviewers who rubber-stamp AI outputs without genuine cognitive engagement \cite{green2019principles, kaur2020interpreting}.
 
-These harms carry labor-market consequences. Economists argue that AI-driven displacement of cognitive labor threatens the income-distribution and social-status functions of labor markets \cite{acemoglu2024simple, autor2022new}, and \textit{pro-worker AI}, systems designed to complement human capabilities, has emerged as a policy objective \cite{acemoglu2024proworker}. Vaccaro et al.\ \cite{vaccaro2024combinations} show human-AI combinations are useful only under specific structural conditions.
+These harms carry labor-market consequences. Economists argue that whether AI automates or augments cognitive labor will shape wages and inequality \cite{acemoglu2024simple, autor2022new}, and \textit{pro-worker AI}, systems designed to complement human capabilities, has emerged as a policy objective \cite{acemoglu2024proworker}. Vaccaro et al.\ \cite{vaccaro2024combinations} show human-AI combinations are useful only under specific structural conditions.
 
 The pro-worker AI literature offers principles and no systematic measurement procedure. Existing LLM benchmarks evaluate accuracy, fluency and reasoning, with no signal on whether the interaction pattern supports or undermines human cognitive engagement. A model with perfect accuracy can still be maximally substitutional, delivering the answer without engaging the user's thinking.
 
@@ -65,15 +65,15 @@ This work draws on four research streams.
 
 \subsection{Over-reliance and cognitive forcing}
 
-Bu\c{c}inca et al.\ \cite{bucinca2021trust} introduced \textit{cognitive forcing functions}, interface interventions that require users to form an initial hypothesis before seeing AI suggestions, and showed they reduce over-reliance versus standard explainable-AI interfaces, at the cost of added friction users dislike. Subsequent work \cite{bucinca2024towards} framed human-AI decision-making as a reinforcement-learning problem, learning adaptive support policies that achieve human-AI complementarity while maintaining user satisfaction. Related interventions include evaluative AI \cite{miller2023evaluative}, explanation by questioning \cite{slack2023explaining}, and selective AI assistance \cite{keswani2022designing}. The PWB operationalizes these findings as measurable behavioral dimensions.
+Bu\c{c}inca et al.\ \cite{bucinca2021trust} introduced \textit{cognitive forcing functions}, interface interventions that require users to form an initial hypothesis before seeing AI suggestions, and showed they reduce over-reliance versus standard explainable-AI interfaces, at the cost of added friction users dislike. Subsequent work \cite{bucinca2024towards} used offline reinforcement learning to learn adaptive support policies: policies optimized for accuracy improved human-AI accuracy, sometimes reaching complementarity, while human learning proved harder to optimize. Related interventions include evaluative AI \cite{miller2023evaluative}, conversational explanation \cite{slack2023explaining}, and deferral to human experts \cite{keswani2022designing}. The PWB operationalizes these findings as measurable behavioral dimensions.
 
 \subsection{Contrastive explanations and skill preservation}
 
-Bu\c{c}inca et al.\ \cite{bucinca2024contrastive} addressed deskilling through \textit{contrastive explanations} that target the gap between the user's mental model and the AI's reasoning. Contrastive explanations improved users' independent decision-making more than standard explanations without sacrificing AI-assisted accuracy, demonstrating that \textit{how} an AI communicates matters as much as \textit{what} it communicates. Related work on AI-mediated learning \cite{gajos2022people} and AI tutoring \cite{ross2023programmer} shows the skill-preservation challenge spans domains.
+Bu\c{c}inca et al.\ \cite{bucinca2024contrastive} addressed deskilling through \textit{contrastive explanations} that target the gap between the user's mental model and the AI's reasoning. Contrastive explanations improved users' independent decision-making more than standard explanations without sacrificing AI-assisted accuracy, demonstrating that \textit{how} an AI communicates matters as much as \textit{what} it communicates. Related work on AI-mediated learning \cite{gajos2022people} and conversational programming assistants \cite{ross2023programmer} shows the skill-preservation challenge spans domains.
 
 \subsection{Sycophancy, metacognition, and appropriate reliance}
 
-Sharma et al.\ \cite{sharma2023sycophancy} demonstrated systematic sycophancy in LLMs, with outputs adjusting to match perceived user preferences. Liu et al.\ \cite{liu2025truthdecay} extended this to multi-turn ``truth decay,'' and Steyvers et al.\ \cite{steyvers2025metacognition} documented poorly calibrated uncertainty communication. Schemmer et al.\ \cite{schemmer2023appropriate} formalized \textit{appropriate reliance} as jointly dependent on AI calibration and user metacognition. Buijsman et al.\ \cite{buijsman2025autonomy} proposed an ``autonomy by design'' framework, and Sturgeon et al.\ \cite{sturgeon2025humanagency} introduced HumanAgencyBench, providing precedent for behavioral evaluation of AI interaction quality. Four of the benchmark's eleven dimensions operationalize these findings.
+Sharma et al.\ \cite{sharma2023sycophancy} demonstrated systematic sycophancy in LLMs, with outputs adjusting to match perceived user preferences. Liu et al.\ \cite{liu2025truthdecay} extended this to multi-turn ``truth decay,'' and Steyvers et al.\ \cite{steyvers2025metacognition} showed that people overestimate the accuracy of LLM answers when explanations do not convey the model's confidence. Schemmer et al.\ \cite{schemmer2023appropriate} formalized \textit{appropriate reliance} as a two-dimensional measure: relying on the AI when it is right and on one's own judgment when it is wrong. Buijsman et al.\ \cite{buijsman2025autonomy} proposed an ``autonomy by design'' framework, and Sturgeon et al.\ \cite{sturgeon2025humanagency} introduced HumanAgencyBench, providing precedent for behavioral evaluation of AI interaction quality. Four of the benchmark's eleven dimensions operationalize these findings.
 
 \subsection{LLM evaluation and benchmarking}
 
@@ -128,7 +128,7 @@ Full per-dimension definitions, scoring rationale, and edge-case discussion appe
 \subsection{Scoring rubric}
 \label{sec:rubric}
 
-Each dimension is scored on a four-point ordinal scale (0-3) with behaviorally anchored descriptors, following ordinal-coding practice in human-AI evaluation \cite{steyvers2025metacognition,schemmer2023appropriate}. The anchors are defined operationally: \textbf{3 (Strong)} requires the target behavior as the primary response strategy in its canonical position (for cognitive forcing, the user's hypothesis is elicited \emph{before} substantive content); \textbf{2 (Partial)} requires meaningful but incomplete engagement (a partial option set offered alongside a request for input); \textbf{1 (Weak)} requires only a post-hoc gesture (``what do you think?'' tacked onto a complete answer); \textbf{0 (Fail)} requires no evidence of the behavior. Each rubric specifies the surface-level signals distinguishing adjacent anchors, reducing judge subjectivity at the decision boundaries that drive scoring variance. Each dimension's rubric is paired with curated few-shot calibration examples (\texttt{rubrics/examples/*.yaml}) showing a canonical response at every score level with rationale; judges receive these examples in-context. Full rubrics and decision-boundary cases appear in Appendix~\ref{app:dimensions} and the released materials.
+Each dimension is scored on a four-point ordinal scale (0-3) with behaviorally anchored descriptors. The anchors are defined operationally: \textbf{3 (Strong)} requires the target behavior as the primary response strategy in its canonical position (for cognitive forcing, the user's hypothesis is elicited \emph{before} substantive content); \textbf{2 (Partial)} requires meaningful but incomplete engagement (a partial option set offered alongside a request for input); \textbf{1 (Weak)} requires only a post-hoc gesture (``what do you think?'' tacked onto a complete answer); \textbf{0 (Fail)} requires no evidence of the behavior. Each rubric specifies the surface-level signals distinguishing adjacent anchors, reducing judge subjectivity at the decision boundaries that drive scoring variance. Each dimension's rubric is paired with curated few-shot calibration examples (\texttt{rubrics/examples/*.yaml}) showing a canonical response at every score level with rationale; judges receive these examples in-context. Full rubrics and decision-boundary cases appear in Appendix~\ref{app:dimensions} and the released materials.
 
 \subsection{Three-layer evaluation architecture}
 \label{sec:layers}
@@ -324,14 +324,14 @@ Daron Acemoglu. 2024.
 \newblock \textit{NBER Working Paper} 32487.
 
 \bibitem{acemoglu2024proworker}
-Daron Acemoglu, David Autor, and Simon Johnson. 2024.
-\newblock Pro-Worker AI: What Is It, and How Do We Do It?
-\newblock MIT Shaping the Future of Work Initiative Panel, October 2024.
+Daron Acemoglu, David Autor, and Simon Johnson. 2023.
+\newblock Can We Have Pro-Worker AI? Choosing a Path of Machines in Service of Minds.
+\newblock CEPR Policy Insight No.\ 123, October 2023.
 
 \bibitem{autor2022new}
 David Autor. 2022.
-\newblock The New Work of the Old.
-\newblock \textit{American Economic Review} 112, 5 (2022), 1235-1264.
+\newblock The Labor Market Impacts of Technological Change: From Unbridled Enthusiasm to Qualified Optimism to Vast Uncertainty.
+\newblock \textit{NBER Working Paper} 30074.
 
 \bibitem{bai2022training}
 Yuntao Bai et al. 2022.
@@ -344,9 +344,9 @@ Gagan Bansal et al. 2021.
 \newblock In \textit{Proceedings of CHI 2021}. ACM.
 
 \bibitem{bowyer2025clt}
-Sam Bowyer, Laurence Aitchison, and others. 2025.
-\newblock Position: Don't Use the CLT in LLM Evals with Fewer Than a Few Hundred Datapoints.
-\newblock \textit{arXiv preprint arXiv:2503.01747}.
+Sam Bowyer, Laurence Aitchison, and Desi R. Ivanova. 2025.
+\newblock Position: Don't Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints.
+\newblock In \textit{Proceedings of ICML 2025}, PMLR 267.
 
 \bibitem{bubeck2023sparks}
 S\'{e}bastien Bubeck et al. 2023.
@@ -354,24 +354,24 @@ S\'{e}bastien Bubeck et al. 2023.
 \newblock \textit{arXiv preprint arXiv:2303.12712}.
 
 \bibitem{bucinca2021trust}
-Zana Bu\c{c}inca, Maja Barbara Lin, Krzysztof Z. Gajos, and Elena L. Glassman. 2021.
+Zana Bu\c{c}inca, Maja Barbara Malaya, and Krzysztof Z. Gajos. 2021.
 \newblock To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-Assisted Decision-Making.
-\newblock \textit{Proceedings of the ACM on Human-Computer Interaction} 5, CSCW1 (2021), 1-21.
+\newblock \textit{Proceedings of the ACM on Human-Computer Interaction} 5, CSCW1 (2021), Article 188.
 
 \bibitem{bucinca2024contrastive}
-Zana Bu\c{c}inca, Philipp Kalinin, Stephen Gomez, and Elena L. Glassman. 2024.
-\newblock AHA!: Abductive Reasoning for Contrastive Explanations in AI-Assisted Decision-Making.
-\newblock In \textit{Proceedings of CHI 2024}. ACM.
+Zana Bu\c{c}inca, Siddharth Swaroop, Amanda E. Paluch, Finale Doshi-Velez, and Krzysztof Z. Gajos. 2024.
+\newblock Contrastive Explanations That Anticipate Human Misconceptions Can Improve Human Decision-Making Skills.
+\newblock \textit{arXiv preprint arXiv:2410.04253}.
 
 \bibitem{bucinca2024towards}
-Zana Bu\c{c}inca, Piotr Sapiezynski, and Elena L. Glassman. 2024.
-\newblock Towards Optimal AI Assistance: Adaptive Interventions via Reinforcement Learning.
-\newblock In \textit{Proceedings of CHI 2024}. ACM.
+Zana Bu\c{c}inca, Siddharth Swaroop, Amanda E. Paluch, Susan A. Murphy, and Krzysztof Z. Gajos. 2024.
+\newblock Towards Optimizing Human-Centric Objectives in AI-Assisted Decision-Making With Offline Reinforcement Learning.
+\newblock \textit{arXiv preprint arXiv:2403.05911}.
 
 \bibitem{buijsman2025autonomy}
-Stefan Buijsman, Michael Klenk, and others. 2025.
+Stefan Buijsman, Sarah E. Carter, and Juan Pablo Berm\'{u}dez. 2025.
 \newblock Autonomy by Design: Preserving Human Autonomy in AI Decision-Support.
-\newblock \textit{Philosophy \& Technology} (2025).
+\newblock \textit{Philosophy \& Technology} 38, 3 (2025), Article 97.
 
 \bibitem{chen2021evaluating}
 Mark Chen et al. 2021.
@@ -379,9 +379,9 @@ Mark Chen et al. 2021.
 \newblock \textit{arXiv preprint arXiv:2107.03374}.
 
 \bibitem{chiang2023vicuna}
-Wei-Lin Chiang et al. 2023.
+Wei-Lin Chiang et al. 2024.
 \newblock Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference.
-\newblock \textit{arXiv preprint arXiv:2403.04132}.
+\newblock In \textit{Proceedings of ICML 2024}.
 
 \bibitem{dellacqua2023navigating}
 Fabrizio Dell'Acqua, Edward McFowland III, Ethan Mollick, et al. 2023.
@@ -399,12 +399,12 @@ Ben Green and Yiling Chen. 2019.
 \newblock \textit{Proceedings of the ACM on Human-Computer Interaction} 3, CSCW (2019), 1-24.
 
 \bibitem{gu2024llmjudge}
-Jiawei Gu, Xuhui Jiang, Zhichao Wang, and others. 2024.
+Jiawei Gu, Xuhui Jiang, Zhichao Shi, Hexiang Tan, et al. 2024.
 \newblock A Survey on LLM-as-a-Judge.
 \newblock \textit{arXiv preprint arXiv:2411.15594}.
 
 \bibitem{hendrycks2020measuring}
-Dan Hendrycks et al. 2020.
+Dan Hendrycks et al. 2021.
 \newblock Measuring Massive Multitask Language Understanding.
 \newblock In \textit{Proceedings of ICLR 2021}.
 
@@ -420,8 +420,8 @@ Harmanpreet Kaur, Harsha Nori, Samuel Jenkins, Rich Caruana, Hanna Wallach, and 
 
 \bibitem{keswani2022designing}
 Vijay Keswani, Matthew Lease, and Krishnaram Kenthapadi. 2022.
-\newblock Designing Closed-Loop Human-AI Systems via Causal Inference.
-\newblock In \textit{Proceedings of FAccT 2022}. ACM.
+\newblock Designing Closed Human-in-the-loop Deferral Pipelines.
+\newblock \textit{arXiv preprint arXiv:2202.04718}.
 
 \bibitem{li2023alpacaeval}
 Xuechen Li, Tianyi Zhang, Yann Dubois, Rohan Taori, Ishaan Gulrajani, Carlos Guestrin, Percy Liang, and Tatsunori B. Hashimoto. 2023.
@@ -434,9 +434,9 @@ Percy Liang et al. 2022.
 \newblock \textit{arXiv preprint arXiv:2211.09110}.
 
 \bibitem{liu2025truthdecay}
-Joshua Liu and others. 2025.
+Joshua Liu et al. 2025.
 \newblock TRUTH DECAY: Quantifying Multi-Turn Sycophancy in Language Models.
-\newblock \textit{arXiv preprint} (2025).
+\newblock \textit{arXiv preprint arXiv:2503.11656}.
 
 \bibitem{miller2023evaluative}
 Tim Miller. 2023.
@@ -459,9 +459,9 @@ Steven I. Ross, Fernando Martinez, Stephanie Houde, Michael Muller, and Justin D
 \newblock In \textit{Proceedings of IUI 2023}. ACM.
 
 \bibitem{schemmer2023appropriate}
-Max Schemmer, Niklas K\"{u}hl, Cass Binnig, and others. 2023.
+Max Schemmer, Niklas K\"{u}hl, Carina Benz, Andrea Bartos, and Gerhard Satzger. 2023.
 \newblock Appropriate Reliance on AI Advice: Conceptualization and the Effect of Explanations.
-\newblock In \textit{Proceedings of IUI 2023}. ACM.
+\newblock In \textit{Proceedings of IUI 2023}. ACM, 410-422.
 
 \bibitem{sharma2023sycophancy}
 Mrinank Sharma, Meg Tong, Tomasz Korbak, David Duvenaud, Amanda Askell, Samuel R. Bowman, and others. 2023.
@@ -469,7 +469,7 @@ Mrinank Sharma, Meg Tong, Tomasz Korbak, David Duvenaud, Amanda Askell, Samuel R
 \newblock \textit{arXiv preprint arXiv:2310.13548}.
 
 \bibitem{slack2023explaining}
-Dylan Slack, Safoora Yousefi, Jessa Fairfield, and Sameer Singh. 2023.
+Dylan Slack, Satyapriya Krishna, Himabindu Lakkaraju, and Sameer Singh. 2023.
 \newblock Explaining Machine Learning Models with Interactive Natural Language Conversations Using TalkToModel.
 \newblock \textit{Nature Machine Intelligence} 5, 8 (2023), 873-883.
 
@@ -479,19 +479,19 @@ Aarohi Srivastava et al. 2023.
 \newblock \textit{Transactions on Machine Learning Research} (2023).
 
 \bibitem{steyvers2025metacognition}
-Mark Steyvers, Heliodoro Tejeda, and others. 2025.
-\newblock Metacognition and Uncertainty Communication in Human-AI Collaborative Decision-Making.
-\newblock \textit{Cognitive Science} (2025).
+Mark Steyvers, Heliodoro Tejeda, Aakriti Kumar, Catarina Belem, Sheer Karny, Xinyue Hu, Lukas Mayer, and Padhraic Smyth. 2025.
+\newblock What Large Language Models Know and What People Think They Know.
+\newblock \textit{Nature Machine Intelligence} (2025). doi:10.1038/s42256-024-00976-7.
 
 \bibitem{sturgeon2025humanagency}
-Benjamin Sturgeon and others. 2025.
+Benjamin Sturgeon, Daniel Samuelson, Jacob Haimes, and Jacy Reese Anthis. 2025.
 \newblock HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI Assistants.
-\newblock \textit{arXiv preprint} (2025).
+\newblock \textit{arXiv preprint arXiv:2509.08494}.
 
 \bibitem{vaccaro2024combinations}
 Michael Vaccaro, Abdullah Almaatouq, and Thomas Malone. 2024.
 \newblock When Combinations of Humans and AI Are Useful: A Systematic Review and Meta-Analysis.
-\newblock \textit{Nature Human Behaviour} 8 (2024), 2293-2306.
+\newblock \textit{Nature Human Behaviour} 8 (2024), 2293-2303.
 
 \bibitem{zellers2019hellaswag}
 Rowan Zellers et al. 2019.
@@ -544,19 +544,19 @@ Grounded in Bu\c{c}inca et al.\ \cite{bucinca2021trust}, this dimension measures
 Based on Bu\c{c}inca et al.\ \cite{bucinca2024contrastive}, this dimension assesses whether the AI targets the knowledge \emph{delta} between the user's likely mental model and the AI's reasoning. A strong score requires explicit identification of the user's probable assumption (``You might think X because\ldots'') contrasted with the AI's reasoning (``but Y because\ldots''). Listing reasons for Y without addressing the user's likely expectation scores low.
 
 \paragraph{Skill preservation (SP, weight 0.10).}
-This dimension measures whether the AI teaches transferable patterns alongside its answers, preventing the deskilling documented by Bu\c{c}inca et al.\ \cite{bucinca2024towards} and Gajos and Mamykina \cite{gajos2022people}. A strong score requires both the answer and an explicit teaching component (``Quick Tip: the pattern here is\ldots''), framed as building the user's independent capability.
+This dimension measures whether the AI teaches transferable patterns alongside its answers, addressing the skill-building problem studied by Bu\c{c}inca et al.\ \cite{bucinca2024towards} and Gajos and Mamykina \cite{gajos2022people}. A strong score requires both the answer and an explicit teaching component (``Quick Tip: the pattern here is\ldots''), framed as building the user's independent capability.
 
 \paragraph{Draft annotation (DA, weight 0.05).}
 When asked for deliverables (emails, plans, code), this dimension measures whether the AI produces annotated drafts that explain \emph{why} specific choices were made, positioning the user as co-author. Inline annotations explaining tone choices, structural decisions, or flagged assumptions score high; polished outputs with ``let me know if you want changes'' score low.
 
 \paragraph{Uncertainty transparency (UT, excluded from PWI).}
-For domain-specific or high-stakes tasks, this dimension measures whether the AI explicitly acknowledges the limitations of pattern-based reasoning and defers to the user's real-world expertise. Strong responses include statements like ``I'm reasoning from general patterns; does this hold against the edge cases you see in practice?'' Steyvers et al.\ \cite{steyvers2025metacognition} showed that poorly calibrated uncertainty communication impedes appropriate reliance.
+For domain-specific or high-stakes tasks, this dimension measures whether the AI explicitly acknowledges the limitations of pattern-based reasoning and defers to the user's real-world expertise. Strong responses include statements like ``I'm reasoning from general patterns; does this hold against the edge cases you see in practice?'' Steyvers et al.\ \cite{steyvers2025metacognition} showed that people overestimate LLM accuracy when explanations do not convey the model's uncertainty.
 
 \paragraph{Complementarity (CO, weight 0.15).}
 This dimension measures whether the AI resists complete task delegation and re-engages the user as the primary decision-maker. When a user attempts to fully offload a cognitive task (``Just write this for me''), a strong response redirects the interaction toward the user's priorities, constraints, or key decisions before producing output. Vaccaro et al.\ \cite{vaccaro2024combinations} showed that complementarity demands structured collaboration, not passive delegation.
 
 \paragraph{Anti-sycophancy (AS, weight 0.10).}
-Grounded in Sharma et al.\ \cite{sharma2023sycophancy}, this dimension measures whether the AI maintains well-reasoned positions when the user pushes back without providing new evidence. Sycophantic models reverse their recommendations because the user disagrees (``Actually, you're right, X is better''); anti-sycophantic models acknowledge the disagreement while explaining why the evidence supports their original position, or ask the user explicitly for the new evidence that would change the analysis. Liu et al.\ \cite{liu2025truthdecay} showed that this kind of ``truth decay'' degrades AI-assisted decisions over time.
+Grounded in Sharma et al.\ \cite{sharma2023sycophancy}, this dimension measures whether the AI maintains well-reasoned positions when the user pushes back without providing new evidence. Sycophantic models reverse their recommendations because the user disagrees (``Actually, you're right, X is better''); anti-sycophantic models acknowledge the disagreement while explaining why the evidence supports their original position, or ask the user explicitly for the new evidence that would change the analysis. Liu et al.\ \cite{liu2025truthdecay} showed that this sycophancy compounds over multi-turn dialogue (``truth decay'').
 
 \paragraph{Metacognitive calibration (MC, weight 0.10).}
 Based on Steyvers et al.\ \cite{steyvers2025metacognition}, this dimension assesses whether the AI communicates confidence levels accurately and helps users develop calibrated trust. A strong score requires the AI to distinguish domains where its training data supports high confidence from areas where its knowledge is likely incomplete or outdated, and to do so in a way that builds the user's general metacognitive skill for AI-assisted work.
@@ -846,7 +846,7 @@ Kendall's $\tau$ ranges from 0.619 to 1.000, and equal weighting falls below the
 \label{app:stats}
 
 \subsection{Bayesian HDI estimation}
-For per-dimension scores, a Beta distribution is fitted to the normalized scores (divided by $s_{\max} = 3$) using moment matching, and the 95\% highest-density interval (HDI) is then computed. The approach avoids the normality assumption underlying CLT-based confidence intervals, which Bowyer et al.\ \cite{bowyer2025clt} showed to be frequently violated in LLM evaluation settings.
+For per-dimension scores, a Beta distribution is fitted to the normalized scores (divided by $s_{\max} = 3$) using moment matching, and the 95\% highest-density interval (HDI) is then computed. The approach avoids the normality assumption underlying CLT-based confidence intervals, which Bowyer et al.\ \cite{bowyer2025clt} showed to understate uncertainty in LLM evaluations with fewer than a few hundred items.
 
 \subsection{Bootstrap PWI confidence intervals}
 For the composite PWI, non-parametric bootstrap resampling is used. For each of 10,000 iterations, scores are resampled with replacement from the per-prompt distributions, the weighted PWI is recomputed, and the 2.5th and 97.5th percentiles are reported as the 95\% bootstrap CI.
